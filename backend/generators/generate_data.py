@@ -58,12 +58,14 @@ from backend.config import (
 from backend.database.db_manager import DatabaseManager
 from backend.generators.enrollments import EnrollmentGenerator
 from backend.generators.fee_data import FeeScheduleGenerator
+from backend.generators.phase2_data import InvoiceGenerator, ScholarshipGenerator, PaymentGenerator
 from backend.generators.programs import ProgramGenerator
 from backend.generators.students import StudentGenerator
 from backend.generators.terms import TermGenerator
 from backend.id_generator import IDGenerator
 from backend.logging_config import setup_logging
 from backend.seed_manager import SeededRandom
+from backend.services.finance_policy import FinancePolicy
 from backend.validators import verify_integrity
 
 logger = logging.getLogger(__name__)
@@ -91,12 +93,20 @@ def _count(conn: sqlite3.Connection, table: str) -> int:
 def _print_summary(conn: sqlite3.Connection) -> None:
     _print_separator("GENERATION SUMMARY")
     tables = [
-        ("Programs",          "Programs"),
-        ("Terms",             "Terms"),
-        ("Fee Schedules",     "FeeSchedules"),
-        ("Fee Schedule Lines","FeeScheduleLines"),
-        ("Students",          "Students"),
-        ("Enrollments",       "Enrollments"),
+        ("Programs",             "Programs"),
+        ("Terms",                "Terms"),
+        ("Fee Schedules",        "FeeSchedules"),
+        ("Fee Schedule Lines",   "FeeScheduleLines"),
+        ("Students",             "Students"),
+        ("Enrollments",          "Enrollments"),
+        ("Scholarships",         "Scholarships"),
+        ("Eligibility (Awards)", "Eligibility"),
+        ("Invoices",             "Invoices"),
+        ("Invoice Lines",        "InvoiceLines"),
+        ("Payments",             "Payments"),
+        ("Payment Allocations",  "PaymentAllocations"),
+        ("Refunds",              "Refunds"),
+        ("Audit Events",         "AuditEvents"),
     ]
     for label, table in tables:
         count = _count(conn, table)
@@ -241,8 +251,37 @@ def run_generation(
     print(f"  Enrollments    : {enr_stats['inserted']} new, "
           f"{enr_stats['skipped']} skipped")
 
+    # ---- 6. Phase 2: Invoices, Scholarships, Payments ------------------
+    policy = FinancePolicy()
+    id_gen_p2 = IDGenerator()
+    inv_rng = SeededRandom(seed).fork("invoices_p2")
+    sch_rng = SeededRandom(seed).fork("scholarships_p2")
+    pay_rng = SeededRandom(seed).fork("payments_p2")
+
+    _print_separator("Step 6/9: Invoices + Invoice Lines")
+    inv_gen_p2 = InvoiceGenerator(config, inv_rng, id_gen_p2, policy)
+    with manager.connection() as conn:
+        inv_stats = inv_gen_p2.generate(conn)
+    print(f"  Invoices       : {inv_stats['invoices_created']} created, "
+          f"{inv_stats['lines_created']} lines")
+
+    _print_separator("Step 7/9: Scholarships + Eligibility")
+    sch_gen_p2 = ScholarshipGenerator(config, sch_rng, policy)
+    with manager.connection() as conn:
+        sch_stats = sch_gen_p2.generate(conn)
+    print(f"  Scholarships   : {sch_stats['scholarships_inserted']} in catalogue")
+    print(f"  Awards         : {sch_stats['awards_created']} created")
+
+    _print_separator("Step 8/9: Payments + Allocations + Refunds")
+    pay_gen_p2 = PaymentGenerator(config, pay_rng, id_gen_p2, policy)
+    with manager.connection() as conn:
+        pay_stats = pay_gen_p2.generate(conn)
+    print(f"  Payments       : {pay_stats['payments_created']} created")
+    print(f"  Allocations    : {pay_stats['allocations_created']} created")
+    print(f"  Refunds        : {pay_stats['refunds_created']} created")
+
     # ---- Integrity check -----------------------------------------------
-    _print_separator("Integrity Check")
+    _print_separator("Step 9/9: Integrity Check")
     with manager.connection() as conn:
         violations = verify_integrity(conn)
         fk_violations = manager.run_foreign_key_check()

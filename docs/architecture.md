@@ -1,7 +1,7 @@
 # Architecture — Student Finance Management
 
-> **Phase:** Part 1 — Database Foundation  
-> **Stack:** Python 3.11+, SQLite 3, `sqlite3` (stdlib), `pytest`
+> **Phase:** 2 — Financial Business Logic & API (complete through Phase 2)
+> **Stack:** Python 3.11+, SQLite 3, `sqlite3` (stdlib), FastAPI 0.121.3, Pydantic 2.x, `pytest`
 
 ---
 
@@ -10,16 +10,16 @@
 The Student Finance Management system is built in five phases. This document covers Phase 1: the database foundation that all subsequent phases depend on.
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    Phase Dependency Stack                     │
-├─────────────────────────────────────────────────────────────┤
-│  Phase 5 — Validation & Anomaly Detection                   │
-│  Phase 4 — Data Generation                                  │
-│  Phase 3 — Frontend / Dashboard                             │
-│  Phase 2 — Business Logic / API Layer                       │
-│  ─────────────────────────────────────────────────────────  │
-│  Phase 1 — Database Foundation  ◄ YOU ARE HERE              │
-└─────────────────────────────────────────────────────────────┘
++--------------------------------------------------------------+
+|                    Phase Dependency Stack                     |
++--------------------------------------------------------------+
+|  Phase 5 — Validation & Anomaly Detection                   |
+|  Phase 4 — (reserved)                                       |
+|  Phase 3 — Frontend / Dashboard                             |
+|  Phase 2 — Business Logic / API Layer  <- COMPLETE          |
+|  ----------------------------------------------------------  |
+|  Phase 1 — Database Foundation         <- COMPLETE          |
++--------------------------------------------------------------+
 ```
 
 ---
@@ -28,20 +28,57 @@ The Student Finance Management system is built in five phases. This document cov
 
 ```
 Student Finance Management/
-├── backend/
-│   └── database/
-│       ├── __init__.py          # Package; exports DatabaseManager + models
-│       ├── schema.sql           # DDL: all tables, constraints, indexes
-│       ├── db_manager.py        # Connection management, verification, guards
-│       ├── models.py            # Python dataclasses mirroring every table
-│       └── student_finance.db  # SQLite database file (created on init)
-│
-├── docs/
-│   ├── data_dictionary.md       # Column-level documentation for every table
-│   └── architecture.md          # This file
-│
-└── tests/
-    └── test_database.py         # pytest test suite (uses tmp_path fixtures)
+|-- backend/
+|   |-- config.py                  # Generation modes, fee components, targets
+|   |-- id_generator.py            # Stateful sequential ID counters
+|   |-- logging_config.py          # Structured logging setup
+|   |-- models.py                  # Python dataclasses mirroring DB tables
+|   |-- seed_manager.py            # SeededRandom with child-stream forking
+|   |-- validators.py              # Cross-table integrity validators
+|   |
+|   |-- api/
+|   |   |-- __init__.py            # FastAPI app factory (create_app)
+|   |   |-- deps.py                # Per-request DB connection dependency
+|   |   |-- schemas.py             # Pydantic v2 response schemas
+|   |   `-- routes/
+|   |       |-- students.py        # GET /students, /students/{id}
+|   |       |-- programs.py        # GET /programs, /programs/{id}
+|   |       |-- invoices.py        # GET /students/{id}/invoices, /invoices/{id}
+|   |       |-- scholarships.py    # GET /scholarships, /students/{id}/scholarships
+|   |       |-- payments.py        # GET /students/{id}/payments, /payments/{id}/allocations
+|   |       `-- balance.py         # GET /students/{id}/balance
+|   |
+|   |-- database/
+|   |   |-- __init__.py
+|   |   |-- schema.sql             # DDL: 14 tables, constraints, indexes
+|   |   |-- db_manager.py          # Connection management, FK enforcement, validation
+|   |   `-- student_finance.db     # SQLite database (created on init)
+|   |
+|   |-- generators/
+|   |   |-- generate_data.py       # Main entry point (9-step pipeline)
+|   |   |-- programs.py            # ProgramGenerator
+|   |   |-- terms.py               # TermGenerator
+|   |   |-- fee_data.py            # FeeScheduleGenerator
+|   |   |-- students.py            # StudentGenerator
+|   |   |-- enrollments.py         # EnrollmentGenerator
+|   |   `-- phase2_data.py         # InvoiceGenerator, ScholarshipGenerator, PaymentGenerator
+|   |
+|   `-- services/
+|       |-- finance_policy.py      # ScholarshipRule, FinancePolicy (5 rules)
+|       `-- finance_service.py     # InvoiceService, ScholarshipService, PaymentService,
+|                                  # BalanceService, AuditService, FinanceValidationService,
+|                                  # FinanceReadService
+|
+|-- docs/
+|   |-- architecture.md            # This file
+|   |-- api_documentation.md       # Full API endpoint reference
+|   |-- business_rules.md          # Invoice, scholarship, payment, balance rules
+|   |-- data_dictionary.md         # Column-level docs for all 14 tables
+|   `-- data_generation.md         # Generation modes, seed, targets, order
+|
+`-- tests/
+    |-- test_database.py            # 81 Phase 1 tests
+    `-- test_phase2.py              # 69 Phase 2 tests (66 pass, 3 skip)
 ```
 
 ---
