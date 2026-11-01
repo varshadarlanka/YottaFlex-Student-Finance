@@ -295,6 +295,29 @@ class FinancialSummaryOut(BaseModel):
 
 
 # ---------------------------------------------------------------------------
+# Dashboard Summary
+# ---------------------------------------------------------------------------
+
+
+class DashboardSummaryOut(BaseModel):
+    students: int
+    invoices: int
+    payments: int
+    refunds: int
+    scholarships: int
+    total_invoiced_paise: int
+    total_invoiced_inr: float
+    total_paid_paise: int
+    total_paid_inr: float
+    total_refunded_paise: int
+    total_refunded_inr: float
+    outstanding_paise: int
+    outstanding_inr: float
+
+    model_config = {"from_attributes": True}
+
+
+# ---------------------------------------------------------------------------
 # Error
 # ---------------------------------------------------------------------------
 

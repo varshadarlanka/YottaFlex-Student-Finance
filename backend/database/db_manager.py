@@ -61,6 +61,7 @@ EXPECTED_TABLES: List[str] = [
     "Payments",
     "PaymentAllocations",
     "Refunds",
+    "BalanceSnapshots",
     "AuditEvents",
 ]
 
@@ -129,9 +130,12 @@ class DatabaseManager:
         schema_sql = self._load_schema()
 
         try:
-            with self._raw_connection() as conn:
+            conn = self._raw_connection()
+            try:
                 conn.executescript(schema_sql)
                 conn.commit()
+            finally:
+                conn.close()
         except sqlite3.Error as exc:
             raise DatabaseError(
                 f"Schema application failed: {exc}\nDB path: {self.db_path}"
@@ -370,13 +374,12 @@ class DatabaseManager:
         Open a raw SQLite connection with:
         * Row factory set to ``sqlite3.Row`` for dict-like access.
         * Foreign-key enforcement enabled.
-        * isolation_level=None disabled so that we manage transactions
-          ourselves (autocommit turned off via BEGIN).
+        * Busy timeout so concurrent requests wait instead of failing.
         """
-        conn = sqlite3.connect(str(self.db_path))
+        conn = sqlite3.connect(str(self.db_path), check_same_thread=False)
         conn.row_factory = sqlite3.Row
+        conn.execute("PRAGMA busy_timeout = 5000")
         conn.execute("PRAGMA foreign_keys = ON")
-        # Verify FK pragma took effect
         fk_enabled = conn.execute("PRAGMA foreign_keys").fetchone()[0]
         if fk_enabled != 1:
             logger.warning(

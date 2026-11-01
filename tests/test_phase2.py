@@ -109,14 +109,19 @@ class TestInvoiceGeneration:
             )
 
     def test_no_duplicate_active_invoices(self, conn):
+        """Each enrollment+term should have at most one main fee invoice
+        (containing Tuition lines).  Supplementary invoices (hostel,
+        transport, late-fee) are permitted alongside it."""
         dups = conn.execute(
-            """SELECT enrollment_id, term_id, COUNT(*) AS cnt
-               FROM Invoices
-               WHERE status NOT IN ('cancelled', 'refunded')
-               GROUP BY enrollment_id, term_id
+            """SELECT i.enrollment_id, i.term_id, COUNT(DISTINCT i.invoice_id) AS cnt
+               FROM Invoices i
+               JOIN InvoiceLines il ON il.invoice_id = i.invoice_id
+               WHERE i.status NOT IN ('cancelled', 'refunded')
+                 AND il.fee_type = 'Tuition'
+               GROUP BY i.enrollment_id, i.term_id
                HAVING cnt > 1"""
         ).fetchall()
-        assert len(dups) == 0, f"Duplicate invoices: {list(dups)}"
+        assert len(dups) == 0, f"Duplicate main fee invoices: {list(dups)}"
 
     def test_withdrawn_enrollment_invoice_cancelled(self, conn):
         withdrawn = conn.execute(
@@ -492,6 +497,46 @@ class TestRefundLimits:
                 refund_method="UPI",
             )
 
+    def test_pending_refund_reserves_refundable_amount(self, fresh_db):
+        conn, _ = fresh_db
+        from backend.services.finance_service import PaymentService
+
+        pay = conn.execute(
+            """SELECT p.payment_id, p.amount_paise
+               FROM Payments p
+               WHERE p.status = 'cleared'
+                 AND NOT EXISTS (
+                     SELECT 1 FROM Refunds r WHERE r.payment_id = p.payment_id
+                 )
+               LIMIT 1"""
+        ).fetchone()
+        if pay is None:
+            pytest.skip("No cleared payment without an existing refund")
+
+        service = PaymentService()
+        first_refund = pay["amount_paise"] // 2
+        service.record_refund(
+            conn,
+            pay["payment_id"],
+            "REF-PENDING-ONE",
+            "2026-01-01",
+            first_refund,
+            "Pending test",
+            "UPI",
+            status="pending",
+        )
+        with pytest.raises(ValueError):
+            service.record_refund(
+                conn,
+                pay["payment_id"],
+                "REF-PENDING-TWO",
+                "2026-01-01",
+                pay["amount_paise"] - first_refund + 1,
+                "Pending test",
+                "UPI",
+                status="pending",
+            )
+
 
 # ---------------------------------------------------------------------------
 # 10. Cancelled Invoices
@@ -852,6 +897,56 @@ class TestAPIBalance:
 
 
 class TestVerificationScenarios:
+    def test_generated_invoice_allocations_do_not_exceed_net_due(self, conn):
+        violations = conn.execute(
+            """WITH invoice_totals AS (
+                   SELECT i.invoice_id,
+                          SUM(CASE WHEN il.amount_paise > 0
+                                     AND il.is_scholarship_credit = 0
+                                   THEN il.amount_paise ELSE 0 END) AS gross,
+                          SUM(CASE WHEN il.is_scholarship_credit = 1
+                                   THEN ABS(il.amount_paise) ELSE 0 END) AS credits
+                   FROM Invoices i
+                   LEFT JOIN InvoiceLines il ON il.invoice_id = i.invoice_id
+                   WHERE i.status NOT IN ('cancelled', 'refunded')
+                   GROUP BY i.invoice_id
+               ), paid AS (
+                   SELECT il.invoice_id,
+                          SUM(pa.allocated_amount_paise) AS total_paid
+                   FROM PaymentAllocations pa
+                   JOIN Payments p ON p.payment_id = pa.payment_id
+                   JOIN InvoiceLines il ON il.line_id = pa.line_id
+                   WHERE p.status = 'cleared'
+                   GROUP BY il.invoice_id
+               )
+               SELECT COUNT(*)
+               FROM invoice_totals i
+               JOIN paid p ON p.invoice_id = i.invoice_id
+               WHERE p.total_paid > MAX(0, i.gross - i.credits)"""
+        ).fetchone()[0]
+        assert violations == 0
+
+    def test_late_fees_are_disabled_by_default(self, conn):
+        from backend.services.finance_policy import FinancePolicy
+
+        policy = FinancePolicy()
+        assert policy.late_fee_enabled is False
+        assert policy.late_fee_rate_bps == 0
+        assert policy.late_fee_grace_days == 0
+        assert conn.execute(
+            "SELECT COUNT(*) FROM InvoiceLines WHERE fee_type = 'Late Fee'"
+        ).fetchone()[0] == 0
+
+    def test_documented_scholarship_score_thresholds(self):
+        from backend.services.finance_policy import FinancePolicy
+
+        rules = {
+            rule.code: rule.min_score for rule in FinancePolicy().scholarship_rules
+        }
+        assert rules["MERIT-ACADEMIC"] == 88
+        assert rules["ACCESS-SUPPORT"] == 52
+        assert rules["SPORTS-EXCELLENCE"] == 78
+
     def test_at_least_one_fully_paid_invoice(self, conn):
         count = conn.execute(
             "SELECT COUNT(*) FROM Invoices WHERE status = 'paid'"

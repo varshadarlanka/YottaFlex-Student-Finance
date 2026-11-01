@@ -1,0 +1,1202 @@
+[
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 1,
+    "schedule_id": 1,
+    "schedule_name": "FS-PROG-01-BTECH-CSE-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 1,
+    "schedule_id": 2,
+    "schedule_name": "FS-PROG-01-BTECH-CSE-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 1,
+    "schedule_id": 3,
+    "schedule_name": "FS-PROG-01-BTECH-CSE-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 1,
+    "schedule_id": 4,
+    "schedule_name": "FS-PROG-01-BTECH-CSE-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 1,
+    "schedule_id": 5,
+    "schedule_name": "FS-PROG-01-BTECH-CSE-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 1,
+    "schedule_id": 6,
+    "schedule_name": "FS-PROG-01-BTECH-CSE-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 2,
+    "schedule_id": 7,
+    "schedule_name": "FS-PROG-02-BTECH-ECE-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 2,
+    "schedule_id": 8,
+    "schedule_name": "FS-PROG-02-BTECH-ECE-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 2,
+    "schedule_id": 9,
+    "schedule_name": "FS-PROG-02-BTECH-ECE-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 2,
+    "schedule_id": 10,
+    "schedule_name": "FS-PROG-02-BTECH-ECE-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 2,
+    "schedule_id": 11,
+    "schedule_name": "FS-PROG-02-BTECH-ECE-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 2,
+    "schedule_id": 12,
+    "schedule_name": "FS-PROG-02-BTECH-ECE-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 3,
+    "schedule_id": 13,
+    "schedule_name": "FS-PROG-03-BTECH-MECH-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 3,
+    "schedule_id": 14,
+    "schedule_name": "FS-PROG-03-BTECH-MECH-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 3,
+    "schedule_id": 15,
+    "schedule_name": "FS-PROG-03-BTECH-MECH-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 3,
+    "schedule_id": 16,
+    "schedule_name": "FS-PROG-03-BTECH-MECH-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 3,
+    "schedule_id": 17,
+    "schedule_name": "FS-PROG-03-BTECH-MECH-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 3,
+    "schedule_id": 18,
+    "schedule_name": "FS-PROG-03-BTECH-MECH-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 4,
+    "schedule_id": 19,
+    "schedule_name": "FS-PROG-04-BTECH-CIVIL-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 4,
+    "schedule_id": 20,
+    "schedule_name": "FS-PROG-04-BTECH-CIVIL-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 4,
+    "schedule_id": 21,
+    "schedule_name": "FS-PROG-04-BTECH-CIVIL-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 4,
+    "schedule_id": 22,
+    "schedule_name": "FS-PROG-04-BTECH-CIVIL-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 4,
+    "schedule_id": 23,
+    "schedule_name": "FS-PROG-04-BTECH-CIVIL-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 4,
+    "schedule_id": 24,
+    "schedule_name": "FS-PROG-04-BTECH-CIVIL-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 5,
+    "schedule_id": 25,
+    "schedule_name": "FS-PROG-05-BTECH-EEE-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 5,
+    "schedule_id": 26,
+    "schedule_name": "FS-PROG-05-BTECH-EEE-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 5,
+    "schedule_id": 27,
+    "schedule_name": "FS-PROG-05-BTECH-EEE-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 5,
+    "schedule_id": 28,
+    "schedule_name": "FS-PROG-05-BTECH-EEE-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 5,
+    "schedule_id": 29,
+    "schedule_name": "FS-PROG-05-BTECH-EEE-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 5,
+    "schedule_id": 30,
+    "schedule_name": "FS-PROG-05-BTECH-EEE-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 6,
+    "schedule_id": 31,
+    "schedule_name": "FS-PROG-06-BCA-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 6,
+    "schedule_id": 32,
+    "schedule_name": "FS-PROG-06-BCA-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 6,
+    "schedule_id": 33,
+    "schedule_name": "FS-PROG-06-BCA-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 6,
+    "schedule_id": 34,
+    "schedule_name": "FS-PROG-06-BCA-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 6,
+    "schedule_id": 35,
+    "schedule_name": "FS-PROG-06-BCA-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 6,
+    "schedule_id": 36,
+    "schedule_name": "FS-PROG-06-BCA-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 7,
+    "schedule_id": 37,
+    "schedule_name": "FS-PROG-07-BSC-PHY-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 7,
+    "schedule_id": 38,
+    "schedule_name": "FS-PROG-07-BSC-PHY-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 7,
+    "schedule_id": 39,
+    "schedule_name": "FS-PROG-07-BSC-PHY-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 7,
+    "schedule_id": 40,
+    "schedule_name": "FS-PROG-07-BSC-PHY-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 7,
+    "schedule_id": 41,
+    "schedule_name": "FS-PROG-07-BSC-PHY-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 7,
+    "schedule_id": 42,
+    "schedule_name": "FS-PROG-07-BSC-PHY-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 8,
+    "schedule_id": 43,
+    "schedule_name": "FS-PROG-08-BSC-CHEM-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 8,
+    "schedule_id": 44,
+    "schedule_name": "FS-PROG-08-BSC-CHEM-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 8,
+    "schedule_id": 45,
+    "schedule_name": "FS-PROG-08-BSC-CHEM-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 8,
+    "schedule_id": 46,
+    "schedule_name": "FS-PROG-08-BSC-CHEM-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 8,
+    "schedule_id": 47,
+    "schedule_name": "FS-PROG-08-BSC-CHEM-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 8,
+    "schedule_id": 48,
+    "schedule_name": "FS-PROG-08-BSC-CHEM-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 9,
+    "schedule_id": 49,
+    "schedule_name": "FS-PROG-09-BCOM-GEN-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 9,
+    "schedule_id": 50,
+    "schedule_name": "FS-PROG-09-BCOM-GEN-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 9,
+    "schedule_id": 51,
+    "schedule_name": "FS-PROG-09-BCOM-GEN-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 9,
+    "schedule_id": 52,
+    "schedule_name": "FS-PROG-09-BCOM-GEN-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 9,
+    "schedule_id": 53,
+    "schedule_name": "FS-PROG-09-BCOM-GEN-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 9,
+    "schedule_id": 54,
+    "schedule_name": "FS-PROG-09-BCOM-GEN-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 10,
+    "schedule_id": 55,
+    "schedule_name": "FS-PROG-10-BBA-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 10,
+    "schedule_id": 56,
+    "schedule_name": "FS-PROG-10-BBA-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 10,
+    "schedule_id": 57,
+    "schedule_name": "FS-PROG-10-BBA-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 10,
+    "schedule_id": 58,
+    "schedule_name": "FS-PROG-10-BBA-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 10,
+    "schedule_id": 59,
+    "schedule_name": "FS-PROG-10-BBA-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 10,
+    "schedule_id": 60,
+    "schedule_name": "FS-PROG-10-BBA-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 11,
+    "schedule_id": 61,
+    "schedule_name": "FS-PROG-11-MTECH-CSE-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 11,
+    "schedule_id": 62,
+    "schedule_name": "FS-PROG-11-MTECH-CSE-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 11,
+    "schedule_id": 63,
+    "schedule_name": "FS-PROG-11-MTECH-CSE-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 11,
+    "schedule_id": 64,
+    "schedule_name": "FS-PROG-11-MTECH-CSE-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 11,
+    "schedule_id": 65,
+    "schedule_name": "FS-PROG-11-MTECH-CSE-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 11,
+    "schedule_id": 66,
+    "schedule_name": "FS-PROG-11-MTECH-CSE-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 12,
+    "schedule_id": 67,
+    "schedule_name": "FS-PROG-12-MBA-FIN-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 12,
+    "schedule_id": 68,
+    "schedule_name": "FS-PROG-12-MBA-FIN-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 12,
+    "schedule_id": 69,
+    "schedule_name": "FS-PROG-12-MBA-FIN-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 12,
+    "schedule_id": 70,
+    "schedule_name": "FS-PROG-12-MBA-FIN-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 12,
+    "schedule_id": 71,
+    "schedule_name": "FS-PROG-12-MBA-FIN-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 12,
+    "schedule_id": 72,
+    "schedule_name": "FS-PROG-12-MBA-FIN-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 13,
+    "schedule_id": 73,
+    "schedule_name": "FS-PROG-13-MBA-MKTG-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 13,
+    "schedule_id": 74,
+    "schedule_name": "FS-PROG-13-MBA-MKTG-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 13,
+    "schedule_id": 75,
+    "schedule_name": "FS-PROG-13-MBA-MKTG-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 13,
+    "schedule_id": 76,
+    "schedule_name": "FS-PROG-13-MBA-MKTG-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 13,
+    "schedule_id": 77,
+    "schedule_name": "FS-PROG-13-MBA-MKTG-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 13,
+    "schedule_id": 78,
+    "schedule_name": "FS-PROG-13-MBA-MKTG-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 14,
+    "schedule_id": 79,
+    "schedule_name": "FS-PROG-14-MCA-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 14,
+    "schedule_id": 80,
+    "schedule_name": "FS-PROG-14-MCA-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 14,
+    "schedule_id": 81,
+    "schedule_name": "FS-PROG-14-MCA-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 14,
+    "schedule_id": 82,
+    "schedule_name": "FS-PROG-14-MCA-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 14,
+    "schedule_id": 83,
+    "schedule_name": "FS-PROG-14-MCA-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 14,
+    "schedule_id": 84,
+    "schedule_name": "FS-PROG-14-MCA-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 15,
+    "schedule_id": 85,
+    "schedule_name": "FS-PROG-15-MSC-DATA-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 15,
+    "schedule_id": 86,
+    "schedule_name": "FS-PROG-15-MSC-DATA-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 15,
+    "schedule_id": 87,
+    "schedule_name": "FS-PROG-15-MSC-DATA-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 15,
+    "schedule_id": 88,
+    "schedule_name": "FS-PROG-15-MSC-DATA-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 15,
+    "schedule_id": 89,
+    "schedule_name": "FS-PROG-15-MSC-DATA-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 15,
+    "schedule_id": 90,
+    "schedule_name": "FS-PROG-15-MSC-DATA-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 16,
+    "schedule_id": 91,
+    "schedule_name": "FS-PROG-16-PHD-CSE-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 16,
+    "schedule_id": 92,
+    "schedule_name": "FS-PROG-16-PHD-CSE-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 16,
+    "schedule_id": 93,
+    "schedule_name": "FS-PROG-16-PHD-CSE-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 16,
+    "schedule_id": 94,
+    "schedule_name": "FS-PROG-16-PHD-CSE-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 16,
+    "schedule_id": 95,
+    "schedule_name": "FS-PROG-16-PHD-CSE-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 16,
+    "schedule_id": 96,
+    "schedule_name": "FS-PROG-16-PHD-CSE-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 17,
+    "schedule_id": 97,
+    "schedule_name": "FS-PROG-17-PHD-MGMT-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 17,
+    "schedule_id": 98,
+    "schedule_name": "FS-PROG-17-PHD-MGMT-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 17,
+    "schedule_id": 99,
+    "schedule_name": "FS-PROG-17-PHD-MGMT-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 17,
+    "schedule_id": 100,
+    "schedule_name": "FS-PROG-17-PHD-MGMT-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 17,
+    "schedule_id": 101,
+    "schedule_name": "FS-PROG-17-PHD-MGMT-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 17,
+    "schedule_id": 102,
+    "schedule_name": "FS-PROG-17-PHD-MGMT-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 18,
+    "schedule_id": 103,
+    "schedule_name": "FS-PROG-18-DIP-CS-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 18,
+    "schedule_id": 104,
+    "schedule_name": "FS-PROG-18-DIP-CS-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 18,
+    "schedule_id": 105,
+    "schedule_name": "FS-PROG-18-DIP-CS-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 18,
+    "schedule_id": 106,
+    "schedule_name": "FS-PROG-18-DIP-CS-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 18,
+    "schedule_id": 107,
+    "schedule_name": "FS-PROG-18-DIP-CS-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 18,
+    "schedule_id": 108,
+    "schedule_name": "FS-PROG-18-DIP-CS-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 19,
+    "schedule_id": 109,
+    "schedule_name": "FS-PROG-19-DIP-ELEC-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 19,
+    "schedule_id": 110,
+    "schedule_name": "FS-PROG-19-DIP-ELEC-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 19,
+    "schedule_id": 111,
+    "schedule_name": "FS-PROG-19-DIP-ELEC-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 19,
+    "schedule_id": 112,
+    "schedule_name": "FS-PROG-19-DIP-ELEC-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 19,
+    "schedule_id": 113,
+    "schedule_name": "FS-PROG-19-DIP-ELEC-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 19,
+    "schedule_id": 114,
+    "schedule_name": "FS-PROG-19-DIP-ELEC-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-01-01",
+    "effective_to": null,
+    "program_id": 20,
+    "schedule_id": 115,
+    "schedule_name": "FS-PROG-20-CERT-AIML-TERM-2024-SPRING",
+    "status": "active",
+    "term_id": 1
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2024-07-01",
+    "effective_to": null,
+    "program_id": 20,
+    "schedule_id": 116,
+    "schedule_name": "FS-PROG-20-CERT-AIML-TERM-2024-FALL",
+    "status": "active",
+    "term_id": 2
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-01-01",
+    "effective_to": null,
+    "program_id": 20,
+    "schedule_id": 117,
+    "schedule_name": "FS-PROG-20-CERT-AIML-TERM-2025-SPRING",
+    "status": "active",
+    "term_id": 3
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2025-07-01",
+    "effective_to": null,
+    "program_id": 20,
+    "schedule_id": 118,
+    "schedule_name": "FS-PROG-20-CERT-AIML-TERM-2025-FALL",
+    "status": "active",
+    "term_id": 4
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-01-01",
+    "effective_to": null,
+    "program_id": 20,
+    "schedule_id": 119,
+    "schedule_name": "FS-PROG-20-CERT-AIML-TERM-2026-SPRING",
+    "status": "active",
+    "term_id": 5
+  },
+  {
+    "created_at": "2026-10-31T18:01:01",
+    "effective_from": "2026-07-01",
+    "effective_to": null,
+    "program_id": 20,
+    "schedule_id": 120,
+    "schedule_name": "FS-PROG-20-CERT-AIML-TERM-2026-FALL",
+    "status": "active",
+    "term_id": 6
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "created_at": "2026-10-31T18:01:14",
+    "description": "High-scoring students in UG and PG programmes receive a partial tuition waiver based on a deterministic academic score.",
+    "is_active": 1,
+    "is_renewable": 1,
+    "max_amount_paise": 8000000,
+    "percentage_discount": 35.0,
+    "scholarship_code": "MERIT-ACADEMIC",
+    "scholarship_id": 1,
+    "scholarship_name": "Merit Academic Scholarship",
+    "scholarship_type": "Merit"
+  },
+  {
+    "created_at": "2026-10-31T18:01:14",
+    "description": "Students from non-metro cities receive support against tuition and development fees.",
+    "is_active": 1,
+    "is_renewable": 0,
+    "max_amount_paise": 3000000,
+    "percentage_discount": 20.0,
+    "scholarship_code": "ACCESS-SUPPORT",
+    "scholarship_id": 2,
+    "scholarship_name": "Access Support Grant",
+    "scholarship_type": "Need-based"
+  },
+  {
+    "created_at": "2026-10-31T18:01:14",
+    "description": "Female students in Engineering and Computing programmes receive a government-backed tuition subsidy.",
+    "is_active": 1,
+    "is_renewable": 1,
+    "max_amount_paise": 5500000,
+    "percentage_discount": 30.0,
+    "scholarship_code": "GOV-WOMEN-STEM",
+    "scholarship_id": 3,
+    "scholarship_name": "Government Women in STEM Scholarship",
+    "scholarship_type": "Government"
+  },
+  {
+    "created_at": "2026-10-31T18:01:14",
+    "description": "Students with a strong extracurricular score receive a fixed grant against sports, tuition, and development fees.",
+    "is_active": 1,
+    "is_renewable": 0,
+    "max_amount_paise": 1800000,
+    "percentage_discount": 15.0,
+    "scholarship_code": "SPORTS-EXCELLENCE",
+    "scholarship_id": 4,
+    "scholarship_name": "Sports Excellence Grant",
+    "scholarship_type": "Sports"
+  },
+  {
+    "created_at": "2026-10-31T18:01:14",
+    "description": "PG and PhD students in research-oriented programmes receive support for research and library-related fees.",
+    "is_active": 1,
+    "is_renewable": 1,
+    "max_amount_paise": 6500000,
+    "percentage_discount": 25.0,
+    "scholarship_code": "RESEARCH-GRANT",
+    "scholarship_id": 5,
+    "scholarship_name": "Research Progress Grant",
+    "scholarship_type": "Special"
+  }
+]

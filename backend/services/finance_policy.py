@@ -125,7 +125,7 @@ class FinancePolicy:
                 allowed_departments=("Research", "Sciences", "Engineering", "Computing"),
                 min_year_of_study=1,
                 max_year_of_study=3,
-                min_score=70,
+                min_score=55,
             ),
         ]
 
@@ -192,6 +192,15 @@ class FinancePolicy:
             "ChequeDD": "other",
         }
         return mapping.get(value, value.lower())
+
+    def calculate_late_fee(self, outstanding_paise: int, days_overdue: int) -> int:
+        """Calculate late fee in paise based on outstanding balance and days overdue."""
+        if not self.late_fee_enabled or days_overdue <= self.late_fee_grace_days:
+            return 0
+        effective_days = days_overdue - self.late_fee_grace_days
+        periods = max(1.0, effective_days / 30.0)
+        fee = int(outstanding_paise * (self.late_fee_rate_bps / 10000.0) * periods)
+        return max(100, fee)
 
     def calculate_due_date(self, issue_date: str) -> str:
         return (date.fromisoformat(issue_date) + timedelta(days=self.invoice_due_days)).isoformat()

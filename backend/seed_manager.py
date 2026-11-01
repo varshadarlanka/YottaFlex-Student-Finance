@@ -24,6 +24,7 @@ Design
 
 from __future__ import annotations
 
+import hashlib
 import random
 from datetime import date, timedelta
 from typing import List, Optional, Sequence, TypeVar
@@ -133,7 +134,8 @@ class SeededRandom:
             A unique string label for this child stream.
         """
         # Derive a child seed deterministically without consuming parent state
-        child_seed = hash((self._seed, label)) & 0xFFFF_FFFF
+        seed_material = f"{self._seed}:{label}".encode("utf-8")
+        child_seed = int.from_bytes(hashlib.sha256(seed_material).digest()[:4], "big")
         return SeededRandom(seed=child_seed)
 
     @property

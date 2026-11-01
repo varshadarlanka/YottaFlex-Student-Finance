@@ -63,7 +63,7 @@ Each scholarship has filters applied in order:
 3. **Gender** — GOV-WOMEN-STEM only applies to female students (gender=`F`).
 4. **Age** — SPORTS-EXCELLENCE capped at age 25.
 5. **Year of study** — MERIT-ACADEMIC: years 1–3.
-6. **Academic score** — synthetic score derived deterministically from `(student_id * 37 + program_id * 13) % 101`. Merit requires ≥ 88; ACCESS-SUPPORT ≥ 52.
+6. **Academic score** — synthetic score derived deterministically from `(student_id * 37 + program_id * 13) % 101`. Merit requires ≥ 88; ACCESS-SUPPORT ≥ 52; GOV-WOMEN-STEM ≥ 60; RESEARCH-GRANT ≥ 55.
 7. **Extracurricular score** — `(student_id * 53 + program_id * 7 + 11) % 101`. Sports requires ≥ 78.
 8. **City type** — ACCESS-SUPPORT requires non-metro city (not Mumbai/Delhi/Bengaluru/etc.).
 9. **Applicable fee types** — only fees matching the rule's `applicable_fee_types` count.

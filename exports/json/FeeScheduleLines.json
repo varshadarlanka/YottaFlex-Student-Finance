@@ -1,0 +1,6782 @@
+[
+  {
+    "amount_paise": 13150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 1,
+    "is_mandatory": 1,
+    "schedule_id": 1,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 2,
+    "is_mandatory": 1,
+    "schedule_id": 1,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 3,
+    "is_mandatory": 1,
+    "schedule_id": 1,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 4,
+    "is_mandatory": 0,
+    "schedule_id": 1,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 5,
+    "is_mandatory": 0,
+    "schedule_id": 1,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 6,
+    "is_mandatory": 1,
+    "schedule_id": 1,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 7,
+    "is_mandatory": 1,
+    "schedule_id": 2,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 8,
+    "is_mandatory": 1,
+    "schedule_id": 2,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 9,
+    "is_mandatory": 1,
+    "schedule_id": 2,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 10,
+    "is_mandatory": 0,
+    "schedule_id": 2,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 11,
+    "is_mandatory": 0,
+    "schedule_id": 2,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 12,
+    "is_mandatory": 1,
+    "schedule_id": 2,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 8500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 13,
+    "is_mandatory": 1,
+    "schedule_id": 3,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 14,
+    "is_mandatory": 1,
+    "schedule_id": 3,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 15,
+    "is_mandatory": 1,
+    "schedule_id": 3,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 16,
+    "is_mandatory": 0,
+    "schedule_id": 3,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 17,
+    "is_mandatory": 0,
+    "schedule_id": 3,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 18,
+    "is_mandatory": 1,
+    "schedule_id": 3,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 19,
+    "is_mandatory": 1,
+    "schedule_id": 4,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 20,
+    "is_mandatory": 1,
+    "schedule_id": 4,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 21,
+    "is_mandatory": 1,
+    "schedule_id": 4,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 22,
+    "is_mandatory": 0,
+    "schedule_id": 4,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 23,
+    "is_mandatory": 0,
+    "schedule_id": 4,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 24,
+    "is_mandatory": 1,
+    "schedule_id": 4,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 8600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 25,
+    "is_mandatory": 1,
+    "schedule_id": 5,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 26,
+    "is_mandatory": 1,
+    "schedule_id": 5,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 27,
+    "is_mandatory": 1,
+    "schedule_id": 5,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 28,
+    "is_mandatory": 0,
+    "schedule_id": 5,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 29,
+    "is_mandatory": 0,
+    "schedule_id": 5,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 30,
+    "is_mandatory": 1,
+    "schedule_id": 5,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 31,
+    "is_mandatory": 1,
+    "schedule_id": 6,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 32,
+    "is_mandatory": 1,
+    "schedule_id": 6,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 33,
+    "is_mandatory": 1,
+    "schedule_id": 6,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 34,
+    "is_mandatory": 0,
+    "schedule_id": 6,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 35,
+    "is_mandatory": 0,
+    "schedule_id": 6,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 36,
+    "is_mandatory": 1,
+    "schedule_id": 6,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 37,
+    "is_mandatory": 1,
+    "schedule_id": 7,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 38,
+    "is_mandatory": 1,
+    "schedule_id": 7,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 39,
+    "is_mandatory": 1,
+    "schedule_id": 7,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 40,
+    "is_mandatory": 0,
+    "schedule_id": 7,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 41,
+    "is_mandatory": 0,
+    "schedule_id": 7,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 42,
+    "is_mandatory": 1,
+    "schedule_id": 7,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 43,
+    "is_mandatory": 1,
+    "schedule_id": 8,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 44,
+    "is_mandatory": 1,
+    "schedule_id": 8,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 45,
+    "is_mandatory": 1,
+    "schedule_id": 8,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 46,
+    "is_mandatory": 0,
+    "schedule_id": 8,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 47,
+    "is_mandatory": 0,
+    "schedule_id": 8,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 48,
+    "is_mandatory": 1,
+    "schedule_id": 8,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 49,
+    "is_mandatory": 1,
+    "schedule_id": 9,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 50,
+    "is_mandatory": 1,
+    "schedule_id": 9,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 51,
+    "is_mandatory": 1,
+    "schedule_id": 9,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 52,
+    "is_mandatory": 0,
+    "schedule_id": 9,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 53,
+    "is_mandatory": 0,
+    "schedule_id": 9,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 54,
+    "is_mandatory": 1,
+    "schedule_id": 9,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 55,
+    "is_mandatory": 1,
+    "schedule_id": 10,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 56,
+    "is_mandatory": 1,
+    "schedule_id": 10,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 57,
+    "is_mandatory": 1,
+    "schedule_id": 10,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 58,
+    "is_mandatory": 0,
+    "schedule_id": 10,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 59,
+    "is_mandatory": 0,
+    "schedule_id": 10,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 60,
+    "is_mandatory": 1,
+    "schedule_id": 10,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 61,
+    "is_mandatory": 1,
+    "schedule_id": 11,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 62,
+    "is_mandatory": 1,
+    "schedule_id": 11,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 63,
+    "is_mandatory": 1,
+    "schedule_id": 11,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 64,
+    "is_mandatory": 0,
+    "schedule_id": 11,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 65,
+    "is_mandatory": 0,
+    "schedule_id": 11,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 66,
+    "is_mandatory": 1,
+    "schedule_id": 11,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 67,
+    "is_mandatory": 1,
+    "schedule_id": 12,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 68,
+    "is_mandatory": 1,
+    "schedule_id": 12,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 69,
+    "is_mandatory": 1,
+    "schedule_id": 12,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 70,
+    "is_mandatory": 0,
+    "schedule_id": 12,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 71,
+    "is_mandatory": 0,
+    "schedule_id": 12,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 72,
+    "is_mandatory": 1,
+    "schedule_id": 12,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 73,
+    "is_mandatory": 1,
+    "schedule_id": 13,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 74,
+    "is_mandatory": 1,
+    "schedule_id": 13,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 75,
+    "is_mandatory": 1,
+    "schedule_id": 13,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 76,
+    "is_mandatory": 0,
+    "schedule_id": 13,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 77,
+    "is_mandatory": 0,
+    "schedule_id": 13,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 78,
+    "is_mandatory": 1,
+    "schedule_id": 13,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 79,
+    "is_mandatory": 1,
+    "schedule_id": 14,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 80,
+    "is_mandatory": 1,
+    "schedule_id": 14,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 81,
+    "is_mandatory": 1,
+    "schedule_id": 14,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 82,
+    "is_mandatory": 0,
+    "schedule_id": 14,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 83,
+    "is_mandatory": 0,
+    "schedule_id": 14,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 84,
+    "is_mandatory": 1,
+    "schedule_id": 14,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 85,
+    "is_mandatory": 1,
+    "schedule_id": 15,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 86,
+    "is_mandatory": 1,
+    "schedule_id": 15,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 87,
+    "is_mandatory": 1,
+    "schedule_id": 15,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 88,
+    "is_mandatory": 0,
+    "schedule_id": 15,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 89,
+    "is_mandatory": 0,
+    "schedule_id": 15,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 90,
+    "is_mandatory": 1,
+    "schedule_id": 15,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 91,
+    "is_mandatory": 1,
+    "schedule_id": 16,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 92,
+    "is_mandatory": 1,
+    "schedule_id": 16,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 93,
+    "is_mandatory": 1,
+    "schedule_id": 16,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 94,
+    "is_mandatory": 0,
+    "schedule_id": 16,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 95,
+    "is_mandatory": 0,
+    "schedule_id": 16,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 96,
+    "is_mandatory": 1,
+    "schedule_id": 16,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 97,
+    "is_mandatory": 1,
+    "schedule_id": 17,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 98,
+    "is_mandatory": 1,
+    "schedule_id": 17,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 99,
+    "is_mandatory": 1,
+    "schedule_id": 17,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 100,
+    "is_mandatory": 0,
+    "schedule_id": 17,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 101,
+    "is_mandatory": 0,
+    "schedule_id": 17,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 102,
+    "is_mandatory": 1,
+    "schedule_id": 17,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 103,
+    "is_mandatory": 1,
+    "schedule_id": 18,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 104,
+    "is_mandatory": 1,
+    "schedule_id": 18,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 105,
+    "is_mandatory": 1,
+    "schedule_id": 18,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 106,
+    "is_mandatory": 0,
+    "schedule_id": 18,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 107,
+    "is_mandatory": 0,
+    "schedule_id": 18,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 108,
+    "is_mandatory": 1,
+    "schedule_id": 18,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 109,
+    "is_mandatory": 1,
+    "schedule_id": 19,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 110,
+    "is_mandatory": 1,
+    "schedule_id": 19,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 111,
+    "is_mandatory": 1,
+    "schedule_id": 19,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 112,
+    "is_mandatory": 0,
+    "schedule_id": 19,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 113,
+    "is_mandatory": 0,
+    "schedule_id": 19,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 114,
+    "is_mandatory": 1,
+    "schedule_id": 19,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 115,
+    "is_mandatory": 1,
+    "schedule_id": 20,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 116,
+    "is_mandatory": 1,
+    "schedule_id": 20,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 117,
+    "is_mandatory": 1,
+    "schedule_id": 20,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 118,
+    "is_mandatory": 0,
+    "schedule_id": 20,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 119,
+    "is_mandatory": 0,
+    "schedule_id": 20,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 120,
+    "is_mandatory": 1,
+    "schedule_id": 20,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 121,
+    "is_mandatory": 1,
+    "schedule_id": 21,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 122,
+    "is_mandatory": 1,
+    "schedule_id": 21,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 123,
+    "is_mandatory": 1,
+    "schedule_id": 21,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 124,
+    "is_mandatory": 0,
+    "schedule_id": 21,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 125,
+    "is_mandatory": 0,
+    "schedule_id": 21,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 126,
+    "is_mandatory": 1,
+    "schedule_id": 21,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 127,
+    "is_mandatory": 1,
+    "schedule_id": 22,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 128,
+    "is_mandatory": 1,
+    "schedule_id": 22,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 129,
+    "is_mandatory": 1,
+    "schedule_id": 22,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 130,
+    "is_mandatory": 0,
+    "schedule_id": 22,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 131,
+    "is_mandatory": 0,
+    "schedule_id": 22,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 132,
+    "is_mandatory": 1,
+    "schedule_id": 22,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 133,
+    "is_mandatory": 1,
+    "schedule_id": 23,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 134,
+    "is_mandatory": 1,
+    "schedule_id": 23,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 135,
+    "is_mandatory": 1,
+    "schedule_id": 23,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 136,
+    "is_mandatory": 0,
+    "schedule_id": 23,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 137,
+    "is_mandatory": 0,
+    "schedule_id": 23,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 138,
+    "is_mandatory": 1,
+    "schedule_id": 23,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 139,
+    "is_mandatory": 1,
+    "schedule_id": 24,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 140,
+    "is_mandatory": 1,
+    "schedule_id": 24,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 141,
+    "is_mandatory": 1,
+    "schedule_id": 24,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 142,
+    "is_mandatory": 0,
+    "schedule_id": 24,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 143,
+    "is_mandatory": 0,
+    "schedule_id": 24,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 144,
+    "is_mandatory": 1,
+    "schedule_id": 24,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 145,
+    "is_mandatory": 1,
+    "schedule_id": 25,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 146,
+    "is_mandatory": 1,
+    "schedule_id": 25,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 147,
+    "is_mandatory": 1,
+    "schedule_id": 25,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 148,
+    "is_mandatory": 0,
+    "schedule_id": 25,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 149,
+    "is_mandatory": 0,
+    "schedule_id": 25,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 150,
+    "is_mandatory": 1,
+    "schedule_id": 25,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 151,
+    "is_mandatory": 1,
+    "schedule_id": 26,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 152,
+    "is_mandatory": 1,
+    "schedule_id": 26,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 153,
+    "is_mandatory": 1,
+    "schedule_id": 26,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 154,
+    "is_mandatory": 0,
+    "schedule_id": 26,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 155,
+    "is_mandatory": 0,
+    "schedule_id": 26,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 156,
+    "is_mandatory": 1,
+    "schedule_id": 26,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 157,
+    "is_mandatory": 1,
+    "schedule_id": 27,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 158,
+    "is_mandatory": 1,
+    "schedule_id": 27,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 159,
+    "is_mandatory": 1,
+    "schedule_id": 27,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 160,
+    "is_mandatory": 0,
+    "schedule_id": 27,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 161,
+    "is_mandatory": 0,
+    "schedule_id": 27,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 162,
+    "is_mandatory": 1,
+    "schedule_id": 27,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 8950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 163,
+    "is_mandatory": 1,
+    "schedule_id": 28,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 164,
+    "is_mandatory": 1,
+    "schedule_id": 28,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 165,
+    "is_mandatory": 1,
+    "schedule_id": 28,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 166,
+    "is_mandatory": 0,
+    "schedule_id": 28,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 167,
+    "is_mandatory": 0,
+    "schedule_id": 28,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 168,
+    "is_mandatory": 1,
+    "schedule_id": 28,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 169,
+    "is_mandatory": 1,
+    "schedule_id": 29,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 170,
+    "is_mandatory": 1,
+    "schedule_id": 29,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 171,
+    "is_mandatory": 1,
+    "schedule_id": 29,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 172,
+    "is_mandatory": 0,
+    "schedule_id": 29,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 173,
+    "is_mandatory": 0,
+    "schedule_id": 29,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 174,
+    "is_mandatory": 1,
+    "schedule_id": 29,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 175,
+    "is_mandatory": 1,
+    "schedule_id": 30,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 176,
+    "is_mandatory": 1,
+    "schedule_id": 30,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 177,
+    "is_mandatory": 1,
+    "schedule_id": 30,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 178,
+    "is_mandatory": 0,
+    "schedule_id": 30,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 179,
+    "is_mandatory": 0,
+    "schedule_id": 30,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 180,
+    "is_mandatory": 1,
+    "schedule_id": 30,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 181,
+    "is_mandatory": 1,
+    "schedule_id": 31,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 182,
+    "is_mandatory": 1,
+    "schedule_id": 31,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 183,
+    "is_mandatory": 1,
+    "schedule_id": 31,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 184,
+    "is_mandatory": 0,
+    "schedule_id": 31,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 185,
+    "is_mandatory": 0,
+    "schedule_id": 31,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 186,
+    "is_mandatory": 1,
+    "schedule_id": 31,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 187,
+    "is_mandatory": 1,
+    "schedule_id": 32,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 188,
+    "is_mandatory": 1,
+    "schedule_id": 32,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 189,
+    "is_mandatory": 1,
+    "schedule_id": 32,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 190,
+    "is_mandatory": 0,
+    "schedule_id": 32,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 191,
+    "is_mandatory": 0,
+    "schedule_id": 32,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 192,
+    "is_mandatory": 1,
+    "schedule_id": 32,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 193,
+    "is_mandatory": 1,
+    "schedule_id": 33,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 194,
+    "is_mandatory": 1,
+    "schedule_id": 33,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 195,
+    "is_mandatory": 1,
+    "schedule_id": 33,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 196,
+    "is_mandatory": 0,
+    "schedule_id": 33,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 197,
+    "is_mandatory": 0,
+    "schedule_id": 33,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 198,
+    "is_mandatory": 1,
+    "schedule_id": 33,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 199,
+    "is_mandatory": 1,
+    "schedule_id": 34,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 200,
+    "is_mandatory": 1,
+    "schedule_id": 34,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 201,
+    "is_mandatory": 1,
+    "schedule_id": 34,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 202,
+    "is_mandatory": 0,
+    "schedule_id": 34,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 203,
+    "is_mandatory": 0,
+    "schedule_id": 34,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 204,
+    "is_mandatory": 1,
+    "schedule_id": 34,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 205,
+    "is_mandatory": 1,
+    "schedule_id": 35,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 206,
+    "is_mandatory": 1,
+    "schedule_id": 35,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 207,
+    "is_mandatory": 1,
+    "schedule_id": 35,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 208,
+    "is_mandatory": 0,
+    "schedule_id": 35,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 209,
+    "is_mandatory": 0,
+    "schedule_id": 35,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 210,
+    "is_mandatory": 1,
+    "schedule_id": 35,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 211,
+    "is_mandatory": 1,
+    "schedule_id": 36,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 212,
+    "is_mandatory": 1,
+    "schedule_id": 36,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 213,
+    "is_mandatory": 1,
+    "schedule_id": 36,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 214,
+    "is_mandatory": 0,
+    "schedule_id": 36,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 215,
+    "is_mandatory": 0,
+    "schedule_id": 36,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 216,
+    "is_mandatory": 1,
+    "schedule_id": 36,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 217,
+    "is_mandatory": 1,
+    "schedule_id": 37,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 218,
+    "is_mandatory": 1,
+    "schedule_id": 37,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 219,
+    "is_mandatory": 1,
+    "schedule_id": 37,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 220,
+    "is_mandatory": 0,
+    "schedule_id": 37,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 221,
+    "is_mandatory": 0,
+    "schedule_id": 37,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 222,
+    "is_mandatory": 1,
+    "schedule_id": 37,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 223,
+    "is_mandatory": 1,
+    "schedule_id": 38,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 224,
+    "is_mandatory": 1,
+    "schedule_id": 38,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 225,
+    "is_mandatory": 1,
+    "schedule_id": 38,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 226,
+    "is_mandatory": 0,
+    "schedule_id": 38,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 227,
+    "is_mandatory": 0,
+    "schedule_id": 38,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 228,
+    "is_mandatory": 1,
+    "schedule_id": 38,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 229,
+    "is_mandatory": 1,
+    "schedule_id": 39,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 230,
+    "is_mandatory": 1,
+    "schedule_id": 39,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 231,
+    "is_mandatory": 1,
+    "schedule_id": 39,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 232,
+    "is_mandatory": 0,
+    "schedule_id": 39,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 233,
+    "is_mandatory": 0,
+    "schedule_id": 39,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 234,
+    "is_mandatory": 1,
+    "schedule_id": 39,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 235,
+    "is_mandatory": 1,
+    "schedule_id": 40,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 236,
+    "is_mandatory": 1,
+    "schedule_id": 40,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 237,
+    "is_mandatory": 1,
+    "schedule_id": 40,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 238,
+    "is_mandatory": 0,
+    "schedule_id": 40,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 239,
+    "is_mandatory": 0,
+    "schedule_id": 40,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 240,
+    "is_mandatory": 1,
+    "schedule_id": 40,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 241,
+    "is_mandatory": 1,
+    "schedule_id": 41,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 242,
+    "is_mandatory": 1,
+    "schedule_id": 41,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 243,
+    "is_mandatory": 1,
+    "schedule_id": 41,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 244,
+    "is_mandatory": 0,
+    "schedule_id": 41,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 245,
+    "is_mandatory": 0,
+    "schedule_id": 41,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 246,
+    "is_mandatory": 1,
+    "schedule_id": 41,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 247,
+    "is_mandatory": 1,
+    "schedule_id": 42,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 248,
+    "is_mandatory": 1,
+    "schedule_id": 42,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 249,
+    "is_mandatory": 1,
+    "schedule_id": 42,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 250,
+    "is_mandatory": 0,
+    "schedule_id": 42,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 251,
+    "is_mandatory": 0,
+    "schedule_id": 42,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 252,
+    "is_mandatory": 1,
+    "schedule_id": 42,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 253,
+    "is_mandatory": 1,
+    "schedule_id": 43,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 254,
+    "is_mandatory": 1,
+    "schedule_id": 43,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 255,
+    "is_mandatory": 1,
+    "schedule_id": 43,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 256,
+    "is_mandatory": 0,
+    "schedule_id": 43,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 257,
+    "is_mandatory": 0,
+    "schedule_id": 43,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 258,
+    "is_mandatory": 1,
+    "schedule_id": 43,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 8300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 259,
+    "is_mandatory": 1,
+    "schedule_id": 44,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 260,
+    "is_mandatory": 1,
+    "schedule_id": 44,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 261,
+    "is_mandatory": 1,
+    "schedule_id": 44,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 262,
+    "is_mandatory": 0,
+    "schedule_id": 44,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 263,
+    "is_mandatory": 0,
+    "schedule_id": 44,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 264,
+    "is_mandatory": 1,
+    "schedule_id": 44,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 265,
+    "is_mandatory": 1,
+    "schedule_id": 45,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 266,
+    "is_mandatory": 1,
+    "schedule_id": 45,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 267,
+    "is_mandatory": 1,
+    "schedule_id": 45,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 268,
+    "is_mandatory": 0,
+    "schedule_id": 45,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 269,
+    "is_mandatory": 0,
+    "schedule_id": 45,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 270,
+    "is_mandatory": 1,
+    "schedule_id": 45,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 271,
+    "is_mandatory": 1,
+    "schedule_id": 46,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 272,
+    "is_mandatory": 1,
+    "schedule_id": 46,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 273,
+    "is_mandatory": 1,
+    "schedule_id": 46,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 274,
+    "is_mandatory": 0,
+    "schedule_id": 46,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 275,
+    "is_mandatory": 0,
+    "schedule_id": 46,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 276,
+    "is_mandatory": 1,
+    "schedule_id": 46,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 277,
+    "is_mandatory": 1,
+    "schedule_id": 47,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 278,
+    "is_mandatory": 1,
+    "schedule_id": 47,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 279,
+    "is_mandatory": 1,
+    "schedule_id": 47,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 280,
+    "is_mandatory": 0,
+    "schedule_id": 47,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 281,
+    "is_mandatory": 0,
+    "schedule_id": 47,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 282,
+    "is_mandatory": 1,
+    "schedule_id": 47,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 283,
+    "is_mandatory": 1,
+    "schedule_id": 48,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 284,
+    "is_mandatory": 1,
+    "schedule_id": 48,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 285,
+    "is_mandatory": 1,
+    "schedule_id": 48,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 286,
+    "is_mandatory": 0,
+    "schedule_id": 48,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 287,
+    "is_mandatory": 0,
+    "schedule_id": 48,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 288,
+    "is_mandatory": 1,
+    "schedule_id": 48,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 289,
+    "is_mandatory": 1,
+    "schedule_id": 49,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 290,
+    "is_mandatory": 1,
+    "schedule_id": 49,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 291,
+    "is_mandatory": 1,
+    "schedule_id": 49,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 292,
+    "is_mandatory": 0,
+    "schedule_id": 49,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 293,
+    "is_mandatory": 0,
+    "schedule_id": 49,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 294,
+    "is_mandatory": 1,
+    "schedule_id": 49,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 295,
+    "is_mandatory": 1,
+    "schedule_id": 50,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 296,
+    "is_mandatory": 1,
+    "schedule_id": 50,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 297,
+    "is_mandatory": 1,
+    "schedule_id": 50,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 298,
+    "is_mandatory": 0,
+    "schedule_id": 50,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 299,
+    "is_mandatory": 0,
+    "schedule_id": 50,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 300,
+    "is_mandatory": 1,
+    "schedule_id": 50,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 301,
+    "is_mandatory": 1,
+    "schedule_id": 51,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 302,
+    "is_mandatory": 1,
+    "schedule_id": 51,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 303,
+    "is_mandatory": 1,
+    "schedule_id": 51,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 304,
+    "is_mandatory": 0,
+    "schedule_id": 51,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 305,
+    "is_mandatory": 0,
+    "schedule_id": 51,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 306,
+    "is_mandatory": 1,
+    "schedule_id": 51,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 9850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 307,
+    "is_mandatory": 1,
+    "schedule_id": 52,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 308,
+    "is_mandatory": 1,
+    "schedule_id": 52,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 309,
+    "is_mandatory": 1,
+    "schedule_id": 52,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 310,
+    "is_mandatory": 0,
+    "schedule_id": 52,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 311,
+    "is_mandatory": 0,
+    "schedule_id": 52,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 312,
+    "is_mandatory": 1,
+    "schedule_id": 52,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 313,
+    "is_mandatory": 1,
+    "schedule_id": 53,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 314,
+    "is_mandatory": 1,
+    "schedule_id": 53,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 315,
+    "is_mandatory": 1,
+    "schedule_id": 53,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 316,
+    "is_mandatory": 0,
+    "schedule_id": 53,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 317,
+    "is_mandatory": 0,
+    "schedule_id": 53,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 318,
+    "is_mandatory": 1,
+    "schedule_id": 53,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 319,
+    "is_mandatory": 1,
+    "schedule_id": 54,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 320,
+    "is_mandatory": 1,
+    "schedule_id": 54,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 321,
+    "is_mandatory": 1,
+    "schedule_id": 54,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 322,
+    "is_mandatory": 0,
+    "schedule_id": 54,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 323,
+    "is_mandatory": 0,
+    "schedule_id": 54,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 324,
+    "is_mandatory": 1,
+    "schedule_id": 54,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 11300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 325,
+    "is_mandatory": 1,
+    "schedule_id": 55,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 326,
+    "is_mandatory": 1,
+    "schedule_id": 55,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 327,
+    "is_mandatory": 1,
+    "schedule_id": 55,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 328,
+    "is_mandatory": 0,
+    "schedule_id": 55,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 329,
+    "is_mandatory": 0,
+    "schedule_id": 55,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 330,
+    "is_mandatory": 1,
+    "schedule_id": 55,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 10400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 331,
+    "is_mandatory": 1,
+    "schedule_id": 56,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 332,
+    "is_mandatory": 1,
+    "schedule_id": 56,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 333,
+    "is_mandatory": 1,
+    "schedule_id": 56,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 334,
+    "is_mandatory": 0,
+    "schedule_id": 56,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 335,
+    "is_mandatory": 0,
+    "schedule_id": 56,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 336,
+    "is_mandatory": 1,
+    "schedule_id": 56,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 337,
+    "is_mandatory": 1,
+    "schedule_id": 57,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 338,
+    "is_mandatory": 1,
+    "schedule_id": 57,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 339,
+    "is_mandatory": 1,
+    "schedule_id": 57,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 340,
+    "is_mandatory": 0,
+    "schedule_id": 57,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 341,
+    "is_mandatory": 0,
+    "schedule_id": 57,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 342,
+    "is_mandatory": 1,
+    "schedule_id": 57,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 343,
+    "is_mandatory": 1,
+    "schedule_id": 58,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 344,
+    "is_mandatory": 1,
+    "schedule_id": 58,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 345,
+    "is_mandatory": 1,
+    "schedule_id": 58,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 346,
+    "is_mandatory": 0,
+    "schedule_id": 58,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 347,
+    "is_mandatory": 0,
+    "schedule_id": 58,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 348,
+    "is_mandatory": 1,
+    "schedule_id": 58,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 8350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 349,
+    "is_mandatory": 1,
+    "schedule_id": 59,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 350,
+    "is_mandatory": 1,
+    "schedule_id": 59,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 351,
+    "is_mandatory": 1,
+    "schedule_id": 59,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 352,
+    "is_mandatory": 0,
+    "schedule_id": 59,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 353,
+    "is_mandatory": 0,
+    "schedule_id": 59,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 354,
+    "is_mandatory": 1,
+    "schedule_id": 59,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 355,
+    "is_mandatory": 1,
+    "schedule_id": 60,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 356,
+    "is_mandatory": 1,
+    "schedule_id": 60,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 357,
+    "is_mandatory": 1,
+    "schedule_id": 60,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Sports & fitness fee",
+    "fee_type": "Sports",
+    "fsl_id": 358,
+    "is_mandatory": 0,
+    "schedule_id": 60,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 359,
+    "is_mandatory": 0,
+    "schedule_id": 60,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 360,
+    "is_mandatory": 1,
+    "schedule_id": 60,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 19900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 361,
+    "is_mandatory": 1,
+    "schedule_id": 61,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 362,
+    "is_mandatory": 1,
+    "schedule_id": 61,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 363,
+    "is_mandatory": 1,
+    "schedule_id": 61,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 364,
+    "is_mandatory": 0,
+    "schedule_id": 61,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 365,
+    "is_mandatory": 1,
+    "schedule_id": 61,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 366,
+    "is_mandatory": 0,
+    "schedule_id": 61,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 21050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 367,
+    "is_mandatory": 1,
+    "schedule_id": 62,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 368,
+    "is_mandatory": 1,
+    "schedule_id": 62,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 369,
+    "is_mandatory": 1,
+    "schedule_id": 62,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 370,
+    "is_mandatory": 0,
+    "schedule_id": 62,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 371,
+    "is_mandatory": 1,
+    "schedule_id": 62,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 372,
+    "is_mandatory": 0,
+    "schedule_id": 62,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 373,
+    "is_mandatory": 1,
+    "schedule_id": 63,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 374,
+    "is_mandatory": 1,
+    "schedule_id": 63,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 375,
+    "is_mandatory": 1,
+    "schedule_id": 63,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 376,
+    "is_mandatory": 0,
+    "schedule_id": 63,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 377,
+    "is_mandatory": 1,
+    "schedule_id": 63,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 378,
+    "is_mandatory": 0,
+    "schedule_id": 63,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 379,
+    "is_mandatory": 1,
+    "schedule_id": 64,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 380,
+    "is_mandatory": 1,
+    "schedule_id": 64,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 381,
+    "is_mandatory": 1,
+    "schedule_id": 64,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 382,
+    "is_mandatory": 0,
+    "schedule_id": 64,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 383,
+    "is_mandatory": 1,
+    "schedule_id": 64,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 384,
+    "is_mandatory": 0,
+    "schedule_id": 64,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 385,
+    "is_mandatory": 1,
+    "schedule_id": 65,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 386,
+    "is_mandatory": 1,
+    "schedule_id": 65,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 387,
+    "is_mandatory": 1,
+    "schedule_id": 65,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 388,
+    "is_mandatory": 0,
+    "schedule_id": 65,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 389,
+    "is_mandatory": 1,
+    "schedule_id": 65,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 390,
+    "is_mandatory": 0,
+    "schedule_id": 65,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 15300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 391,
+    "is_mandatory": 1,
+    "schedule_id": 66,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 392,
+    "is_mandatory": 1,
+    "schedule_id": 66,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 393,
+    "is_mandatory": 1,
+    "schedule_id": 66,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 394,
+    "is_mandatory": 0,
+    "schedule_id": 66,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 395,
+    "is_mandatory": 1,
+    "schedule_id": 66,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 396,
+    "is_mandatory": 0,
+    "schedule_id": 66,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 397,
+    "is_mandatory": 1,
+    "schedule_id": 67,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 398,
+    "is_mandatory": 1,
+    "schedule_id": 67,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 399,
+    "is_mandatory": 1,
+    "schedule_id": 67,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 400,
+    "is_mandatory": 0,
+    "schedule_id": 67,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 401,
+    "is_mandatory": 1,
+    "schedule_id": 67,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 402,
+    "is_mandatory": 0,
+    "schedule_id": 67,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 20400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 403,
+    "is_mandatory": 1,
+    "schedule_id": 68,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 404,
+    "is_mandatory": 1,
+    "schedule_id": 68,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 405,
+    "is_mandatory": 1,
+    "schedule_id": 68,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 406,
+    "is_mandatory": 0,
+    "schedule_id": 68,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 407,
+    "is_mandatory": 1,
+    "schedule_id": 68,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 408,
+    "is_mandatory": 0,
+    "schedule_id": 68,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 16450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 409,
+    "is_mandatory": 1,
+    "schedule_id": 69,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 410,
+    "is_mandatory": 1,
+    "schedule_id": 69,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 411,
+    "is_mandatory": 1,
+    "schedule_id": 69,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 412,
+    "is_mandatory": 0,
+    "schedule_id": 69,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 413,
+    "is_mandatory": 1,
+    "schedule_id": 69,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 414,
+    "is_mandatory": 0,
+    "schedule_id": 69,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 415,
+    "is_mandatory": 1,
+    "schedule_id": 70,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 416,
+    "is_mandatory": 1,
+    "schedule_id": 70,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 417,
+    "is_mandatory": 1,
+    "schedule_id": 70,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 418,
+    "is_mandatory": 0,
+    "schedule_id": 70,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 419,
+    "is_mandatory": 1,
+    "schedule_id": 70,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 420,
+    "is_mandatory": 0,
+    "schedule_id": 70,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 20900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 421,
+    "is_mandatory": 1,
+    "schedule_id": 71,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 422,
+    "is_mandatory": 1,
+    "schedule_id": 71,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 423,
+    "is_mandatory": 1,
+    "schedule_id": 71,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 424,
+    "is_mandatory": 0,
+    "schedule_id": 71,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 425,
+    "is_mandatory": 1,
+    "schedule_id": 71,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 426,
+    "is_mandatory": 0,
+    "schedule_id": 71,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 19200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 427,
+    "is_mandatory": 1,
+    "schedule_id": 72,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 428,
+    "is_mandatory": 1,
+    "schedule_id": 72,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 429,
+    "is_mandatory": 1,
+    "schedule_id": 72,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 430,
+    "is_mandatory": 0,
+    "schedule_id": 72,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 431,
+    "is_mandatory": 1,
+    "schedule_id": 72,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 432,
+    "is_mandatory": 0,
+    "schedule_id": 72,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 433,
+    "is_mandatory": 1,
+    "schedule_id": 73,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 434,
+    "is_mandatory": 1,
+    "schedule_id": 73,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 435,
+    "is_mandatory": 1,
+    "schedule_id": 73,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 436,
+    "is_mandatory": 0,
+    "schedule_id": 73,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 437,
+    "is_mandatory": 1,
+    "schedule_id": 73,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 438,
+    "is_mandatory": 0,
+    "schedule_id": 73,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 16950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 439,
+    "is_mandatory": 1,
+    "schedule_id": 74,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 440,
+    "is_mandatory": 1,
+    "schedule_id": 74,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 441,
+    "is_mandatory": 1,
+    "schedule_id": 74,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 442,
+    "is_mandatory": 0,
+    "schedule_id": 74,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 443,
+    "is_mandatory": 1,
+    "schedule_id": 74,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 444,
+    "is_mandatory": 0,
+    "schedule_id": 74,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 17500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 445,
+    "is_mandatory": 1,
+    "schedule_id": 75,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 446,
+    "is_mandatory": 1,
+    "schedule_id": 75,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 447,
+    "is_mandatory": 1,
+    "schedule_id": 75,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 448,
+    "is_mandatory": 0,
+    "schedule_id": 75,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 449,
+    "is_mandatory": 1,
+    "schedule_id": 75,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 450,
+    "is_mandatory": 0,
+    "schedule_id": 75,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 17900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 451,
+    "is_mandatory": 1,
+    "schedule_id": 76,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 452,
+    "is_mandatory": 1,
+    "schedule_id": 76,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 453,
+    "is_mandatory": 1,
+    "schedule_id": 76,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 454,
+    "is_mandatory": 0,
+    "schedule_id": 76,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 455,
+    "is_mandatory": 1,
+    "schedule_id": 76,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 456,
+    "is_mandatory": 0,
+    "schedule_id": 76,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 15050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 457,
+    "is_mandatory": 1,
+    "schedule_id": 77,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 458,
+    "is_mandatory": 1,
+    "schedule_id": 77,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 459,
+    "is_mandatory": 1,
+    "schedule_id": 77,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 460,
+    "is_mandatory": 0,
+    "schedule_id": 77,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 461,
+    "is_mandatory": 1,
+    "schedule_id": 77,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 462,
+    "is_mandatory": 0,
+    "schedule_id": 77,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 20900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 463,
+    "is_mandatory": 1,
+    "schedule_id": 78,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 464,
+    "is_mandatory": 1,
+    "schedule_id": 78,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 465,
+    "is_mandatory": 1,
+    "schedule_id": 78,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 466,
+    "is_mandatory": 0,
+    "schedule_id": 78,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 467,
+    "is_mandatory": 1,
+    "schedule_id": 78,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 468,
+    "is_mandatory": 0,
+    "schedule_id": 78,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 469,
+    "is_mandatory": 1,
+    "schedule_id": 79,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 470,
+    "is_mandatory": 1,
+    "schedule_id": 79,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 471,
+    "is_mandatory": 1,
+    "schedule_id": 79,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 472,
+    "is_mandatory": 0,
+    "schedule_id": 79,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 473,
+    "is_mandatory": 1,
+    "schedule_id": 79,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 474,
+    "is_mandatory": 0,
+    "schedule_id": 79,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 19150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 475,
+    "is_mandatory": 1,
+    "schedule_id": 80,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 476,
+    "is_mandatory": 1,
+    "schedule_id": 80,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 477,
+    "is_mandatory": 1,
+    "schedule_id": 80,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 478,
+    "is_mandatory": 0,
+    "schedule_id": 80,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 479,
+    "is_mandatory": 1,
+    "schedule_id": 80,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 480,
+    "is_mandatory": 0,
+    "schedule_id": 80,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 18500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 481,
+    "is_mandatory": 1,
+    "schedule_id": 81,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 482,
+    "is_mandatory": 1,
+    "schedule_id": 81,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 483,
+    "is_mandatory": 1,
+    "schedule_id": 81,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 484,
+    "is_mandatory": 0,
+    "schedule_id": 81,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 485,
+    "is_mandatory": 1,
+    "schedule_id": 81,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 486,
+    "is_mandatory": 0,
+    "schedule_id": 81,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 487,
+    "is_mandatory": 1,
+    "schedule_id": 82,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 488,
+    "is_mandatory": 1,
+    "schedule_id": 82,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 489,
+    "is_mandatory": 1,
+    "schedule_id": 82,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 490,
+    "is_mandatory": 0,
+    "schedule_id": 82,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 491,
+    "is_mandatory": 1,
+    "schedule_id": 82,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 492,
+    "is_mandatory": 0,
+    "schedule_id": 82,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 493,
+    "is_mandatory": 1,
+    "schedule_id": 83,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 494,
+    "is_mandatory": 1,
+    "schedule_id": 83,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 495,
+    "is_mandatory": 1,
+    "schedule_id": 83,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 496,
+    "is_mandatory": 0,
+    "schedule_id": 83,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 497,
+    "is_mandatory": 1,
+    "schedule_id": 83,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 498,
+    "is_mandatory": 0,
+    "schedule_id": 83,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 14850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 499,
+    "is_mandatory": 1,
+    "schedule_id": 84,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 500,
+    "is_mandatory": 1,
+    "schedule_id": 84,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 501,
+    "is_mandatory": 1,
+    "schedule_id": 84,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 502,
+    "is_mandatory": 0,
+    "schedule_id": 84,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 503,
+    "is_mandatory": 1,
+    "schedule_id": 84,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 504,
+    "is_mandatory": 0,
+    "schedule_id": 84,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 13750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 505,
+    "is_mandatory": 1,
+    "schedule_id": 85,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 506,
+    "is_mandatory": 1,
+    "schedule_id": 85,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 507,
+    "is_mandatory": 1,
+    "schedule_id": 85,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 508,
+    "is_mandatory": 0,
+    "schedule_id": 85,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 509,
+    "is_mandatory": 1,
+    "schedule_id": 85,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 510,
+    "is_mandatory": 0,
+    "schedule_id": 85,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 12150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 511,
+    "is_mandatory": 1,
+    "schedule_id": 86,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 512,
+    "is_mandatory": 1,
+    "schedule_id": 86,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 513,
+    "is_mandatory": 1,
+    "schedule_id": 86,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 514,
+    "is_mandatory": 0,
+    "schedule_id": 86,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 515,
+    "is_mandatory": 1,
+    "schedule_id": 86,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 516,
+    "is_mandatory": 0,
+    "schedule_id": 86,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 15400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 517,
+    "is_mandatory": 1,
+    "schedule_id": 87,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 518,
+    "is_mandatory": 1,
+    "schedule_id": 87,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 519,
+    "is_mandatory": 1,
+    "schedule_id": 87,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 520,
+    "is_mandatory": 0,
+    "schedule_id": 87,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 521,
+    "is_mandatory": 1,
+    "schedule_id": 87,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 2000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 522,
+    "is_mandatory": 0,
+    "schedule_id": 87,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 15350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 523,
+    "is_mandatory": 1,
+    "schedule_id": 88,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 524,
+    "is_mandatory": 1,
+    "schedule_id": 88,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 525,
+    "is_mandatory": 1,
+    "schedule_id": 88,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 526,
+    "is_mandatory": 0,
+    "schedule_id": 88,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 527,
+    "is_mandatory": 1,
+    "schedule_id": 88,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 528,
+    "is_mandatory": 0,
+    "schedule_id": 88,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 16350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 529,
+    "is_mandatory": 1,
+    "schedule_id": 89,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 530,
+    "is_mandatory": 1,
+    "schedule_id": 89,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 531,
+    "is_mandatory": 1,
+    "schedule_id": 89,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 532,
+    "is_mandatory": 0,
+    "schedule_id": 89,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 533,
+    "is_mandatory": 1,
+    "schedule_id": 89,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 1350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 534,
+    "is_mandatory": 0,
+    "schedule_id": 89,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 17450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 535,
+    "is_mandatory": 1,
+    "schedule_id": 90,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 536,
+    "is_mandatory": 1,
+    "schedule_id": 90,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 537,
+    "is_mandatory": 1,
+    "schedule_id": 90,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 538,
+    "is_mandatory": 0,
+    "schedule_id": 90,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 1150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 539,
+    "is_mandatory": 1,
+    "schedule_id": 90,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 540,
+    "is_mandatory": 0,
+    "schedule_id": 90,
+    "sort_order": 6
+  },
+  {
+    "amount_paise": 29500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 541,
+    "is_mandatory": 1,
+    "schedule_id": 91,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 542,
+    "is_mandatory": 1,
+    "schedule_id": 91,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 543,
+    "is_mandatory": 1,
+    "schedule_id": 91,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 544,
+    "is_mandatory": 1,
+    "schedule_id": 91,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 545,
+    "is_mandatory": 0,
+    "schedule_id": 91,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 21150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 546,
+    "is_mandatory": 1,
+    "schedule_id": 92,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 547,
+    "is_mandatory": 1,
+    "schedule_id": 92,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 548,
+    "is_mandatory": 1,
+    "schedule_id": 92,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 549,
+    "is_mandatory": 1,
+    "schedule_id": 92,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 550,
+    "is_mandatory": 0,
+    "schedule_id": 92,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 25750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 551,
+    "is_mandatory": 1,
+    "schedule_id": 93,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 552,
+    "is_mandatory": 1,
+    "schedule_id": 93,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 553,
+    "is_mandatory": 1,
+    "schedule_id": 93,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 554,
+    "is_mandatory": 1,
+    "schedule_id": 93,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 555,
+    "is_mandatory": 0,
+    "schedule_id": 93,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 19400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 556,
+    "is_mandatory": 1,
+    "schedule_id": 94,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 557,
+    "is_mandatory": 1,
+    "schedule_id": 94,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 558,
+    "is_mandatory": 1,
+    "schedule_id": 94,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 559,
+    "is_mandatory": 1,
+    "schedule_id": 94,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 560,
+    "is_mandatory": 0,
+    "schedule_id": 94,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 26150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 561,
+    "is_mandatory": 1,
+    "schedule_id": 95,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 562,
+    "is_mandatory": 1,
+    "schedule_id": 95,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 563,
+    "is_mandatory": 1,
+    "schedule_id": 95,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 564,
+    "is_mandatory": 1,
+    "schedule_id": 95,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 565,
+    "is_mandatory": 0,
+    "schedule_id": 95,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 19000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 566,
+    "is_mandatory": 1,
+    "schedule_id": 96,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 567,
+    "is_mandatory": 1,
+    "schedule_id": 96,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 568,
+    "is_mandatory": 1,
+    "schedule_id": 96,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 569,
+    "is_mandatory": 1,
+    "schedule_id": 96,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 570,
+    "is_mandatory": 0,
+    "schedule_id": 96,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 29400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 571,
+    "is_mandatory": 1,
+    "schedule_id": 97,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 572,
+    "is_mandatory": 1,
+    "schedule_id": 97,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 573,
+    "is_mandatory": 1,
+    "schedule_id": 97,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 1800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 574,
+    "is_mandatory": 1,
+    "schedule_id": 97,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 575,
+    "is_mandatory": 0,
+    "schedule_id": 97,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 26600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 576,
+    "is_mandatory": 1,
+    "schedule_id": 98,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 577,
+    "is_mandatory": 1,
+    "schedule_id": 98,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 578,
+    "is_mandatory": 1,
+    "schedule_id": 98,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 2150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 579,
+    "is_mandatory": 1,
+    "schedule_id": 98,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 580,
+    "is_mandatory": 0,
+    "schedule_id": 98,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 22950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 581,
+    "is_mandatory": 1,
+    "schedule_id": 99,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 582,
+    "is_mandatory": 1,
+    "schedule_id": 99,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 583,
+    "is_mandatory": 1,
+    "schedule_id": 99,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 2250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 584,
+    "is_mandatory": 1,
+    "schedule_id": 99,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 585,
+    "is_mandatory": 0,
+    "schedule_id": 99,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 26950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 586,
+    "is_mandatory": 1,
+    "schedule_id": 100,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 750000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 587,
+    "is_mandatory": 1,
+    "schedule_id": 100,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 588,
+    "is_mandatory": 1,
+    "schedule_id": 100,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3000000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 589,
+    "is_mandatory": 1,
+    "schedule_id": 100,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 590,
+    "is_mandatory": 0,
+    "schedule_id": 100,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 28400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 591,
+    "is_mandatory": 1,
+    "schedule_id": 101,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 592,
+    "is_mandatory": 1,
+    "schedule_id": 101,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 593,
+    "is_mandatory": 1,
+    "schedule_id": 101,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3950000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 594,
+    "is_mandatory": 1,
+    "schedule_id": 101,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 595,
+    "is_mandatory": 0,
+    "schedule_id": 101,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 20500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "PhD programme fee",
+    "fee_type": "Tuition",
+    "fsl_id": 596,
+    "is_mandatory": 1,
+    "schedule_id": 102,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 800000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Thesis examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 597,
+    "is_mandatory": 1,
+    "schedule_id": 102,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 650000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library & journal fee",
+    "fee_type": "Library",
+    "fsl_id": 598,
+    "is_mandatory": 1,
+    "schedule_id": 102,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 2050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Research resource fee",
+    "fee_type": "Research",
+    "fsl_id": 599,
+    "is_mandatory": 1,
+    "schedule_id": 102,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Stipend administration",
+    "fee_type": "Stipend Admin",
+    "fsl_id": 600,
+    "is_mandatory": 0,
+    "schedule_id": 102,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 6700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 601,
+    "is_mandatory": 1,
+    "schedule_id": 103,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 602,
+    "is_mandatory": 1,
+    "schedule_id": 103,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 603,
+    "is_mandatory": 1,
+    "schedule_id": 103,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 604,
+    "is_mandatory": 0,
+    "schedule_id": 103,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 605,
+    "is_mandatory": 1,
+    "schedule_id": 103,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 7200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 606,
+    "is_mandatory": 1,
+    "schedule_id": 104,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 607,
+    "is_mandatory": 1,
+    "schedule_id": 104,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 608,
+    "is_mandatory": 1,
+    "schedule_id": 104,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 609,
+    "is_mandatory": 0,
+    "schedule_id": 104,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 610,
+    "is_mandatory": 1,
+    "schedule_id": 104,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 5250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 611,
+    "is_mandatory": 1,
+    "schedule_id": 105,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 612,
+    "is_mandatory": 1,
+    "schedule_id": 105,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 613,
+    "is_mandatory": 1,
+    "schedule_id": 105,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 614,
+    "is_mandatory": 0,
+    "schedule_id": 105,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 615,
+    "is_mandatory": 1,
+    "schedule_id": 105,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 6250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 616,
+    "is_mandatory": 1,
+    "schedule_id": 106,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 617,
+    "is_mandatory": 1,
+    "schedule_id": 106,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 618,
+    "is_mandatory": 1,
+    "schedule_id": 106,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 619,
+    "is_mandatory": 0,
+    "schedule_id": 106,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 620,
+    "is_mandatory": 1,
+    "schedule_id": 106,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 6400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 621,
+    "is_mandatory": 1,
+    "schedule_id": 107,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 622,
+    "is_mandatory": 1,
+    "schedule_id": 107,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 623,
+    "is_mandatory": 1,
+    "schedule_id": 107,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 624,
+    "is_mandatory": 0,
+    "schedule_id": 107,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 625,
+    "is_mandatory": 1,
+    "schedule_id": 107,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 6850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 626,
+    "is_mandatory": 1,
+    "schedule_id": 108,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 627,
+    "is_mandatory": 1,
+    "schedule_id": 108,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 628,
+    "is_mandatory": 1,
+    "schedule_id": 108,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 629,
+    "is_mandatory": 0,
+    "schedule_id": 108,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 630,
+    "is_mandatory": 1,
+    "schedule_id": 108,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 7550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 631,
+    "is_mandatory": 1,
+    "schedule_id": 109,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 632,
+    "is_mandatory": 1,
+    "schedule_id": 109,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 633,
+    "is_mandatory": 1,
+    "schedule_id": 109,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 634,
+    "is_mandatory": 0,
+    "schedule_id": 109,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 635,
+    "is_mandatory": 1,
+    "schedule_id": 109,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 5900000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 636,
+    "is_mandatory": 1,
+    "schedule_id": 110,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 637,
+    "is_mandatory": 1,
+    "schedule_id": 110,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 638,
+    "is_mandatory": 1,
+    "schedule_id": 110,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 639,
+    "is_mandatory": 0,
+    "schedule_id": 110,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 640,
+    "is_mandatory": 1,
+    "schedule_id": 110,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 6050000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 641,
+    "is_mandatory": 1,
+    "schedule_id": 111,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 642,
+    "is_mandatory": 1,
+    "schedule_id": 111,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 643,
+    "is_mandatory": 1,
+    "schedule_id": 111,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 644,
+    "is_mandatory": 0,
+    "schedule_id": 111,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 645,
+    "is_mandatory": 1,
+    "schedule_id": 111,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 6400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 646,
+    "is_mandatory": 1,
+    "schedule_id": 112,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 647,
+    "is_mandatory": 1,
+    "schedule_id": 112,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 648,
+    "is_mandatory": 1,
+    "schedule_id": 112,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 649,
+    "is_mandatory": 0,
+    "schedule_id": 112,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 650,
+    "is_mandatory": 1,
+    "schedule_id": 112,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 5100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 651,
+    "is_mandatory": 1,
+    "schedule_id": 113,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 652,
+    "is_mandatory": 1,
+    "schedule_id": 113,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 653,
+    "is_mandatory": 1,
+    "schedule_id": 113,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 600000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 654,
+    "is_mandatory": 0,
+    "schedule_id": 113,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 500000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 655,
+    "is_mandatory": 1,
+    "schedule_id": 113,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 5550000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Diploma tuition fee",
+    "fee_type": "Tuition",
+    "fsl_id": 656,
+    "is_mandatory": 1,
+    "schedule_id": 114,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 400000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 657,
+    "is_mandatory": 1,
+    "schedule_id": 114,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Library access fee",
+    "fee_type": "Library",
+    "fsl_id": 658,
+    "is_mandatory": 1,
+    "schedule_id": 114,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Laboratory usage fee",
+    "fee_type": "Lab",
+    "fsl_id": 659,
+    "is_mandatory": 0,
+    "schedule_id": 114,
+    "sort_order": 4
+  },
+  {
+    "amount_paise": 350000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Campus development fee",
+    "fee_type": "Development",
+    "fsl_id": 660,
+    "is_mandatory": 1,
+    "schedule_id": 114,
+    "sort_order": 5
+  },
+  {
+    "amount_paise": 3100000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Certificate course fee",
+    "fee_type": "Tuition",
+    "fsl_id": 661,
+    "is_mandatory": 1,
+    "schedule_id": 115,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 662,
+    "is_mandatory": 1,
+    "schedule_id": 115,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Course material fee",
+    "fee_type": "Material",
+    "fsl_id": 663,
+    "is_mandatory": 1,
+    "schedule_id": 115,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 4450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Certificate course fee",
+    "fee_type": "Tuition",
+    "fsl_id": 664,
+    "is_mandatory": 1,
+    "schedule_id": 116,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 665,
+    "is_mandatory": 1,
+    "schedule_id": 116,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 450000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Course material fee",
+    "fee_type": "Material",
+    "fsl_id": 666,
+    "is_mandatory": 1,
+    "schedule_id": 116,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 2700000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Certificate course fee",
+    "fee_type": "Tuition",
+    "fsl_id": 667,
+    "is_mandatory": 1,
+    "schedule_id": 117,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 668,
+    "is_mandatory": 1,
+    "schedule_id": 117,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Course material fee",
+    "fee_type": "Material",
+    "fsl_id": 669,
+    "is_mandatory": 1,
+    "schedule_id": 117,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 2850000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Certificate course fee",
+    "fee_type": "Tuition",
+    "fsl_id": 670,
+    "is_mandatory": 1,
+    "schedule_id": 118,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 200000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 671,
+    "is_mandatory": 1,
+    "schedule_id": 118,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Course material fee",
+    "fee_type": "Material",
+    "fsl_id": 672,
+    "is_mandatory": 1,
+    "schedule_id": 118,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 4300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Certificate course fee",
+    "fee_type": "Tuition",
+    "fsl_id": 673,
+    "is_mandatory": 1,
+    "schedule_id": 119,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 150000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 674,
+    "is_mandatory": 1,
+    "schedule_id": 119,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Course material fee",
+    "fee_type": "Material",
+    "fsl_id": 675,
+    "is_mandatory": 1,
+    "schedule_id": 119,
+    "sort_order": 3
+  },
+  {
+    "amount_paise": 3300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Certificate course fee",
+    "fee_type": "Tuition",
+    "fsl_id": 676,
+    "is_mandatory": 1,
+    "schedule_id": 120,
+    "sort_order": 1
+  },
+  {
+    "amount_paise": 250000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Examination fee",
+    "fee_type": "Exam",
+    "fsl_id": 677,
+    "is_mandatory": 1,
+    "schedule_id": 120,
+    "sort_order": 2
+  },
+  {
+    "amount_paise": 300000,
+    "created_at": "2026-10-31T18:01:01",
+    "description": "Course material fee",
+    "fee_type": "Material",
+    "fsl_id": 678,
+    "is_mandatory": 1,
+    "schedule_id": 120,
+    "sort_order": 3
+  }
+]

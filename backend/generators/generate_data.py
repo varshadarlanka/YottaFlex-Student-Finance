@@ -66,6 +66,7 @@ from backend.id_generator import IDGenerator
 from backend.logging_config import setup_logging
 from backend.seed_manager import SeededRandom
 from backend.services.finance_policy import FinancePolicy
+from backend.services.finance_service import processed_refunds_by_student_term
 from backend.validators import verify_integrity
 
 logger = logging.getLogger(__name__)
@@ -112,6 +113,91 @@ def _print_summary(conn: sqlite3.Connection) -> None:
         count = _count(conn, table)
         print(f"  {label:<25} {count:>8,} rows")
     _print_separator()
+
+
+def _generate_balance_snapshots(
+    conn: sqlite3.Connection,
+    rng: "SeededRandom",
+) -> int:
+    """Generate baseline BalanceSnapshots for a sample of students."""
+    existing = conn.execute(
+        "SELECT COUNT(*) FROM BalanceSnapshots"
+    ).fetchone()[0]
+    if existing > 0:
+        return 0
+
+    has_table = conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='BalanceSnapshots'"
+    ).fetchone()
+    if not has_table:
+        conn.execute(
+            """CREATE TABLE IF NOT EXISTS BalanceSnapshots (
+                   snapshot_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                   student_id INTEGER NOT NULL,
+                   term_id INTEGER NOT NULL,
+                   reported_outstanding_paise INTEGER NOT NULL,
+                   snapshot_date TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%S','now')),
+                   FOREIGN KEY (student_id) REFERENCES Students(student_id),
+                   FOREIGN KEY (term_id) REFERENCES Terms(term_id)
+               )"""
+        )
+
+    students = conn.execute(
+        "SELECT student_id FROM Students ORDER BY student_id"
+    ).fetchall()
+    terms = conn.execute(
+        "SELECT term_id FROM Terms ORDER BY term_id"
+    ).fetchall()
+    if not students or not terms:
+        return 0
+
+    count = 0
+    refunded_by_term = processed_refunds_by_student_term(conn)
+    for stu in students:
+        if rng.random() > 0.15:
+            continue
+        tid = rng.choice(terms)["term_id"]
+        sid = stu["student_id"]
+
+        invoiced = conn.execute(
+            """SELECT COALESCE(SUM(CASE WHEN il.is_scholarship_credit = 0
+                                        THEN il.amount_paise ELSE 0 END), 0) AS inv,
+                      COALESCE(SUM(CASE WHEN il.is_scholarship_credit = 1
+                                        THEN ABS(il.amount_paise) ELSE 0 END), 0) AS sch
+               FROM InvoiceLines il
+               JOIN Invoices i ON i.invoice_id = il.invoice_id
+               JOIN Enrollments en ON en.enrollment_id = i.enrollment_id
+               WHERE en.student_id = ? AND i.term_id = ?
+                 AND i.status NOT IN ('cancelled', 'refunded')""",
+            (sid, tid),
+        ).fetchone()
+
+        paid = conn.execute(
+            """SELECT COALESCE(SUM(pa.allocated_amount_paise), 0) AS paid
+               FROM PaymentAllocations pa
+               JOIN Payments p ON p.payment_id = pa.payment_id
+               JOIN InvoiceLines il ON il.line_id = pa.line_id
+               JOIN Invoices i ON i.invoice_id = il.invoice_id
+               JOIN Enrollments en ON en.enrollment_id = i.enrollment_id
+               WHERE en.student_id = ? AND i.term_id = ? AND p.status = 'cleared'
+                 AND i.status NOT IN ('cancelled', 'refunded')""",
+            (sid, tid),
+        ).fetchone()["paid"]
+
+        net = max(0, (invoiced["inv"] or 0) - (invoiced["sch"] or 0))
+        outstanding = max(
+            0,
+            net - paid + refunded_by_term.get((sid, tid), 0),
+        )
+
+        conn.execute(
+            """INSERT INTO BalanceSnapshots (student_id, term_id, reported_outstanding_paise)
+               VALUES (?, ?, ?)""",
+            (sid, tid, outstanding),
+        )
+        count += 1
+
+    return count
 
 
 def _has_existing_data(conn: sqlite3.Connection) -> bool:
@@ -165,12 +251,14 @@ def run_generation(
 
     # ---- Check for existing data (guard against accidental overwrites) --
     with manager.connection() as conn:
-        if not reset and _has_existing_data(conn):
+        existing_data = _has_existing_data(conn)
+        if not reset and existing_data:
             print(
                 "\n  [WARNING] Database already contains data.\n"
                 "  Use --reset to wipe and regenerate, or check existing data.\n"
                 "  Existing records will be SKIPPED (INSERT OR IGNORE).\n"
             )
+    generation_started_empty = reset or not existing_data
 
     # ---- Seed setup ----------------------------------------------------
     config: GenerationConfig = get_config(mode, seed=seed)
@@ -258,21 +346,26 @@ def run_generation(
     sch_rng = SeededRandom(seed).fork("scholarships_p2")
     pay_rng = SeededRandom(seed).fork("payments_p2")
 
-    _print_separator("Step 6/9: Invoices + Invoice Lines")
+    _print_separator("Step 6/12: Invoices + Invoice Lines")
     inv_gen_p2 = InvoiceGenerator(config, inv_rng, id_gen_p2, policy)
     with manager.connection() as conn:
         inv_stats = inv_gen_p2.generate(conn)
     print(f"  Invoices       : {inv_stats['invoices_created']} created, "
           f"{inv_stats['lines_created']} lines")
 
-    _print_separator("Step 7/9: Scholarships + Eligibility")
+    _print_separator("Step 7/12: Scholarships + Eligibility")
     sch_gen_p2 = ScholarshipGenerator(config, sch_rng, policy)
     with manager.connection() as conn:
-        sch_stats = sch_gen_p2.generate(conn)
+        sch_stats = sch_gen_p2.generate(
+            conn,
+            target_award_count=(
+                config.target_award_count if generation_started_empty else None
+            ),
+        )
     print(f"  Scholarships   : {sch_stats['scholarships_inserted']} in catalogue")
     print(f"  Awards         : {sch_stats['awards_created']} created")
 
-    _print_separator("Step 8/9: Payments + Allocations + Refunds")
+    _print_separator("Step 8/12: Payments + Allocations + Refunds (base)")
     pay_gen_p2 = PaymentGenerator(config, pay_rng, id_gen_p2, policy)
     with manager.connection() as conn:
         pay_stats = pay_gen_p2.generate(conn)
@@ -280,8 +373,42 @@ def run_generation(
     print(f"  Allocations    : {pay_stats['allocations_created']} created")
     print(f"  Refunds        : {pay_stats['refunds_created']} created")
 
+    # ---- 9. Supplementary Invoices (hostel, transport, late fees) ------
+    _print_separator("Step 9/12: Supplementary Invoices + Late Fee Invoices")
+    supp_inv_rng = SeededRandom(seed).fork("supp_invoices")
+    supp_inv_gen = InvoiceGenerator(config, supp_inv_rng, id_gen_p2, policy)
+    with manager.connection() as conn:
+        supp_inv_stats = supp_inv_gen.generate_supplementary(
+            conn,
+            target_invoice_count=(
+                config.target_invoice_count if generation_started_empty else None
+            ),
+        )
+    print(f"  Supplementary  : {supp_inv_stats['invoices_created']} invoices, "
+          f"{supp_inv_stats['lines_created']} lines")
+
+    # ---- 10. Supplementary Payments (installments, follow-ups) ---------
+    _print_separator("Step 10/12: Supplementary Payments (installments)")
+    supp_pay_rng = SeededRandom(seed).fork("supp_payments")
+    supp_pay_gen = PaymentGenerator(config, supp_pay_rng, id_gen_p2, policy)
+    with manager.connection() as conn:
+        supp_pay_stats = supp_pay_gen.generate_supplementary(
+            conn,
+            target_payment_count=(
+                config.target_payment_count if generation_started_empty else None
+            ),
+        )
+    print(f"  Follow-up pays : {supp_pay_stats['payments_created']} created")
+    print(f"  Allocations    : {supp_pay_stats['allocations_created']} created")
+
+    # ---- 11. Balance Snapshots -----------------------------------------
+    _print_separator("Step 11/12: Balance Snapshots")
+    with manager.connection() as conn:
+        snap_count = _generate_balance_snapshots(conn, SeededRandom(seed).fork("snapshots"))
+    print(f"  Snapshots      : {snap_count} created")
+
     # ---- Integrity check -----------------------------------------------
-    _print_separator("Step 9/9: Integrity Check")
+    _print_separator("Step 12/12: Integrity Check")
     with manager.connection() as conn:
         violations = verify_integrity(conn)
         fk_violations = manager.run_foreign_key_check()
@@ -299,6 +426,29 @@ def run_generation(
             print(f"    - {v}")
     else:
         print("  [OK] PRAGMA foreign_key_check: 0 violations.")
+
+    if mode == GenerationMode.FULL and generation_started_empty:
+        expected = {
+            "Invoices": config.target_invoice_count,
+            "Eligibility": config.target_award_count,
+            "Payments": config.target_payment_count,
+        }
+        with manager.connection() as conn:
+            actual = {
+                table: conn.execute(
+                    f'SELECT COUNT(*) FROM "{table}"'
+                ).fetchone()[0]
+                for table in expected
+            }
+        mismatches = {
+            table: {"expected": expected[table], "actual": actual[table]}
+            for table in expected
+            if actual[table] != expected[table]
+        }
+        if mismatches:
+            raise RuntimeError(
+                f"Full dataset did not meet required baseline volumes: {mismatches}"
+            )
 
     # ---- Summary -------------------------------------------------------
     with manager.connection() as conn:

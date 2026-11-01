@@ -1,0 +1,235 @@
+{
+  "artifacts": [
+    {
+      "path": "AuditEvents.csv",
+      "sha256": "5ed444d54da8005caf966bd171ffd87b65dc9cf2d1f8d7a6459e9bb4db175e13",
+      "size_bytes": 17574478
+    },
+    {
+      "path": "AuditEvents.json",
+      "sha256": "314997ad72dc8b8b8a6e051312f7cb2f869b4618a1cb19d0d6873bd4224058e2",
+      "size_bytes": 45470068
+    },
+    {
+      "path": "BalanceSnapshots.csv",
+      "sha256": "3bd80de02788c932fb72a9342ea4cce6f70f13c9d27f28249e1def206018a427",
+      "size_bytes": 53669
+    },
+    {
+      "path": "BalanceSnapshots.json",
+      "sha256": "a4f710cd3f3485141455d4bf7cd2b40b399d8b5a13ab62d82f251880866a1558",
+      "size_bytes": 252383
+    },
+    {
+      "path": "Eligibility.csv",
+      "sha256": "08e0dafd604020a49e40328b4b44970c3ddf2cca89aebdc68c0f8aa83d30f398",
+      "size_bytes": 1657708
+    },
+    {
+      "path": "Eligibility.json",
+      "sha256": "0cfcae6fb8ab5a5f45f0ada0c7b306334901d812604991cb1b2db400ad621d9a",
+      "size_bytes": 6121345
+    },
+    {
+      "path": "Enrollments.csv",
+      "sha256": "96027957954ccf1ba096a4a0ae90c9909020ce72332587cd5231260181edf998",
+      "size_bytes": 1564139
+    },
+    {
+      "path": "Enrollments.json",
+      "sha256": "e118528c7efb86638c73783a3144944d5f0649e08895c500be07ae46ea4d46c7",
+      "size_bytes": 6199416
+    },
+    {
+      "path": "FeeScheduleLines.csv",
+      "sha256": "4d4ec4787979f8332974b30445b2730fa02c4ff90a1ae7be887a58c36d647add",
+      "size_bytes": 44815
+    },
+    {
+      "path": "FeeScheduleLines.json",
+      "sha256": "6d9a478223d84e8487e61082c57d5c8d99179bd2fafd386db402c954efe242a3",
+      "size_bytes": 163379
+    },
+    {
+      "path": "FeeSchedules.csv",
+      "sha256": "9ff007ec5432bbd22d256f960cf7cca0ab9015483c100e281e5a7d49e1396bee",
+      "size_bytes": 10070
+    },
+    {
+      "path": "FeeSchedules.json",
+      "sha256": "faf4a9f6f42c98ca9660c302e53fa2cf28516e0580408273b5c35309396cb8f4",
+      "size_bytes": 32061
+    },
+    {
+      "path": "ground_truth.csv",
+      "sha256": "e73ec0c46d7d591b1c4c9ff368b34ac40f026b668538a587e77bc6469766c55a",
+      "size_bytes": 872
+    },
+    {
+      "path": "ground_truth.json",
+      "sha256": "3679d772a45898b1163e409f1fb32e8bd124a097545252d26386af46bed8a2d6",
+      "size_bytes": 1770
+    },
+    {
+      "path": "InvoiceLines.csv",
+      "sha256": "e101fe7a6432e3c9171197dc3d89d28a92e1d34e4fa18cc245a4714e978b6faa",
+      "size_bytes": 10620087
+    },
+    {
+      "path": "InvoiceLines.json",
+      "sha256": "65f6ad9e15a8bdd87371f2333e49db154b25a99bd6b492ea86f5bdc4134f24b7",
+      "size_bytes": 35462260
+    },
+    {
+      "path": "Invoices.csv",
+      "sha256": "077e896cb8884371632fab2dfca2513a30edc183b8ec2c4360e1df2f31b5281c",
+      "size_bytes": 3781883
+    },
+    {
+      "path": "Invoices.json",
+      "sha256": "5052fabff07f73e3fd1df81d9613e64f63bee7e67f7081d17d8d540bb347dd08",
+      "size_bytes": 11180046
+    },
+    {
+      "path": "PaymentAllocations.csv",
+      "sha256": "543e343cca511066b6c56b5bca5faea1c03a103a93b8be76ba39ed3fa93d432c",
+      "size_bytes": 5209943
+    },
+    {
+      "path": "PaymentAllocations.json",
+      "sha256": "aa489a912e17d8cda2daa67a788e6b7ac0be62a93e9e9ee79985db92a2419cda",
+      "size_bytes": 19236251
+    },
+    {
+      "path": "Payments.csv",
+      "sha256": "0ccadc6193fa6346c426797704f0b3196a2a402e81e199599408125b5e5092ae",
+      "size_bytes": 6073000
+    },
+    {
+      "path": "Payments.json",
+      "sha256": "4faa53c18cce5f97852adc3a23b6d551ab2387f43c51886811cd86d72d283126",
+      "size_bytes": 20622501
+    },
+    {
+      "path": "Programs.csv",
+      "sha256": "f17ac0999b4ebfce2de9c08b9397c2d5261ee25d5390af597058865bc323c184",
+      "size_bytes": 1784
+    },
+    {
+      "path": "Programs.json",
+      "sha256": "21a9beb019b212ad5c0b54c8d9946437f259889691e1fd0974881cefbd8823eb",
+      "size_bytes": 5316
+    },
+    {
+      "path": "Refunds.csv",
+      "sha256": "e0e8c705c80be3ce74fd637b18169fe14d630ab444f80d91b8777bc6bcf76b21",
+      "size_bytes": 82800
+    },
+    {
+      "path": "Refunds.json",
+      "sha256": "9b7d4601f99c3dda797c92cc02a7d57e9ea9d2bad3340129312af40b9cdd69b8",
+      "size_bytes": 278371
+    },
+    {
+      "path": "Scholarships.csv",
+      "sha256": "cb21cb64b0f01492260f515f008db268073a9019d269c8c2c8d85c343a80d7c9",
+      "size_bytes": 1133
+    },
+    {
+      "path": "Scholarships.json",
+      "sha256": "fe22215b188ea7f99f264f16a3e468df703fdca1c9dec9daadc40e2ae4c3b146",
+      "size_bytes": 2274
+    },
+    {
+      "path": "seed.sql",
+      "sha256": "357a4bc835163550eb06a7ff048498f4e35b0cb42288296c5ab969e781bae837",
+      "size_bytes": 131629115
+    },
+    {
+      "path": "Students.csv",
+      "sha256": "b48624bef70463d3246fe197c259c736209df01b5a72e7fd36207ff9427833fa",
+      "size_bytes": 1868483
+    },
+    {
+      "path": "Students.json",
+      "sha256": "005b66638ac1dc030daac0835d17f0fc31f6bd533258fa4423fd6a421fe7e36b",
+      "size_bytes": 5238331
+    },
+    {
+      "path": "Terms.csv",
+      "sha256": "e900b7fb3d3b256e6a7ab98a65c065180876e05189fcf3eaa51c193940d81cc3",
+      "size_bytes": 568
+    },
+    {
+      "path": "Terms.json",
+      "sha256": "5dec65c316e349464dbafd384542b02fe8de7752671961023e633d3308030746",
+      "size_bytes": 1407
+    }
+  ],
+  "database": "student_finance.db",
+  "seed": 20261022,
+  "table_count": 15,
+  "tables": [
+    {
+      "name": "Students",
+      "row_count": 10000
+    },
+    {
+      "name": "Programs",
+      "row_count": 20
+    },
+    {
+      "name": "Terms",
+      "row_count": 6
+    },
+    {
+      "name": "FeeSchedules",
+      "row_count": 120
+    },
+    {
+      "name": "FeeScheduleLines",
+      "row_count": 678
+    },
+    {
+      "name": "Enrollments",
+      "row_count": 18920
+    },
+    {
+      "name": "Invoices",
+      "row_count": 33937
+    },
+    {
+      "name": "InvoiceLines",
+      "row_count": 136968
+    },
+    {
+      "name": "Scholarships",
+      "row_count": 5
+    },
+    {
+      "name": "Eligibility",
+      "row_count": 14732
+    },
+    {
+      "name": "Payments",
+      "row_count": 51963
+    },
+    {
+      "name": "PaymentAllocations",
+      "row_count": 112211
+    },
+    {
+      "name": "Refunds",
+      "row_count": 704
+    },
+    {
+      "name": "BalanceSnapshots",
+      "row_count": 1553
+    },
+    {
+      "name": "AuditEvents",
+      "row_count": 123414
+    }
+  ],
+  "total_rows": 505231
+}

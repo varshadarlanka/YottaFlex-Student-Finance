@@ -153,6 +153,10 @@ class GenerationConfig:
     # Average number of terms a student enrolls across
     avg_terms_per_student: float
 
+    target_invoice_count: int | None = None
+    target_award_count: int | None = None
+    target_payment_count: int | None = None
+
     # Probability a student is still 'active' vs graduated/withdrawn/etc
     student_status_weights: Dict[str, float] = field(default_factory=dict)
     enrollment_status_weights: Dict[str, float] = field(default_factory=dict)
@@ -228,6 +232,9 @@ def get_config(
             num_students=10_000,
             num_programs=20,
             num_terms=6,
-            avg_terms_per_student=1.8,
+            avg_terms_per_student=2.8,
+            target_invoice_count=30_000,
+            target_award_count=15_000,
+            target_payment_count=50_000,
             base_year=2024,
         )

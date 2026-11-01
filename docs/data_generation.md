@@ -21,6 +21,7 @@ backend/
     ├── fee_data.py      ← FeeScheduleGenerator (schedules + lines)
     ├── students.py      ← StudentGenerator (10,000 students)
     ├── enrollments.py   ← EnrollmentGenerator (student ↔ program ↔ term)
+    ├── phase2_data.py   ← Invoices, scholarships, payments, allocations, refunds
     └── generate_data.py ← CLI entry point & pipeline orchestrator
 ```
 
@@ -33,6 +34,11 @@ backend/
    └─ FeeScheduleLines
 4. Students        ─── no dependencies
 5. Enrollments     ─── requires Students + Programs + Terms + FeeSchedules
+6. Invoices        ─── generated from Enrollments and FeeScheduleLines
+7. Scholarships    ─── evaluates awards and applies invoice credits
+8. Payments        ─── creates payments, allocations, and refunds
+9. Supplementary   ─── fills full-mode targets on a fresh DB and generates
+                       balance snapshots; then validates integrity
 ```
 
 ---
@@ -48,7 +54,10 @@ All configuration lives in [`backend/config.py`](file:///backend/config.py).
 | `num_students` | 50 | 10,000 |
 | `num_programs` | 20 | 20 |
 | `num_terms` | 4 | 6 |
-| `avg_terms_per_student` | 1.5 | 1.8 |
+| `avg_terms_per_student` | 1.5 | 2.8 |
+| `target_invoice_count` | — | 30,000 |
+| `target_award_count` | — | 15,000 |
+| `target_payment_count` | — | 50,000 |
 
 > Both modes use **exactly the same 20 programmes** and the **same generation logic** — only scale differs.
 
@@ -81,9 +90,9 @@ All IDs are **deterministic** (same seed → same IDs) and **sequential** (no UU
 | Term | `TERM-{year}-{season}` | `TERM-2024-SPRING` |
 | FeeSchedule | `FS-{program_code}-{term_code}` | `FS-PROG-01-BTECH-CSE-TERM-2024-SPRING` |
 | Enrollment | `ENR-{n:08d}` | `ENR-00000001` |
-| Invoice | `INV-{n:08d}` | `INV-00000001` *(future phase)* |
-| Payment | `PAY-{n:08d}` | `PAY-00000001` *(future phase)* |
-| Refund | `REF-{n:08d}` | `REF-00000001` *(future phase)* |
+| Invoice | `INV-{n:08d}` | `INV-00000001` |
+| Payment | `PAY-{n:08d}` | `PAY-00000001` |
+| Refund | `REF-{n:08d}` | `REF-00000001` |
 
 ---
 
@@ -166,7 +175,14 @@ python -m backend.generators.generate_data --mode full --seed 12345 --db /path/t
 | FeeSchedules | 120 (20 programs × 6 terms) |
 | FeeScheduleLines | ~678 |
 | Students | 10,000 |
-| Enrollments | ~16,000–20,000 |
+| Enrollments | Seeded; supports the 15,000 eligible award target |
+| Invoices | 30,000 |
+| Eligibility awards | 15,000 |
+| Payments | 50,000 |
+
+For a fresh full-mode database, generation validates these three required
+financial volumes and raises an error with the actual counts if a target was
+not reached. It does not delete or reduce records in a non-empty database.
 
 ---
 
@@ -217,7 +233,7 @@ All insert operations use `INSERT OR IGNORE` or explicit existence checks, so:
 | Enrollment count is approximate | Depends on random term selection per student |
 | Program switch rate is 5% | Some students may appear in 2 programs |
 | Starter enrollment count varies slightly | Due to RNG state at enrollment phase |
-| Windows file-lock on reset | Python `del manager` required before `--reset` in tests |
+| Windows file-lock on reset | Initialization now closes its SQLite handle explicitly; callers must still close active connections before resetting a database. |
 
 ---
 
@@ -233,3 +249,9 @@ python -m pytest tests/test_database.py -v
 # All tests together:
 python -m pytest tests/ -v
 ```
+
+Full-scale repeatability across separate processes, including the seed
+`20261022`, was verified by comparing all non-timestamp row values in two
+independently generated full databases. See
+[`reproducibility_report.md`](./reproducibility_report.md). Runtime timestamps
+are expected to vary.

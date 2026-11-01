@@ -1,0 +1,6 @@
+scholarship_id,scholarship_code,scholarship_name,description,scholarship_type,max_amount_paise,percentage_discount,is_renewable,is_active,created_at
+1,MERIT-ACADEMIC,Merit Academic Scholarship,High-scoring students in UG and PG programmes receive a partial tuition waiver based on a deterministic academic score.,Merit,8000000,35.0,1,1,2026-10-31T18:01:14
+2,ACCESS-SUPPORT,Access Support Grant,Students from non-metro cities receive support against tuition and development fees.,Need-based,3000000,20.0,0,1,2026-10-31T18:01:14
+3,GOV-WOMEN-STEM,Government Women in STEM Scholarship,Female students in Engineering and Computing programmes receive a government-backed tuition subsidy.,Government,5500000,30.0,1,1,2026-10-31T18:01:14
+4,SPORTS-EXCELLENCE,Sports Excellence Grant,"Students with a strong extracurricular score receive a fixed grant against sports, tuition, and development fees.",Sports,1800000,15.0,0,1,2026-10-31T18:01:14
+5,RESEARCH-GRANT,Research Progress Grant,PG and PhD students in research-oriented programmes receive support for research and library-related fees.,Special,6500000,25.0,1,1,2026-10-31T18:01:14

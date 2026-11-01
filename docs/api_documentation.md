@@ -357,6 +357,34 @@ overpayment  = max(0, total_paid − total_refunded − net_payable)
 
 ---
 
+## Dashboard, Reconciliation, Anomalies, and Exports
+
+| Method and path | Description |
+|-----------------|-------------|
+| `GET /api/v1/dashboard/summary` | Aggregate student, invoice, payment, refund, scholarship, and balance metrics. |
+| `GET /api/v1/data-counts` | Exact live row counts for every schema table and total rows. |
+| `GET /api/v1/reconciliation` | Reconcile student-term ledger totals against stored balance snapshots. |
+| `GET /api/v1/anomalies/detect` | Run the five anomaly checks against the current database. |
+| `POST /api/v1/anomalies/inject` | Apply the five controlled anomaly records used for evaluation. This modifies the database. |
+| `GET /api/v1/anomalies/evaluate` | Evaluate detections against persisted ground-truth labels. |
+| `GET /api/v1/export/csv` | Export all 15 database tables as CSV files under `exports/csv/`. |
+| `GET /api/v1/export/json` | Export all 15 database tables as JSON files under `exports/json/`. |
+| `GET /api/v1/export/csv/download` | Download a ZIP of the 15 CSV tables and `ground_truth.csv`. |
+| `GET /api/v1/export/json/download` | Download a ZIP of the 15 JSON tables and `ground_truth.json`. |
+
+Both export responses include an `export_dir` and a `files` array. The CSV
+response lists `.csv` paths; the JSON response lists `.json` paths.
+Download endpoints return `application/zip` attachments and fail explicitly
+if all five persisted ground-truth labels are not available.
+Archives are written to a temporary file and streamed as a response, avoiding
+an additional full-archive in-memory copy.
+`docs/validation_summary.md` contains database and export row-count comparisons,
+live download verification, and the anomaly-evaluation results.
+Dashboard outstanding is summed from each student-term balance; one student's
+overpayment is not used to offset another student's debt.
+
+---
+
 ## HTTP Error Codes
 
 | Code | Meaning |
@@ -374,4 +402,5 @@ overpayment  = max(0, total_paid − total_refunded − net_payable)
 - List endpoints do not support sorting or free-text search.
 - The database path is resolved from `DEFAULT_DB_PATH` in `backend/database/db_manager.py`. Override via the `deps.py` dependency.
 - No rate limiting is implemented.
-- No write endpoints (POST/PUT/PATCH) are exposed in Phase 2.
+- Finance transaction write endpoints are not exposed; anomaly injection is a
+  deliberate write endpoint for controlled validation data.

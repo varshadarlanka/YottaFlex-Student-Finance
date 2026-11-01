@@ -1,0 +1,57 @@
+[
+  {
+    "description": "Previously injected PAYMENT_ALLOC_EXCEEDS_PAYMENT anomaly.",
+    "details": {},
+    "entity_id": 1,
+    "entity_type": "Payment",
+    "ground_truth": true,
+    "injected_at": "2026-10-31T18:35:21",
+    "issue_id": "GT-PAYMENT_ALLOC_EXCEEDS_PAYMENT-1",
+    "issue_type": "PAYMENT_ALLOC_EXCEEDS_PAYMENT",
+    "related_ids": {}
+  },
+  {
+    "description": "Previously injected SCHOLARSHIP_EXCEEDS_FEES anomaly.",
+    "details": {},
+    "entity_id": 1,
+    "entity_type": "Eligibility",
+    "ground_truth": true,
+    "injected_at": "2026-10-31T18:35:21",
+    "issue_id": "GT-SCHOLARSHIP_EXCEEDS_FEES-1",
+    "issue_type": "SCHOLARSHIP_EXCEEDS_FEES",
+    "related_ids": {}
+  },
+  {
+    "description": "Previously injected DUPLICATE_INVOICE anomaly.",
+    "details": {},
+    "entity_id": 33937,
+    "entity_type": "Invoice",
+    "ground_truth": true,
+    "injected_at": "2026-10-31T18:35:22",
+    "issue_id": "GT-DUPLICATE_INVOICE-33937",
+    "issue_type": "DUPLICATE_INVOICE",
+    "related_ids": {}
+  },
+  {
+    "description": "Previously injected REFUND_EXCEEDS_NET_PAID anomaly.",
+    "details": {},
+    "entity_id": 1,
+    "entity_type": "Payment",
+    "ground_truth": true,
+    "injected_at": "2026-10-31T18:35:22",
+    "issue_id": "GT-REFUND_EXCEEDS_NET_PAID-1",
+    "issue_type": "REFUND_EXCEEDS_NET_PAID",
+    "related_ids": {}
+  },
+  {
+    "description": "Previously injected BALANCE_DISAGREES_LEDGER anomaly.",
+    "details": {},
+    "entity_id": 1553,
+    "entity_type": "BalanceSnapshot",
+    "ground_truth": true,
+    "injected_at": "2026-10-31T18:35:22",
+    "issue_id": "GT-BALANCE_DISAGREES_LEDGER-1553",
+    "issue_type": "BALANCE_DISAGREES_LEDGER",
+    "related_ids": {}
+  }
+]

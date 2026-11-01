@@ -69,6 +69,77 @@ class ValidationResult:
         self.valid = False
 
 
+def processed_refunds_by_student_term(
+    conn: sqlite3.Connection,
+    student_ids: Optional[List[int]] = None,
+) -> Dict[Tuple[int, int], int]:
+    """Allocate processed refunds across a payment's invoice terms by paid share."""
+    if student_ids is not None and not student_ids:
+        return {}
+
+    filter_sql = ""
+    params: List[int] = []
+    if student_ids is not None:
+        placeholders = ",".join("?" for _ in student_ids)
+        filter_sql = f"AND p.student_id IN ({placeholders})"
+        params.extend(student_ids)
+
+    refunds = conn.execute(
+        f"""SELECT r.refund_id, r.payment_id, r.refund_amount_paise, p.student_id
+            FROM Refunds r
+            JOIN Payments p ON p.payment_id = r.payment_id
+            WHERE r.status = 'processed' {filter_sql}
+            ORDER BY r.refund_id""",
+        params,
+    ).fetchall()
+    if not refunds:
+        return {}
+
+    payment_ids = sorted({row["payment_id"] for row in refunds})
+    placeholders = ",".join("?" for _ in payment_ids)
+    weights = conn.execute(
+        f"""SELECT pa.payment_id, i.term_id,
+                   SUM(pa.allocated_amount_paise) AS allocated_paise
+            FROM PaymentAllocations pa
+            JOIN Payments p ON p.payment_id = pa.payment_id
+            JOIN InvoiceLines il ON il.line_id = pa.line_id
+            JOIN Invoices i ON i.invoice_id = il.invoice_id
+            JOIN Enrollments en ON en.enrollment_id = i.enrollment_id
+            WHERE pa.payment_id IN ({placeholders})
+              AND p.status IN ('cleared', 'refunded')
+              AND p.student_id = en.student_id
+            GROUP BY pa.payment_id, i.term_id""",
+        payment_ids,
+    ).fetchall()
+    terms_by_payment: Dict[int, List[Tuple[int, int]]] = {}
+    for row in weights:
+        terms_by_payment.setdefault(row["payment_id"], []).append(
+            (row["term_id"], row["allocated_paise"])
+        )
+
+    totals: Dict[Tuple[int, int], int] = {}
+    for refund in refunds:
+        term_weights = terms_by_payment.get(refund["payment_id"], [])
+        weight_total = sum(weight for _, weight in term_weights)
+        if weight_total <= 0:
+            continue
+
+        amount = refund["refund_amount_paise"]
+        shares = [
+            (term_id, amount * weight // weight_total, amount * weight % weight_total)
+            for term_id, weight in term_weights
+        ]
+        remainder = amount - sum(share for _, share, _ in shares)
+        remainder_order = sorted(shares, key=lambda item: (-item[2], item[0]))
+        extra_terms = {term_id for term_id, _, _ in remainder_order[:remainder]}
+        for term_id, share, _ in shares:
+            if term_id in extra_terms:
+                share += 1
+            key = (refund["student_id"], term_id)
+            totals[key] = totals.get(key, 0) + share
+    return totals
+
+
 # ---------------------------------------------------------------------------
 # AuditService
 # ---------------------------------------------------------------------------
@@ -562,6 +633,9 @@ class PaymentService:
         -------
         payment_id : int
         """
+        if amount_paise <= 0:
+            raise ValueError("Payment amount must be greater than zero.")
+
         existing = conn.execute(
             "SELECT payment_id FROM Payments WHERE payment_reference = ?",
             (payment_reference,),
@@ -603,6 +677,9 @@ class PaymentService:
         -------
         allocation_id or None if already exists.
         """
+        if allocated_amount_paise <= 0:
+            raise ValueError("Allocation amount must be greater than zero.")
+
         # Already allocated?
         existing = conn.execute(
             "SELECT allocation_id FROM PaymentAllocations WHERE payment_id=? AND line_id=?",
@@ -717,6 +794,9 @@ class PaymentService:
         -------
         refund_id : int
         """
+        if refund_amount_paise <= 0:
+            raise ValueError("Refund amount must be greater than zero.")
+
         existing = conn.execute(
             "SELECT refund_id FROM Refunds WHERE refund_reference = ?",
             (refund_reference,),
@@ -734,7 +814,8 @@ class PaymentService:
 
         already_refunded = conn.execute(
             """SELECT COALESCE(SUM(refund_amount_paise), 0)
-               FROM Refunds WHERE payment_id = ? AND status = 'processed'""",
+               FROM Refunds
+               WHERE payment_id = ? AND status IN ('processed', 'pending')""",
             (payment_id,),
         ).fetchone()[0]
         refundable = pay["amount_paise"] - already_refunded
@@ -837,7 +918,7 @@ class BalanceService:
             JOIN Invoices i ON i.invoice_id = il.invoice_id
             JOIN Enrollments e ON e.enrollment_id = i.enrollment_id
             WHERE e.student_id = :student_id
-              AND i.status NOT IN ('cancelled')
+              AND i.status NOT IN ('cancelled', 'refunded')
               {term_filter}
             """,
             params,
@@ -859,7 +940,7 @@ class BalanceService:
             JOIN Payments p ON p.payment_id = pa.payment_id
             WHERE e.student_id = :student_id
               AND p.status = 'cleared'
-              AND i.status NOT IN ('cancelled')
+              AND i.status NOT IN ('cancelled', 'refunded')
               {term_filter}
             """,
             params,
@@ -867,17 +948,19 @@ class BalanceService:
         total_paid = paid_rows["paid"] or 0
 
         # 3. Total processed refunds for student's cleared payments
-        refund_rows = conn.execute(
-            """
-            SELECT COALESCE(SUM(r.refund_amount_paise), 0) AS refunded
-            FROM Refunds r
-            JOIN Payments p ON p.payment_id = r.payment_id
-            WHERE p.student_id = :student_id
-              AND r.status = 'processed'
-            """,
-            {"student_id": student_id},
-        ).fetchone()
-        total_refunded = refund_rows["refunded"] or 0
+        if term_id is None:
+            refund_rows = conn.execute(
+                """SELECT COALESCE(SUM(r.refund_amount_paise), 0)
+                   FROM Refunds r
+                   JOIN Payments p ON p.payment_id = r.payment_id
+                   WHERE p.student_id = ? AND r.status = 'processed'""",
+                (student_id,),
+            ).fetchone()
+            total_refunded = refund_rows[0] or 0
+        else:
+            total_refunded = processed_refunds_by_student_term(
+                conn, [student_id]
+            ).get((student_id, term_id), 0)
 
         # 4. Overdue amounts
         overdue_rows = conn.execute(
@@ -1031,7 +1114,7 @@ class FinanceValidationService:
                    COALESCE(SUM(r.refund_amount_paise), 0) AS total_refunded
             FROM Payments p
             LEFT JOIN Refunds r ON r.payment_id = p.payment_id
-                AND r.status = 'processed'
+                AND r.status IN ('processed', 'pending')
             WHERE p.student_id = ?
             GROUP BY p.payment_id, p.amount_paise
             HAVING total_refunded > p.amount_paise
@@ -1060,8 +1143,21 @@ class FinanceValidationService:
         result = ValidationResult(valid=True)
         dups = conn.execute(
             """SELECT enrollment_id, term_id, COUNT(*) AS cnt
-               FROM Invoices
+               FROM Invoices i
                WHERE status NOT IN ('cancelled', 'refunded')
+                 AND (
+                     NOT EXISTS (
+                         SELECT 1 FROM InvoiceLines il
+                         WHERE il.invoice_id = i.invoice_id
+                     )
+                     OR EXISTS (
+                         SELECT 1 FROM InvoiceLines il
+                         WHERE il.invoice_id = i.invoice_id
+                           AND il.fee_type NOT IN (
+                               'Hostel', 'Transport', 'Miscellaneous', 'Late Fee'
+                           )
+                     )
+                 )
                GROUP BY enrollment_id, term_id
                HAVING cnt > 1"""
         ).fetchall()

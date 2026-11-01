@@ -141,6 +141,202 @@ class InvoiceGenerator:
         )
         return stats
 
+    def generate_supplementary(
+        self,
+        conn: sqlite3.Connection,
+        target_invoice_count: Optional[int] = None,
+    ) -> Dict[str, int]:
+        """Generate supplementary invoices (hostel, transport, additional charges)
+        and late-fee invoices to reach the ~30K invoice target."""
+        stats = {"invoices_created": 0, "lines_created": 0}
+        rng = self._rng.fork("supp_inv")
+        policy = self._svc._policy
+
+        enrollments = conn.execute(
+            """SELECT e.enrollment_id, e.student_id, e.term_id,
+                      t.start_date AS term_start, e.status
+               FROM Enrollments e
+               JOIN Terms t ON t.term_id = e.term_id
+               WHERE e.status IN ('enrolled', 'completed')
+               ORDER BY e.enrollment_id"""
+        ).fetchall()
+
+        selected_enrollment_ids = None
+        if target_invoice_count is not None:
+            current_count = conn.execute(
+                "SELECT COUNT(*) FROM Invoices"
+            ).fetchone()[0]
+            additional_needed = max(0, target_invoice_count - current_count)
+            existing_supplementary = {
+                row["enrollment_id"]
+                for row in conn.execute(
+                    """SELECT DISTINCT i.enrollment_id
+                       FROM Invoices i
+                       JOIN InvoiceLines il ON il.invoice_id = i.invoice_id
+                       WHERE il.fee_type IN ('Hostel', 'Transport', 'Miscellaneous')"""
+                ).fetchall()
+            }
+            eligible = [
+                row
+                for row in enrollments
+                if row["enrollment_id"] not in existing_supplementary
+            ]
+            if additional_needed > len(eligible):
+                raise RuntimeError(
+                    f"Cannot reach {target_invoice_count} invoices: "
+                    f"only {len(eligible)} eligible supplementary invoices remain"
+                )
+            selected_enrollment_ids = {
+                row["enrollment_id"]
+                for row in rng.sample(eligible, additional_needed)
+            }
+
+        for enr in enrollments:
+            if selected_enrollment_ids is not None:
+                if enr["enrollment_id"] not in selected_enrollment_ids:
+                    continue
+            elif rng.random() > 0.62:
+                continue
+
+            sid = enr["student_id"]
+            try:
+                ts = date.fromisoformat(enr["term_start"])
+            except Exception:
+                ts = date(2024, 1, 1)
+            issue_date = (ts + timedelta(days=rng.randint(30, 55))).isoformat()
+            due_date = policy.calculate_due_date(issue_date)
+
+            seq = self._id_gen.invoice_number()
+            seq_num = int(seq.split("-")[-1])
+            year = ts.year
+            inv_number = f"INV-STU-{sid:06d}-{year}-{seq_num:06d}"
+
+            existing = conn.execute(
+                "SELECT invoice_id FROM Invoices WHERE invoice_number = ?",
+                (inv_number,),
+            ).fetchone()
+            if existing:
+                continue
+
+            cur = conn.execute(
+                """INSERT INTO Invoices
+                   (invoice_number, enrollment_id, term_id, issue_date, due_date, status)
+                   VALUES (?, ?, ?, ?, ?, 'issued')""",
+                (inv_number, enr["enrollment_id"], enr["term_id"],
+                 issue_date, due_date),
+            )
+            inv_id = cur.lastrowid
+
+            supp_lines = [
+                ("Hostel", "Hostel accommodation fee",
+                 rng.randint(15000, 40000) * 100),
+                ("Transport", "Campus transport fee",
+                 rng.randint(3000, 8000) * 100),
+            ]
+            if rng.random() < 0.40:
+                supp_lines.append(
+                    ("Miscellaneous", "Misc. institutional charges",
+                     rng.randint(1000, 5000) * 100)
+                )
+
+            for fee_type, desc, amount in supp_lines:
+                conn.execute(
+                    """INSERT INTO InvoiceLines
+                       (invoice_id, fee_type, description, amount_paise, is_scholarship_credit)
+                       VALUES (?, ?, ?, ?, 0)""",
+                    (inv_id, fee_type, desc, amount),
+                )
+                stats["lines_created"] += 1
+
+            AuditService.log(conn, "Invoice", inv_id, "CREATE",
+                             new_value={"invoice_number": inv_number,
+                                        "status": "issued",
+                                        "type": "supplementary"})
+            stats["invoices_created"] += 1
+
+        # Late fee invoices for overdue invoices
+        ref_date = date(2025, 6, 1).isoformat()
+        overdue_invoices = conn.execute(
+            """SELECT i.invoice_id, i.enrollment_id, i.term_id, i.due_date,
+                      e.student_id
+               FROM Invoices i
+               JOIN Enrollments e ON e.enrollment_id = i.enrollment_id
+               WHERE i.status IN ('issued', 'overdue', 'partially_paid')
+                 AND i.due_date < ?
+               ORDER BY i.invoice_id""",
+            (ref_date,),
+        ).fetchall()
+
+        for oi in overdue_invoices:
+            if rng.random() > 0.70:
+                continue
+
+            remaining = conn.execute(
+                """SELECT COALESCE(
+                       SUM(CASE WHEN il.amount_paise > 0 THEN il.amount_paise ELSE 0 END), 0
+                   ) - COALESCE(
+                       (SELECT SUM(pa.allocated_amount_paise)
+                        FROM PaymentAllocations pa
+                        JOIN InvoiceLines il2 ON il2.line_id = pa.line_id
+                        JOIN Payments p ON p.payment_id = pa.payment_id
+                        WHERE il2.invoice_id = ? AND p.status = 'cleared'), 0
+                   ) AS outstanding
+                   FROM InvoiceLines il WHERE il.invoice_id = ?""",
+                (oi["invoice_id"], oi["invoice_id"]),
+            ).fetchone()["outstanding"]
+
+            if remaining <= 0:
+                continue
+
+            try:
+                due_dt = date.fromisoformat(oi["due_date"])
+                days_over = (date.fromisoformat(ref_date) - due_dt).days
+            except Exception:
+                days_over = 30
+            late_fee = policy.calculate_late_fee(remaining, days_over)
+            if late_fee <= 0:
+                continue
+
+            sid = oi["student_id"]
+            seq = self._id_gen.invoice_number()
+            seq_num = int(seq.split("-")[-1])
+            issue_d = ref_date
+            inv_number = f"INV-STU-{sid:06d}-2025-{seq_num:06d}"
+            existing = conn.execute(
+                "SELECT invoice_id FROM Invoices WHERE invoice_number = ?",
+                (inv_number,),
+            ).fetchone()
+            if existing:
+                continue
+
+            due_d = policy.calculate_due_date(issue_d)
+            cur = conn.execute(
+                """INSERT INTO Invoices
+                   (invoice_number, enrollment_id, term_id, issue_date, due_date, status)
+                   VALUES (?, ?, ?, ?, ?, 'issued')""",
+                (inv_number, oi["enrollment_id"], oi["term_id"],
+                 issue_d, due_d),
+            )
+            late_inv_id = cur.lastrowid
+            conn.execute(
+                """INSERT INTO InvoiceLines
+                   (invoice_id, fee_type, description, amount_paise, is_scholarship_credit)
+                   VALUES (?, 'Late Fee', 'Late payment penalty', ?, 0)""",
+                (late_inv_id, late_fee),
+            )
+            stats["lines_created"] += 1
+            AuditService.log(conn, "Invoice", late_inv_id, "CREATE",
+                             new_value={"invoice_number": inv_number,
+                                        "status": "issued",
+                                        "type": "late_fee"})
+            stats["invoices_created"] += 1
+
+        logger.info(
+            "Supplementary invoices: %d created, %d lines.",
+            stats["invoices_created"], stats["lines_created"],
+        )
+        return stats
+
 
 # ---------------------------------------------------------------------------
 # ScholarshipGenerator
@@ -168,7 +364,11 @@ class ScholarshipGenerator:
         self._svc = ScholarshipService(policy or FinancePolicy())
         self._policy = policy or FinancePolicy()
 
-    def generate(self, conn: sqlite3.Connection) -> Dict[str, int]:
+    def generate(
+        self,
+        conn: sqlite3.Connection,
+        target_award_count: Optional[int] = None,
+    ) -> Dict[str, int]:
         stats = {"scholarships_inserted": 0, "awards_created": 0, "evaluated": 0}
 
         # Ensure scholarship catalogue exists
@@ -249,6 +449,11 @@ class ScholarshipGenerator:
             )
 
             for rule, award_amount in awards:
+                if (
+                    target_award_count is not None
+                    and stats["awards_created"] >= target_award_count
+                ):
+                    break
                 scholarship_id = code_to_id.get(rule.code)
                 if not scholarship_id:
                     continue
@@ -287,6 +492,12 @@ class ScholarshipGenerator:
                             inv_svc.add_scholarship_credit_line(
                                 conn, inv["invoice_id"], rule.name, award_amount
                             )
+
+            if (
+                target_award_count is not None
+                and stats["awards_created"] >= target_award_count
+            ):
+                break
 
         logger.info(
             "Scholarships: %d in catalogue, %d awards created, %d enrollments evaluated.",
@@ -491,6 +702,182 @@ class PaymentGenerator:
             stats["allocations_created"],
             stats["refunds_created"],
             stats["payments_skipped"],
+        )
+        return stats
+
+    def generate_supplementary(
+        self,
+        conn: sqlite3.Connection,
+        target_payment_count: Optional[int] = None,
+    ) -> Dict[str, int]:
+        """Generate additional installment and follow-up payments to reach ~50K target."""
+        stats = {"payments_created": 0, "allocations_created": 0, "refunds_created": 0}
+        rng = self._rng.fork("supp_pay")
+
+        # Single bulk query: all invoice lines with remaining balance
+        all_lines = conn.execute(
+            """SELECT il.invoice_id, il.line_id, il.amount_paise,
+                      i.issue_date, e.student_id,
+                      COALESCE(pa_sum.paid, 0) AS already_paid,
+                      invoice_totals.gross,
+                      invoice_totals.credits,
+                      COALESCE(invoice_paid.paid, 0) AS invoice_paid
+               FROM InvoiceLines il
+               JOIN Invoices i ON i.invoice_id = il.invoice_id
+               JOIN Enrollments e ON e.enrollment_id = i.enrollment_id
+               JOIN (
+                   SELECT invoice_id,
+                          SUM(CASE WHEN amount_paise > 0
+                                     AND is_scholarship_credit = 0
+                                   THEN amount_paise ELSE 0 END) AS gross,
+                          SUM(CASE WHEN is_scholarship_credit = 1
+                                   THEN ABS(amount_paise) ELSE 0 END) AS credits
+                   FROM InvoiceLines
+                   GROUP BY invoice_id
+               ) invoice_totals ON invoice_totals.invoice_id = il.invoice_id
+               LEFT JOIN (
+                   SELECT il.invoice_id,
+                          SUM(pa.allocated_amount_paise) AS paid
+                   FROM PaymentAllocations pa
+                   JOIN Payments p ON p.payment_id = pa.payment_id
+                   JOIN InvoiceLines il ON il.line_id = pa.line_id
+                   WHERE p.status = 'cleared'
+                   GROUP BY il.invoice_id
+               ) invoice_paid ON invoice_paid.invoice_id = il.invoice_id
+               LEFT JOIN (
+                   SELECT pa.line_id, SUM(pa.allocated_amount_paise) AS paid
+                   FROM PaymentAllocations pa
+                   JOIN Payments p ON p.payment_id = pa.payment_id
+                   WHERE p.status = 'cleared'
+                   GROUP BY pa.line_id
+               ) pa_sum ON pa_sum.line_id = il.line_id
+               WHERE i.status IN ('issued', 'partially_paid', 'overdue')
+                 AND il.amount_paise > 0
+                 AND il.amount_paise > COALESCE(pa_sum.paid, 0)
+               ORDER BY il.invoice_id, il.line_id"""
+        ).fetchall()
+
+        # Group by invoice
+        inv_data: Dict[int, Dict] = {}
+        for row in all_lines:
+            inv_id = row["invoice_id"]
+            if inv_id not in inv_data:
+                inv_data[inv_id] = {
+                    "student_id": row["student_id"],
+                    "issue_date": row["issue_date"],
+                    "lines": [],
+                    "remaining": max(
+                        0,
+                        row["gross"] - row["credits"] - row["invoice_paid"],
+                    ),
+                }
+            unpaid = row["amount_paise"] - row["already_paid"]
+            inv_data[inv_id]["lines"].append((row["line_id"], unpaid))
+
+        pay_rows = []
+        alloc_rows = []
+        payment_slots = None
+        if target_payment_count is not None:
+            payment_slots = max(
+                0,
+                target_payment_count
+                - conn.execute("SELECT COUNT(*) FROM Payments").fetchone()[0],
+            )
+
+        for inv_id, data in inv_data.items():
+            if payment_slots is not None and len(pay_rows) >= payment_slots:
+                break
+            sid = data["student_id"]
+            remaining = data["remaining"]
+            unpaid_lines = list(data["lines"])
+
+            num_payments = (
+                3
+                if target_payment_count is not None
+                else rng.choices([1, 2, 3], weights=[40, 35, 25], k=1)[0]
+            )
+
+            for pi in range(num_payments):
+                if payment_slots is not None and len(pay_rows) >= payment_slots:
+                    break
+                if remaining <= 0:
+                    break
+
+                if pi < num_payments - 1:
+                    pay_amount = max(100, int(remaining * rng.uniform(0.30, 0.55)))
+                else:
+                    pay_amount = remaining
+                pay_amount = (pay_amount // 100) * 100
+                if pay_amount <= 0:
+                    break
+
+                try:
+                    issue_dt = date.fromisoformat(data["issue_date"])
+                except Exception:
+                    issue_dt = date(2024, 6, 1)
+                pay_date = (issue_dt + timedelta(
+                    days=rng.randint(28 + pi * 18, 55 + pi * 22)
+                )).isoformat()
+
+                method = rng.choices(
+                    PAYMENT_METHODS, weights=[5, 25, 25, 5, 10, 5, 15, 5, 5], k=1,
+                )[0]
+                pay_ref = self._id_gen.payment_reference()
+                txn_id = f"TXN{sid:06d}{rng.randint(100000, 999999)}"
+                pay_status = "failed" if rng.random() < 0.03 else "cleared"
+
+                pay_rows.append((
+                    pay_ref, sid, pay_date, pay_amount,
+                    method, pay_status, txn_id,
+                    inv_id, pi,  # extra context for allocation
+                ))
+
+                if pay_status == "cleared":
+                    alloc_remaining = pay_amount
+                    new_unpaid = []
+                    for line_id, line_unpaid in unpaid_lines:
+                        if alloc_remaining <= 0:
+                            new_unpaid.append((line_id, line_unpaid))
+                            continue
+                        alloc = min(alloc_remaining, line_unpaid)
+                        alloc_rows.append((pay_ref, line_id, alloc))
+                        alloc_remaining -= alloc
+                        leftover = line_unpaid - alloc
+                        if leftover > 0:
+                            new_unpaid.append((line_id, leftover))
+                    unpaid_lines = new_unpaid
+                    remaining -= pay_amount
+
+        # Batch insert payments
+        pay_ref_to_id: Dict[str, int] = {}
+        for row in pay_rows:
+            pay_ref = row[0]
+            cur = conn.execute(
+                """INSERT OR IGNORE INTO Payments
+                   (payment_reference, student_id, payment_date, amount_paise,
+                    payment_method, status, transaction_id)
+                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                row[:7],
+            )
+            if cur.lastrowid:
+                pay_ref_to_id[pay_ref] = cur.lastrowid
+                stats["payments_created"] += 1
+
+        # Batch insert allocations
+        for pay_ref, line_id, alloc_amount in alloc_rows:
+            pay_id = pay_ref_to_id.get(pay_ref)
+            if pay_id:
+                conn.execute(
+                    """INSERT OR IGNORE INTO PaymentAllocations
+                       (payment_id, line_id, allocated_amount_paise)
+                       VALUES (?, ?, ?)""",
+                    (pay_id, line_id, alloc_amount),
+                )
+                stats["allocations_created"] += 1
+
+        logger.info(
+            "Supplementary payments: %d created, %d allocations.",
+            stats["payments_created"], stats["allocations_created"],
         )
         return stats
 

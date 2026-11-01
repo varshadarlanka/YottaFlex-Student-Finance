@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Finance Management</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <h2>💰 Student Finance</h2>
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#dashboard" class="nav-link active" data-page="dashboard">
+          <span class="nav-icon">📊</span> Dashboard
+        </a>
+        <a href="#students" class="nav-link" data-page="students">
+          <span class="nav-icon">🎓</span> Students
+        </a>
+        <a href="#programs" class="nav-link" data-page="programs">
+          <span class="nav-icon">📚</span> Programs & Fees
+        </a>
+        <a href="#invoices" class="nav-link" data-page="invoices">
+          <span class="nav-icon">🧾</span> Invoices
+        </a>
+        <a href="#scholarships" class="nav-link" data-page="scholarships">
+          <span class="nav-icon">🏅</span> Scholarships
+        </a>
+        <a href="#payments" class="nav-link" data-page="payments">
+          <span class="nav-icon">💳</span> Payments
+        </a>
+        <a href="#refunds" class="nav-link" data-page="refunds">
+          <span class="nav-icon">↩️</span> Refunds
+        </a>
+        <a href="#reconciliation" class="nav-link" data-page="reconciliation">
+          <span class="nav-icon">⚖️</span> Reconciliation
+        </a>
+        <a href="#anomalies" class="nav-link" data-page="anomalies">
+          <span class="nav-icon">🔍</span> Anomaly Detection
+        </a>
+        <a href="#exports" class="nav-link" data-page="exports">
+          <span class="nav-icon">📥</span> Data Exports
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="api-status" id="api-status">● Checking...</span>
+      </div>
+    </aside>
+    <main id="main-content" class="main-content">
+      <div id="page-content"></div>
+    </main>
+  </div>
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>

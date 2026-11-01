@@ -20,7 +20,9 @@ Test categories
 13. Validators — field-level and post-generation integrity.
 """
 
+import os
 import sqlite3
+import subprocess
 import sys
 from pathlib import Path
 from typing import List
@@ -109,6 +111,11 @@ class TestConfig:
 
     def test_full_has_6_terms(self, full_config):
         assert full_config.num_terms == 6
+
+    def test_full_mode_targets_challenge_baseline_volumes(self, full_config):
+        assert full_config.target_invoice_count == 30_000
+        assert full_config.target_award_count == 15_000
+        assert full_config.target_payment_count == 50_000
 
     def test_seed_is_configurable(self):
         cfg = get_config(GenerationMode.STARTER, seed=12345)
@@ -207,6 +214,24 @@ class TestSeededRandom:
         child1 = rng1.fork("students")
         child2 = rng2.fork("students")
         assert child1.seed == child2.seed
+
+    def test_fork_is_reproducible_across_processes(self):
+        script = (
+            "from backend.seed_manager import SeededRandom; "
+            "print(SeededRandom(20261022).fork('students').random())"
+        )
+        env = os.environ.copy()
+        env["PYTHONHASHSEED"] = "random"
+        outputs = [
+            subprocess.check_output(
+                [sys.executable, "-c", script],
+                cwd=PROJECT_ROOT,
+                env=env,
+                text=True,
+            ).strip()
+            for _ in range(2)
+        ]
+        assert outputs[0] == outputs[1]
 
     def test_fork_children_are_independent(self):
         rng = SeededRandom(DEFAULT_SEED)

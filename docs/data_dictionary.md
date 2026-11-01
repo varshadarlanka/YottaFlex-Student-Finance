@@ -22,9 +22,10 @@
 11. [Payments](#11-payments)
 12. [PaymentAllocations](#12-paymentallocations)
 13. [Refunds](#13-refunds)
-14. [AuditEvents](#14-auditevents)
-15. [Relationship Summary](#15-relationship-summary)
-16. [Financial Calculation Rules](#16-financial-calculation-rules)
+14. [BalanceSnapshots](#14-balancesnapshots)
+15. [AuditEvents](#15-auditevents)
+16. [Relationship Summary](#16-relationship-summary)
+17. [Financial Calculation Rules](#17-financial-calculation-rules)
 
 ---
 
@@ -179,7 +180,9 @@
 | `created_at` | TEXT | NOT NULL, DEFAULT now | |
 | `updated_at` | TEXT | NOT NULL, DEFAULT now | |
 
-**Indexes:** `idx_invoices_enrollment`, `idx_invoices_term`, `idx_invoices_status`, `idx_invoices_number`
+**Indexes:** `idx_invoices_enrollment`, `idx_invoices_enrollment_term`
+(composite lookup for an enrollment and term), `idx_invoices_term`,
+`idx_invoices_status`, `idx_invoices_number`
 
 ---
 
@@ -320,7 +323,23 @@
 
 ---
 
-## 14. AuditEvents
+## 14. BalanceSnapshots
+
+**Purpose:** Point-in-time student-term balance values used to detect disagreement with the live ledger.
+
+| Column | Type | Constraints | Description |
+|--------|------|-------------|-------------|
+| `snapshot_id` | INTEGER | PK, AUTOINCREMENT | |
+| `student_id` | INTEGER | NOT NULL, FK → Students | Student whose balance was captured |
+| `term_id` | INTEGER | NOT NULL, FK → Terms | Academic term |
+| `reported_outstanding_paise` | INTEGER | NOT NULL | Reported balance in integer paise |
+| `snapshot_date` | TEXT | NOT NULL, DEFAULT now | Capture timestamp |
+
+**Indexes:** `idx_snapshots_student`, `idx_snapshots_term`
+
+---
+
+## 15. AuditEvents
 
 **Purpose:** Immutable, append-only audit trail. Rows are NEVER updated or deleted. No FK to entity tables (to preserve history even if entities are deleted).  
 **Cardinality:** Many AuditEvents per entity row across all tables
@@ -342,7 +361,7 @@
 
 ---
 
-## 15. Relationship Summary
+## 16. Relationship Summary
 
 ```
 Terms ──────────────────────────────────────────────────────────────┐
@@ -380,33 +399,40 @@ AuditEvents (polymorphic, no FK, references all tables)
 | Payment | Refund | 1 → N |
 | Student | Eligibility | 1 → N |
 | Scholarship | Eligibility | 1 → N |
+| Student | BalanceSnapshot | 1 → N |
+| Term | BalanceSnapshot | 1 → N |
 | Student ↔ Scholarship | (via Eligibility) | N → M |
 | Payment ↔ InvoiceLine | (via PaymentAllocations) | N → M |
 
 ---
 
-## 16. Financial Calculation Rules
+## 17. Financial Calculation Rules
 
 ### Invoice Total
 ```
-invoice_total = SUM(InvoiceLines.amount_paise) WHERE invoice_id = X
+fee_charges = SUM(InvoiceLines.amount_paise)
+              WHERE invoice_id = X AND is_scholarship_credit = 0
+scholarship_credits = SUM(ABS(InvoiceLines.amount_paise))
+                      WHERE invoice_id = X AND is_scholarship_credit = 1
+net_payable = max(0, fee_charges - scholarship_credits)
 ```
 
 ### Allocated to Invoice
 ```
 allocated = SUM(PaymentAllocations.allocated_amount_paise)
-            WHERE line_id IN (SELECT line_id FROM InvoiceLines WHERE invoice_id = X)
+            for the invoice's lines and cleared payments
 ```
 
 ### Outstanding Balance
 ```
-outstanding = invoice_total - allocated
+outstanding = max(0, net_payable - allocated + processed_refunds)
+overpayment = max(0, allocated - processed_refunds - net_payable)
 ```
 > **Never store the outstanding balance as a column.** Always derive it.
 
 ### Scholarship Credit
 Scholarship awards are applied as negative InvoiceLines (`is_scholarship_credit = 1`).  
-This means scholarship credit reduces the `invoice_total` automatically in the balance calculation.
+They reduce net payable and are reported separately from fee charges.
 
 ### Payment Unallocated Amount
 ```
@@ -416,6 +442,32 @@ unallocated = payment.amount_paise
 
 ### Total Refunded for a Payment
 ```
-total_refunded = SUM(Refunds.refund_amount_paise WHERE payment_id = X AND status != 'cancelled')
+reported_refunds = SUM(Refunds.refund_amount_paise
+                       WHERE payment_id = X AND status = 'processed')
+reserved_refunds = SUM(Refunds.refund_amount_paise
+                       WHERE payment_id = X AND status IN ('processed', 'pending'))
 ```
-Service layer must ensure `total_refunded ≤ payment.amount_paise`.
+Balance reports count processed refunds. Refund validation reserves pending as
+well as processed refunds, and requires their sum not to exceed the payment
+amount (except for the labelled refund anomaly).
+
+---
+
+## Export Package Manifest
+
+`exports/source_manifest.json` describes the canonical export package:
+
+| Field | Description |
+|-------|-------------|
+| `seed` | Generation seed (`20261022` for the audited full dataset) |
+| `database` | Source SQLite database filename |
+| `table_count` | Number of exported source tables |
+| `total_rows` | Sum of source rows across all listed tables |
+| `tables[]` | Table name and database row count |
+| `artifacts[]` | Root export filename, byte size, and SHA-256 digest |
+
+The package includes CSV and JSON files for all 15 tables, separate
+`ground_truth.csv` and `ground_truth.json` files, and `seed.sql`. API download
+archives contain the 15 tables in one format plus the matching ground-truth
+file. Ground-truth labels are sourced from persisted audit markers; download
+does not inject or alter anomalies.

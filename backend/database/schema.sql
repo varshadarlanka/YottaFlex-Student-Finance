@@ -207,6 +207,8 @@ CREATE TABLE IF NOT EXISTS Invoices (
 );
 
 CREATE INDEX IF NOT EXISTS idx_invoices_enrollment ON Invoices(enrollment_id);
+CREATE INDEX IF NOT EXISTS idx_invoices_enrollment_term
+    ON Invoices(enrollment_id, term_id);
 CREATE INDEX IF NOT EXISTS idx_invoices_term       ON Invoices(term_id);
 CREATE INDEX IF NOT EXISTS idx_invoices_status     ON Invoices(status);
 CREATE INDEX IF NOT EXISTS idx_invoices_number     ON Invoices(invoice_number);
@@ -419,3 +421,23 @@ CREATE TABLE IF NOT EXISTS AuditEvents (
 CREATE INDEX IF NOT EXISTS idx_audit_entity      ON AuditEvents(entity_type, entity_id);
 CREATE INDEX IF NOT EXISTS idx_audit_event_type  ON AuditEvents(event_type);
 CREATE INDEX IF NOT EXISTS idx_audit_performed_at ON AuditEvents(performed_at);
+
+-- ---------------------------------------------------------------------------
+-- 15. BalanceSnapshots
+-- Purpose: Point-in-time snapshots of student outstanding balances.
+--          Used for reconciliation: the reported_outstanding_paise is compared
+--          against the live ledger calculation to detect discrepancies.
+-- Cardinality: many snapshots per student-term pair (historical)
+-- ---------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS BalanceSnapshots (
+    snapshot_id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    student_id                 INTEGER NOT NULL REFERENCES Students(student_id)
+                                   ON UPDATE CASCADE ON DELETE RESTRICT,
+    term_id                    INTEGER NOT NULL REFERENCES Terms(term_id)
+                                   ON UPDATE CASCADE ON DELETE RESTRICT,
+    reported_outstanding_paise INTEGER NOT NULL,
+    snapshot_date              TEXT    NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%S', 'now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_snapshots_student ON BalanceSnapshots(student_id);
+CREATE INDEX IF NOT EXISTS idx_snapshots_term    ON BalanceSnapshots(term_id);

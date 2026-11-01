@@ -1,0 +1,679 @@
+fsl_id,schedule_id,fee_type,description,amount_paise,is_mandatory,sort_order,created_at
+1,1,Tuition,Tuition fee,13150000,1,1,2026-10-31T18:01:01
+2,1,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+3,1,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+4,1,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+5,1,Lab,Laboratory usage fee,900000,0,5,2026-10-31T18:01:01
+6,1,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+7,2,Tuition,Tuition fee,13200000,1,1,2026-10-31T18:01:01
+8,2,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+9,2,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+10,2,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+11,2,Lab,Laboratory usage fee,1050000,0,5,2026-10-31T18:01:01
+12,2,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+13,3,Tuition,Tuition fee,8500000,1,1,2026-10-31T18:01:01
+14,3,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+15,3,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+16,3,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+17,3,Lab,Laboratory usage fee,400000,0,5,2026-10-31T18:01:01
+18,3,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+19,4,Tuition,Tuition fee,12750000,1,1,2026-10-31T18:01:01
+20,4,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+21,4,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+22,4,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+23,4,Lab,Laboratory usage fee,700000,0,5,2026-10-31T18:01:01
+24,4,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+25,5,Tuition,Tuition fee,8600000,1,1,2026-10-31T18:01:01
+26,5,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+27,5,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+28,5,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+29,5,Lab,Laboratory usage fee,650000,0,5,2026-10-31T18:01:01
+30,5,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+31,6,Tuition,Tuition fee,10950000,1,1,2026-10-31T18:01:01
+32,6,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+33,6,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+34,6,Sports,Sports & fitness fee,150000,0,4,2026-10-31T18:01:01
+35,6,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+36,6,Development,Campus development fee,750000,1,6,2026-10-31T18:01:01
+37,7,Tuition,Tuition fee,14550000,1,1,2026-10-31T18:01:01
+38,7,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+39,7,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+40,7,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+41,7,Lab,Laboratory usage fee,500000,0,5,2026-10-31T18:01:01
+42,7,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+43,8,Tuition,Tuition fee,14300000,1,1,2026-10-31T18:01:01
+44,8,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+45,8,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+46,8,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+47,8,Lab,Laboratory usage fee,1200000,0,5,2026-10-31T18:01:01
+48,8,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+49,9,Tuition,Tuition fee,9950000,1,1,2026-10-31T18:01:01
+50,9,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+51,9,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+52,9,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+53,9,Lab,Laboratory usage fee,900000,0,5,2026-10-31T18:01:01
+54,9,Development,Campus development fee,750000,1,6,2026-10-31T18:01:01
+55,10,Tuition,Tuition fee,12750000,1,1,2026-10-31T18:01:01
+56,10,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+57,10,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+58,10,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+59,10,Lab,Laboratory usage fee,1150000,0,5,2026-10-31T18:01:01
+60,10,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+61,11,Tuition,Tuition fee,11400000,1,1,2026-10-31T18:01:01
+62,11,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+63,11,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+64,11,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+65,11,Lab,Laboratory usage fee,1000000,0,5,2026-10-31T18:01:01
+66,11,Development,Campus development fee,750000,1,6,2026-10-31T18:01:01
+67,12,Tuition,Tuition fee,11600000,1,1,2026-10-31T18:01:01
+68,12,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+69,12,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+70,12,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+71,12,Lab,Laboratory usage fee,500000,0,5,2026-10-31T18:01:01
+72,12,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+73,13,Tuition,Tuition fee,11500000,1,1,2026-10-31T18:01:01
+74,13,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+75,13,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+76,13,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+77,13,Lab,Laboratory usage fee,500000,0,5,2026-10-31T18:01:01
+78,13,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+79,14,Tuition,Tuition fee,11600000,1,1,2026-10-31T18:01:01
+80,14,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+81,14,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+82,14,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+83,14,Lab,Laboratory usage fee,500000,0,5,2026-10-31T18:01:01
+84,14,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+85,15,Tuition,Tuition fee,13400000,1,1,2026-10-31T18:01:01
+86,15,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+87,15,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+88,15,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+89,15,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+90,15,Development,Campus development fee,750000,1,6,2026-10-31T18:01:01
+91,16,Tuition,Tuition fee,11050000,1,1,2026-10-31T18:01:01
+92,16,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+93,16,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+94,16,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+95,16,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+96,16,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+97,17,Tuition,Tuition fee,12450000,1,1,2026-10-31T18:01:01
+98,17,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+99,17,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+100,17,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+101,17,Lab,Laboratory usage fee,800000,0,5,2026-10-31T18:01:01
+102,17,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+103,18,Tuition,Tuition fee,12550000,1,1,2026-10-31T18:01:01
+104,18,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+105,18,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+106,18,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+107,18,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+108,18,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+109,19,Tuition,Tuition fee,14750000,1,1,2026-10-31T18:01:01
+110,19,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+111,19,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+112,19,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+113,19,Lab,Laboratory usage fee,800000,0,5,2026-10-31T18:01:01
+114,19,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+115,20,Tuition,Tuition fee,10450000,1,1,2026-10-31T18:01:01
+116,20,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+117,20,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+118,20,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+119,20,Lab,Laboratory usage fee,1050000,0,5,2026-10-31T18:01:01
+120,20,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+121,21,Tuition,Tuition fee,9550000,1,1,2026-10-31T18:01:01
+122,21,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+123,21,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+124,21,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+125,21,Lab,Laboratory usage fee,400000,0,5,2026-10-31T18:01:01
+126,21,Development,Campus development fee,700000,1,6,2026-10-31T18:01:01
+127,22,Tuition,Tuition fee,14750000,1,1,2026-10-31T18:01:01
+128,22,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+129,22,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+130,22,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+131,22,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+132,22,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+133,23,Tuition,Tuition fee,14400000,1,1,2026-10-31T18:01:01
+134,23,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+135,23,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+136,23,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+137,23,Lab,Laboratory usage fee,1200000,0,5,2026-10-31T18:01:01
+138,23,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+139,24,Tuition,Tuition fee,14200000,1,1,2026-10-31T18:01:01
+140,24,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+141,24,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+142,24,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+143,24,Lab,Laboratory usage fee,900000,0,5,2026-10-31T18:01:01
+144,24,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+145,25,Tuition,Tuition fee,9500000,1,1,2026-10-31T18:01:01
+146,25,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+147,25,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+148,25,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+149,25,Lab,Laboratory usage fee,450000,0,5,2026-10-31T18:01:01
+150,25,Development,Campus development fee,550000,1,6,2026-10-31T18:01:01
+151,26,Tuition,Tuition fee,13050000,1,1,2026-10-31T18:01:01
+152,26,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+153,26,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+154,26,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+155,26,Lab,Laboratory usage fee,750000,0,5,2026-10-31T18:01:01
+156,26,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+157,27,Tuition,Tuition fee,13700000,1,1,2026-10-31T18:01:01
+158,27,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+159,27,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+160,27,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+161,27,Lab,Laboratory usage fee,950000,0,5,2026-10-31T18:01:01
+162,27,Development,Campus development fee,550000,1,6,2026-10-31T18:01:01
+163,28,Tuition,Tuition fee,8950000,1,1,2026-10-31T18:01:01
+164,28,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+165,28,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+166,28,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+167,28,Lab,Laboratory usage fee,500000,0,5,2026-10-31T18:01:01
+168,28,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+169,29,Tuition,Tuition fee,9650000,1,1,2026-10-31T18:01:01
+170,29,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+171,29,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+172,29,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+173,29,Lab,Laboratory usage fee,700000,0,5,2026-10-31T18:01:01
+174,29,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+175,30,Tuition,Tuition fee,11800000,1,1,2026-10-31T18:01:01
+176,30,Exam,Examination fee,600000,1,2,2026-10-31T18:01:01
+177,30,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+178,30,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+179,30,Lab,Laboratory usage fee,1200000,0,5,2026-10-31T18:01:01
+180,30,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+181,31,Tuition,Tuition fee,14850000,1,1,2026-10-31T18:01:01
+182,31,Exam,Examination fee,600000,1,2,2026-10-31T18:01:01
+183,31,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+184,31,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+185,31,Lab,Laboratory usage fee,650000,0,5,2026-10-31T18:01:01
+186,31,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+187,32,Tuition,Tuition fee,10150000,1,1,2026-10-31T18:01:01
+188,32,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+189,32,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+190,32,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+191,32,Lab,Laboratory usage fee,850000,0,5,2026-10-31T18:01:01
+192,32,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+193,33,Tuition,Tuition fee,12700000,1,1,2026-10-31T18:01:01
+194,33,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+195,33,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+196,33,Sports,Sports & fitness fee,150000,0,4,2026-10-31T18:01:01
+197,33,Lab,Laboratory usage fee,850000,0,5,2026-10-31T18:01:01
+198,33,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+199,34,Tuition,Tuition fee,9400000,1,1,2026-10-31T18:01:01
+200,34,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+201,34,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+202,34,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+203,34,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+204,34,Development,Campus development fee,500000,1,6,2026-10-31T18:01:01
+205,35,Tuition,Tuition fee,9800000,1,1,2026-10-31T18:01:01
+206,35,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+207,35,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+208,35,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+209,35,Lab,Laboratory usage fee,750000,0,5,2026-10-31T18:01:01
+210,35,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+211,36,Tuition,Tuition fee,9500000,1,1,2026-10-31T18:01:01
+212,36,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+213,36,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+214,36,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+215,36,Lab,Laboratory usage fee,650000,0,5,2026-10-31T18:01:01
+216,36,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+217,37,Tuition,Tuition fee,13550000,1,1,2026-10-31T18:01:01
+218,37,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+219,37,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+220,37,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+221,37,Lab,Laboratory usage fee,700000,0,5,2026-10-31T18:01:01
+222,37,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+223,38,Tuition,Tuition fee,9550000,1,1,2026-10-31T18:01:01
+224,38,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+225,38,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+226,38,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+227,38,Lab,Laboratory usage fee,450000,0,5,2026-10-31T18:01:01
+228,38,Development,Campus development fee,1000000,1,6,2026-10-31T18:01:01
+229,39,Tuition,Tuition fee,11250000,1,1,2026-10-31T18:01:01
+230,39,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+231,39,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+232,39,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+233,39,Lab,Laboratory usage fee,800000,0,5,2026-10-31T18:01:01
+234,39,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+235,40,Tuition,Tuition fee,10400000,1,1,2026-10-31T18:01:01
+236,40,Exam,Examination fee,600000,1,2,2026-10-31T18:01:01
+237,40,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+238,40,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+239,40,Lab,Laboratory usage fee,1000000,0,5,2026-10-31T18:01:01
+240,40,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+241,41,Tuition,Tuition fee,10500000,1,1,2026-10-31T18:01:01
+242,41,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+243,41,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+244,41,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+245,41,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+246,41,Development,Campus development fee,500000,1,6,2026-10-31T18:01:01
+247,42,Tuition,Tuition fee,12500000,1,1,2026-10-31T18:01:01
+248,42,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+249,42,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+250,42,Sports,Sports & fitness fee,150000,0,4,2026-10-31T18:01:01
+251,42,Lab,Laboratory usage fee,500000,0,5,2026-10-31T18:01:01
+252,42,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+253,43,Tuition,Tuition fee,13600000,1,1,2026-10-31T18:01:01
+254,43,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+255,43,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+256,43,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+257,43,Lab,Laboratory usage fee,1200000,0,5,2026-10-31T18:01:01
+258,43,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+259,44,Tuition,Tuition fee,8300000,1,1,2026-10-31T18:01:01
+260,44,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+261,44,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+262,44,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+263,44,Lab,Laboratory usage fee,1200000,0,5,2026-10-31T18:01:01
+264,44,Development,Campus development fee,500000,1,6,2026-10-31T18:01:01
+265,45,Tuition,Tuition fee,14650000,1,1,2026-10-31T18:01:01
+266,45,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+267,45,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+268,45,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+269,45,Lab,Laboratory usage fee,1100000,0,5,2026-10-31T18:01:01
+270,45,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+271,46,Tuition,Tuition fee,14150000,1,1,2026-10-31T18:01:01
+272,46,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+273,46,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+274,46,Sports,Sports & fitness fee,300000,0,4,2026-10-31T18:01:01
+275,46,Lab,Laboratory usage fee,700000,0,5,2026-10-31T18:01:01
+276,46,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+277,47,Tuition,Tuition fee,14500000,1,1,2026-10-31T18:01:01
+278,47,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+279,47,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+280,47,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+281,47,Lab,Laboratory usage fee,400000,0,5,2026-10-31T18:01:01
+282,47,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+283,48,Tuition,Tuition fee,12550000,1,1,2026-10-31T18:01:01
+284,48,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+285,48,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+286,48,Sports,Sports & fitness fee,150000,0,4,2026-10-31T18:01:01
+287,48,Lab,Laboratory usage fee,750000,0,5,2026-10-31T18:01:01
+288,48,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+289,49,Tuition,Tuition fee,11750000,1,1,2026-10-31T18:01:01
+290,49,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+291,49,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+292,49,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+293,49,Lab,Laboratory usage fee,850000,0,5,2026-10-31T18:01:01
+294,49,Development,Campus development fee,750000,1,6,2026-10-31T18:01:01
+295,50,Tuition,Tuition fee,9200000,1,1,2026-10-31T18:01:01
+296,50,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+297,50,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+298,50,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+299,50,Lab,Laboratory usage fee,900000,0,5,2026-10-31T18:01:01
+300,50,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+301,51,Tuition,Tuition fee,14400000,1,1,2026-10-31T18:01:01
+302,51,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+303,51,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+304,51,Sports,Sports & fitness fee,150000,0,4,2026-10-31T18:01:01
+305,51,Lab,Laboratory usage fee,1150000,0,5,2026-10-31T18:01:01
+306,51,Development,Campus development fee,950000,1,6,2026-10-31T18:01:01
+307,52,Tuition,Tuition fee,9850000,1,1,2026-10-31T18:01:01
+308,52,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+309,52,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+310,52,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+311,52,Lab,Laboratory usage fee,1000000,0,5,2026-10-31T18:01:01
+312,52,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+313,53,Tuition,Tuition fee,11350000,1,1,2026-10-31T18:01:01
+314,53,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+315,53,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+316,53,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+317,53,Lab,Laboratory usage fee,600000,0,5,2026-10-31T18:01:01
+318,53,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+319,54,Tuition,Tuition fee,10400000,1,1,2026-10-31T18:01:01
+320,54,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+321,54,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+322,54,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+323,54,Lab,Laboratory usage fee,400000,0,5,2026-10-31T18:01:01
+324,54,Development,Campus development fee,600000,1,6,2026-10-31T18:01:01
+325,55,Tuition,Tuition fee,11300000,1,1,2026-10-31T18:01:01
+326,55,Exam,Examination fee,600000,1,2,2026-10-31T18:01:01
+327,55,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+328,55,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+329,55,Lab,Laboratory usage fee,1150000,0,5,2026-10-31T18:01:01
+330,55,Development,Campus development fee,850000,1,6,2026-10-31T18:01:01
+331,56,Tuition,Tuition fee,10400000,1,1,2026-10-31T18:01:01
+332,56,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+333,56,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+334,56,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+335,56,Lab,Laboratory usage fee,800000,0,5,2026-10-31T18:01:01
+336,56,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+337,57,Tuition,Tuition fee,12900000,1,1,2026-10-31T18:01:01
+338,57,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+339,57,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+340,57,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+341,57,Lab,Laboratory usage fee,1200000,0,5,2026-10-31T18:01:01
+342,57,Development,Campus development fee,800000,1,6,2026-10-31T18:01:01
+343,58,Tuition,Tuition fee,14450000,1,1,2026-10-31T18:01:01
+344,58,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+345,58,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+346,58,Sports,Sports & fitness fee,250000,0,4,2026-10-31T18:01:01
+347,58,Lab,Laboratory usage fee,550000,0,5,2026-10-31T18:01:01
+348,58,Development,Campus development fee,700000,1,6,2026-10-31T18:01:01
+349,59,Tuition,Tuition fee,8350000,1,1,2026-10-31T18:01:01
+350,59,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+351,59,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+352,59,Sports,Sports & fitness fee,200000,0,4,2026-10-31T18:01:01
+353,59,Lab,Laboratory usage fee,450000,0,5,2026-10-31T18:01:01
+354,59,Development,Campus development fee,650000,1,6,2026-10-31T18:01:01
+355,60,Tuition,Tuition fee,13700000,1,1,2026-10-31T18:01:01
+356,60,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+357,60,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+358,60,Sports,Sports & fitness fee,150000,0,4,2026-10-31T18:01:01
+359,60,Lab,Laboratory usage fee,950000,0,5,2026-10-31T18:01:01
+360,60,Development,Campus development fee,900000,1,6,2026-10-31T18:01:01
+361,61,Tuition,Tuition fee,19900000,1,1,2026-10-31T18:01:01
+362,61,Exam,Examination fee,650000,1,2,2026-10-31T18:01:01
+363,61,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+364,61,Lab,Laboratory usage fee,1350000,0,4,2026-10-31T18:01:01
+365,61,Development,Campus development fee,750000,1,5,2026-10-31T18:01:01
+366,61,Research,Research resource fee,1900000,0,6,2026-10-31T18:01:01
+367,62,Tuition,Tuition fee,21050000,1,1,2026-10-31T18:01:01
+368,62,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+369,62,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+370,62,Lab,Laboratory usage fee,650000,0,4,2026-10-31T18:01:01
+371,62,Development,Campus development fee,650000,1,5,2026-10-31T18:01:01
+372,62,Research,Research resource fee,1650000,0,6,2026-10-31T18:01:01
+373,63,Tuition,Tuition fee,14950000,1,1,2026-10-31T18:01:01
+374,63,Exam,Examination fee,650000,1,2,2026-10-31T18:01:01
+375,63,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+376,63,Lab,Laboratory usage fee,950000,0,4,2026-10-31T18:01:01
+377,63,Development,Campus development fee,900000,1,5,2026-10-31T18:01:01
+378,63,Research,Research resource fee,1300000,0,6,2026-10-31T18:01:01
+379,64,Tuition,Tuition fee,14150000,1,1,2026-10-31T18:01:01
+380,64,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+381,64,Library,Library access fee,500000,1,3,2026-10-31T18:01:01
+382,64,Lab,Laboratory usage fee,950000,0,4,2026-10-31T18:01:01
+383,64,Development,Campus development fee,900000,1,5,2026-10-31T18:01:01
+384,64,Research,Research resource fee,1450000,0,6,2026-10-31T18:01:01
+385,65,Tuition,Tuition fee,13200000,1,1,2026-10-31T18:01:01
+386,65,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+387,65,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+388,65,Lab,Laboratory usage fee,700000,0,4,2026-10-31T18:01:01
+389,65,Development,Campus development fee,850000,1,5,2026-10-31T18:01:01
+390,65,Research,Research resource fee,1300000,0,6,2026-10-31T18:01:01
+391,66,Tuition,Tuition fee,15300000,1,1,2026-10-31T18:01:01
+392,66,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+393,66,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+394,66,Lab,Laboratory usage fee,1200000,0,4,2026-10-31T18:01:01
+395,66,Development,Campus development fee,850000,1,5,2026-10-31T18:01:01
+396,66,Research,Research resource fee,1850000,0,6,2026-10-31T18:01:01
+397,67,Tuition,Tuition fee,13350000,1,1,2026-10-31T18:01:01
+398,67,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+399,67,Library,Library access fee,450000,1,3,2026-10-31T18:01:01
+400,67,Lab,Laboratory usage fee,850000,0,4,2026-10-31T18:01:01
+401,67,Development,Campus development fee,750000,1,5,2026-10-31T18:01:01
+402,67,Research,Research resource fee,1700000,0,6,2026-10-31T18:01:01
+403,68,Tuition,Tuition fee,20400000,1,1,2026-10-31T18:01:01
+404,68,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+405,68,Library,Library access fee,450000,1,3,2026-10-31T18:01:01
+406,68,Lab,Laboratory usage fee,1050000,0,4,2026-10-31T18:01:01
+407,68,Development,Campus development fee,700000,1,5,2026-10-31T18:01:01
+408,68,Research,Research resource fee,1850000,0,6,2026-10-31T18:01:01
+409,69,Tuition,Tuition fee,16450000,1,1,2026-10-31T18:01:01
+410,69,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+411,69,Library,Library access fee,450000,1,3,2026-10-31T18:01:01
+412,69,Lab,Laboratory usage fee,550000,0,4,2026-10-31T18:01:01
+413,69,Development,Campus development fee,1000000,1,5,2026-10-31T18:01:01
+414,69,Research,Research resource fee,1400000,0,6,2026-10-31T18:01:01
+415,70,Tuition,Tuition fee,13550000,1,1,2026-10-31T18:01:01
+416,70,Exam,Examination fee,750000,1,2,2026-10-31T18:01:01
+417,70,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+418,70,Lab,Laboratory usage fee,1400000,0,4,2026-10-31T18:01:01
+419,70,Development,Campus development fee,950000,1,5,2026-10-31T18:01:01
+420,70,Research,Research resource fee,1550000,0,6,2026-10-31T18:01:01
+421,71,Tuition,Tuition fee,20900000,1,1,2026-10-31T18:01:01
+422,71,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+423,71,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+424,71,Lab,Laboratory usage fee,700000,0,4,2026-10-31T18:01:01
+425,71,Development,Campus development fee,950000,1,5,2026-10-31T18:01:01
+426,71,Research,Research resource fee,1350000,0,6,2026-10-31T18:01:01
+427,72,Tuition,Tuition fee,19200000,1,1,2026-10-31T18:01:01
+428,72,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+429,72,Library,Library access fee,500000,1,3,2026-10-31T18:01:01
+430,72,Lab,Laboratory usage fee,650000,0,4,2026-10-31T18:01:01
+431,72,Development,Campus development fee,850000,1,5,2026-10-31T18:01:01
+432,72,Research,Research resource fee,1350000,0,6,2026-10-31T18:01:01
+433,73,Tuition,Tuition fee,13300000,1,1,2026-10-31T18:01:01
+434,73,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+435,73,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+436,73,Lab,Laboratory usage fee,950000,0,4,2026-10-31T18:01:01
+437,73,Development,Campus development fee,1100000,1,5,2026-10-31T18:01:01
+438,73,Research,Research resource fee,900000,0,6,2026-10-31T18:01:01
+439,74,Tuition,Tuition fee,16950000,1,1,2026-10-31T18:01:01
+440,74,Exam,Examination fee,750000,1,2,2026-10-31T18:01:01
+441,74,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+442,74,Lab,Laboratory usage fee,1150000,0,4,2026-10-31T18:01:01
+443,74,Development,Campus development fee,750000,1,5,2026-10-31T18:01:01
+444,74,Research,Research resource fee,1300000,0,6,2026-10-31T18:01:01
+445,75,Tuition,Tuition fee,17500000,1,1,2026-10-31T18:01:01
+446,75,Exam,Examination fee,650000,1,2,2026-10-31T18:01:01
+447,75,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+448,75,Lab,Laboratory usage fee,650000,0,4,2026-10-31T18:01:01
+449,75,Development,Campus development fee,850000,1,5,2026-10-31T18:01:01
+450,75,Research,Research resource fee,1700000,0,6,2026-10-31T18:01:01
+451,76,Tuition,Tuition fee,17900000,1,1,2026-10-31T18:01:01
+452,76,Exam,Examination fee,650000,1,2,2026-10-31T18:01:01
+453,76,Library,Library access fee,450000,1,3,2026-10-31T18:01:01
+454,76,Lab,Laboratory usage fee,650000,0,4,2026-10-31T18:01:01
+455,76,Development,Campus development fee,800000,1,5,2026-10-31T18:01:01
+456,76,Research,Research resource fee,1700000,0,6,2026-10-31T18:01:01
+457,77,Tuition,Tuition fee,15050000,1,1,2026-10-31T18:01:01
+458,77,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+459,77,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+460,77,Lab,Laboratory usage fee,950000,0,4,2026-10-31T18:01:01
+461,77,Development,Campus development fee,850000,1,5,2026-10-31T18:01:01
+462,77,Research,Research resource fee,1650000,0,6,2026-10-31T18:01:01
+463,78,Tuition,Tuition fee,20900000,1,1,2026-10-31T18:01:01
+464,78,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+465,78,Library,Library access fee,500000,1,3,2026-10-31T18:01:01
+466,78,Lab,Laboratory usage fee,1000000,0,4,2026-10-31T18:01:01
+467,78,Development,Campus development fee,800000,1,5,2026-10-31T18:01:01
+468,78,Research,Research resource fee,900000,0,6,2026-10-31T18:01:01
+469,79,Tuition,Tuition fee,12500000,1,1,2026-10-31T18:01:01
+470,79,Exam,Examination fee,500000,1,2,2026-10-31T18:01:01
+471,79,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+472,79,Lab,Laboratory usage fee,950000,0,4,2026-10-31T18:01:01
+473,79,Development,Campus development fee,1150000,1,5,2026-10-31T18:01:01
+474,79,Research,Research resource fee,1300000,0,6,2026-10-31T18:01:01
+475,80,Tuition,Tuition fee,19150000,1,1,2026-10-31T18:01:01
+476,80,Exam,Examination fee,750000,1,2,2026-10-31T18:01:01
+477,80,Library,Library access fee,450000,1,3,2026-10-31T18:01:01
+478,80,Lab,Laboratory usage fee,950000,0,4,2026-10-31T18:01:01
+479,80,Development,Campus development fee,650000,1,5,2026-10-31T18:01:01
+480,80,Research,Research resource fee,1650000,0,6,2026-10-31T18:01:01
+481,81,Tuition,Tuition fee,18500000,1,1,2026-10-31T18:01:01
+482,81,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+483,81,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+484,81,Lab,Laboratory usage fee,750000,0,4,2026-10-31T18:01:01
+485,81,Development,Campus development fee,900000,1,5,2026-10-31T18:01:01
+486,81,Research,Research resource fee,1300000,0,6,2026-10-31T18:01:01
+487,82,Tuition,Tuition fee,12800000,1,1,2026-10-31T18:01:01
+488,82,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+489,82,Library,Library access fee,500000,1,3,2026-10-31T18:01:01
+490,82,Lab,Laboratory usage fee,1500000,0,4,2026-10-31T18:01:01
+491,82,Development,Campus development fee,1150000,1,5,2026-10-31T18:01:01
+492,82,Research,Research resource fee,1800000,0,6,2026-10-31T18:01:01
+493,83,Tuition,Tuition fee,12050000,1,1,2026-10-31T18:01:01
+494,83,Exam,Examination fee,750000,1,2,2026-10-31T18:01:01
+495,83,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+496,83,Lab,Laboratory usage fee,550000,0,4,2026-10-31T18:01:01
+497,83,Development,Campus development fee,1200000,1,5,2026-10-31T18:01:01
+498,83,Research,Research resource fee,1900000,0,6,2026-10-31T18:01:01
+499,84,Tuition,Tuition fee,14850000,1,1,2026-10-31T18:01:01
+500,84,Exam,Examination fee,650000,1,2,2026-10-31T18:01:01
+501,84,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+502,84,Lab,Laboratory usage fee,1400000,0,4,2026-10-31T18:01:01
+503,84,Development,Campus development fee,1050000,1,5,2026-10-31T18:01:01
+504,84,Research,Research resource fee,950000,0,6,2026-10-31T18:01:01
+505,85,Tuition,Tuition fee,13750000,1,1,2026-10-31T18:01:01
+506,85,Exam,Examination fee,450000,1,2,2026-10-31T18:01:01
+507,85,Library,Library access fee,300000,1,3,2026-10-31T18:01:01
+508,85,Lab,Laboratory usage fee,1000000,0,4,2026-10-31T18:01:01
+509,85,Development,Campus development fee,900000,1,5,2026-10-31T18:01:01
+510,85,Research,Research resource fee,1750000,0,6,2026-10-31T18:01:01
+511,86,Tuition,Tuition fee,12150000,1,1,2026-10-31T18:01:01
+512,86,Exam,Examination fee,600000,1,2,2026-10-31T18:01:01
+513,86,Library,Library access fee,450000,1,3,2026-10-31T18:01:01
+514,86,Lab,Laboratory usage fee,1450000,0,4,2026-10-31T18:01:01
+515,86,Development,Campus development fee,750000,1,5,2026-10-31T18:01:01
+516,86,Research,Research resource fee,1600000,0,6,2026-10-31T18:01:01
+517,87,Tuition,Tuition fee,15400000,1,1,2026-10-31T18:01:01
+518,87,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+519,87,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+520,87,Lab,Laboratory usage fee,1200000,0,4,2026-10-31T18:01:01
+521,87,Development,Campus development fee,1100000,1,5,2026-10-31T18:01:01
+522,87,Research,Research resource fee,2000000,0,6,2026-10-31T18:01:01
+523,88,Tuition,Tuition fee,15350000,1,1,2026-10-31T18:01:01
+524,88,Exam,Examination fee,600000,1,2,2026-10-31T18:01:01
+525,88,Library,Library access fee,400000,1,3,2026-10-31T18:01:01
+526,88,Lab,Laboratory usage fee,650000,0,4,2026-10-31T18:01:01
+527,88,Development,Campus development fee,700000,1,5,2026-10-31T18:01:01
+528,88,Research,Research resource fee,800000,0,6,2026-10-31T18:01:01
+529,89,Tuition,Tuition fee,16350000,1,1,2026-10-31T18:01:01
+530,89,Exam,Examination fee,550000,1,2,2026-10-31T18:01:01
+531,89,Library,Library access fee,500000,1,3,2026-10-31T18:01:01
+532,89,Lab,Laboratory usage fee,1100000,0,4,2026-10-31T18:01:01
+533,89,Development,Campus development fee,850000,1,5,2026-10-31T18:01:01
+534,89,Research,Research resource fee,1350000,0,6,2026-10-31T18:01:01
+535,90,Tuition,Tuition fee,17450000,1,1,2026-10-31T18:01:01
+536,90,Exam,Examination fee,700000,1,2,2026-10-31T18:01:01
+537,90,Library,Library access fee,350000,1,3,2026-10-31T18:01:01
+538,90,Lab,Laboratory usage fee,1300000,0,4,2026-10-31T18:01:01
+539,90,Development,Campus development fee,1150000,1,5,2026-10-31T18:01:01
+540,90,Research,Research resource fee,950000,0,6,2026-10-31T18:01:01
+541,91,Tuition,PhD programme fee,29500000,1,1,2026-10-31T18:01:01
+542,91,Exam,Thesis examination fee,950000,1,2,2026-10-31T18:01:01
+543,91,Library,Library & journal fee,650000,1,3,2026-10-31T18:01:01
+544,91,Research,Research resource fee,1500000,1,4,2026-10-31T18:01:01
+545,91,Stipend Admin,Stipend administration,500000,0,5,2026-10-31T18:01:01
+546,92,Tuition,PhD programme fee,21150000,1,1,2026-10-31T18:01:01
+547,92,Exam,Thesis examination fee,900000,1,2,2026-10-31T18:01:01
+548,92,Library,Library & journal fee,450000,1,3,2026-10-31T18:01:01
+549,92,Research,Research resource fee,3750000,1,4,2026-10-31T18:01:01
+550,92,Stipend Admin,Stipend administration,400000,0,5,2026-10-31T18:01:01
+551,93,Tuition,PhD programme fee,25750000,1,1,2026-10-31T18:01:01
+552,93,Exam,Thesis examination fee,650000,1,2,2026-10-31T18:01:01
+553,93,Library,Library & journal fee,750000,1,3,2026-10-31T18:01:01
+554,93,Research,Research resource fee,3000000,1,4,2026-10-31T18:01:01
+555,93,Stipend Admin,Stipend administration,450000,0,5,2026-10-31T18:01:01
+556,94,Tuition,PhD programme fee,19400000,1,1,2026-10-31T18:01:01
+557,94,Exam,Thesis examination fee,950000,1,2,2026-10-31T18:01:01
+558,94,Library,Library & journal fee,750000,1,3,2026-10-31T18:01:01
+559,94,Research,Research resource fee,3950000,1,4,2026-10-31T18:01:01
+560,94,Stipend Admin,Stipend administration,300000,0,5,2026-10-31T18:01:01
+561,95,Tuition,PhD programme fee,26150000,1,1,2026-10-31T18:01:01
+562,95,Exam,Thesis examination fee,950000,1,2,2026-10-31T18:01:01
+563,95,Library,Library & journal fee,600000,1,3,2026-10-31T18:01:01
+564,95,Research,Research resource fee,3250000,1,4,2026-10-31T18:01:01
+565,95,Stipend Admin,Stipend administration,250000,0,5,2026-10-31T18:01:01
+566,96,Tuition,PhD programme fee,19000000,1,1,2026-10-31T18:01:01
+567,96,Exam,Thesis examination fee,550000,1,2,2026-10-31T18:01:01
+568,96,Library,Library & journal fee,700000,1,3,2026-10-31T18:01:01
+569,96,Research,Research resource fee,3300000,1,4,2026-10-31T18:01:01
+570,96,Stipend Admin,Stipend administration,400000,0,5,2026-10-31T18:01:01
+571,97,Tuition,PhD programme fee,29400000,1,1,2026-10-31T18:01:01
+572,97,Exam,Thesis examination fee,700000,1,2,2026-10-31T18:01:01
+573,97,Library,Library & journal fee,650000,1,3,2026-10-31T18:01:01
+574,97,Research,Research resource fee,1800000,1,4,2026-10-31T18:01:01
+575,97,Stipend Admin,Stipend administration,300000,0,5,2026-10-31T18:01:01
+576,98,Tuition,PhD programme fee,26600000,1,1,2026-10-31T18:01:01
+577,98,Exam,Thesis examination fee,550000,1,2,2026-10-31T18:01:01
+578,98,Library,Library & journal fee,500000,1,3,2026-10-31T18:01:01
+579,98,Research,Research resource fee,2150000,1,4,2026-10-31T18:01:01
+580,98,Stipend Admin,Stipend administration,450000,0,5,2026-10-31T18:01:01
+581,99,Tuition,PhD programme fee,22950000,1,1,2026-10-31T18:01:01
+582,99,Exam,Thesis examination fee,550000,1,2,2026-10-31T18:01:01
+583,99,Library,Library & journal fee,650000,1,3,2026-10-31T18:01:01
+584,99,Research,Research resource fee,2250000,1,4,2026-10-31T18:01:01
+585,99,Stipend Admin,Stipend administration,400000,0,5,2026-10-31T18:01:01
+586,100,Tuition,PhD programme fee,26950000,1,1,2026-10-31T18:01:01
+587,100,Exam,Thesis examination fee,750000,1,2,2026-10-31T18:01:01
+588,100,Library,Library & journal fee,700000,1,3,2026-10-31T18:01:01
+589,100,Research,Research resource fee,3000000,1,4,2026-10-31T18:01:01
+590,100,Stipend Admin,Stipend administration,500000,0,5,2026-10-31T18:01:01
+591,101,Tuition,PhD programme fee,28400000,1,1,2026-10-31T18:01:01
+592,101,Exam,Thesis examination fee,650000,1,2,2026-10-31T18:01:01
+593,101,Library,Library & journal fee,600000,1,3,2026-10-31T18:01:01
+594,101,Research,Research resource fee,3950000,1,4,2026-10-31T18:01:01
+595,101,Stipend Admin,Stipend administration,400000,0,5,2026-10-31T18:01:01
+596,102,Tuition,PhD programme fee,20500000,1,1,2026-10-31T18:01:01
+597,102,Exam,Thesis examination fee,800000,1,2,2026-10-31T18:01:01
+598,102,Library,Library & journal fee,650000,1,3,2026-10-31T18:01:01
+599,102,Research,Research resource fee,2050000,1,4,2026-10-31T18:01:01
+600,102,Stipend Admin,Stipend administration,450000,0,5,2026-10-31T18:01:01
+601,103,Tuition,Diploma tuition fee,6700000,1,1,2026-10-31T18:01:01
+602,103,Exam,Examination fee,200000,1,2,2026-10-31T18:01:01
+603,103,Library,Library access fee,150000,1,3,2026-10-31T18:01:01
+604,103,Lab,Laboratory usage fee,300000,0,4,2026-10-31T18:01:01
+605,103,Development,Campus development fee,350000,1,5,2026-10-31T18:01:01
+606,104,Tuition,Diploma tuition fee,7200000,1,1,2026-10-31T18:01:01
+607,104,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+608,104,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+609,104,Lab,Laboratory usage fee,200000,0,4,2026-10-31T18:01:01
+610,104,Development,Campus development fee,600000,1,5,2026-10-31T18:01:01
+611,105,Tuition,Diploma tuition fee,5250000,1,1,2026-10-31T18:01:01
+612,105,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+613,105,Library,Library access fee,150000,1,3,2026-10-31T18:01:01
+614,105,Lab,Laboratory usage fee,450000,0,4,2026-10-31T18:01:01
+615,105,Development,Campus development fee,300000,1,5,2026-10-31T18:01:01
+616,106,Tuition,Diploma tuition fee,6250000,1,1,2026-10-31T18:01:01
+617,106,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+618,106,Library,Library access fee,250000,1,3,2026-10-31T18:01:01
+619,106,Lab,Laboratory usage fee,500000,0,4,2026-10-31T18:01:01
+620,106,Development,Campus development fee,500000,1,5,2026-10-31T18:01:01
+621,107,Tuition,Diploma tuition fee,6400000,1,1,2026-10-31T18:01:01
+622,107,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+623,107,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+624,107,Lab,Laboratory usage fee,550000,0,4,2026-10-31T18:01:01
+625,107,Development,Campus development fee,400000,1,5,2026-10-31T18:01:01
+626,108,Tuition,Diploma tuition fee,6850000,1,1,2026-10-31T18:01:01
+627,108,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+628,108,Library,Library access fee,100000,1,3,2026-10-31T18:01:01
+629,108,Lab,Laboratory usage fee,400000,0,4,2026-10-31T18:01:01
+630,108,Development,Campus development fee,500000,1,5,2026-10-31T18:01:01
+631,109,Tuition,Diploma tuition fee,7550000,1,1,2026-10-31T18:01:01
+632,109,Exam,Examination fee,300000,1,2,2026-10-31T18:01:01
+633,109,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+634,109,Lab,Laboratory usage fee,400000,0,4,2026-10-31T18:01:01
+635,109,Development,Campus development fee,450000,1,5,2026-10-31T18:01:01
+636,110,Tuition,Diploma tuition fee,5900000,1,1,2026-10-31T18:01:01
+637,110,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+638,110,Library,Library access fee,150000,1,3,2026-10-31T18:01:01
+639,110,Lab,Laboratory usage fee,550000,0,4,2026-10-31T18:01:01
+640,110,Development,Campus development fee,400000,1,5,2026-10-31T18:01:01
+641,111,Tuition,Diploma tuition fee,6050000,1,1,2026-10-31T18:01:01
+642,111,Exam,Examination fee,250000,1,2,2026-10-31T18:01:01
+643,111,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+644,111,Lab,Laboratory usage fee,500000,0,4,2026-10-31T18:01:01
+645,111,Development,Campus development fee,350000,1,5,2026-10-31T18:01:01
+646,112,Tuition,Diploma tuition fee,6400000,1,1,2026-10-31T18:01:01
+647,112,Exam,Examination fee,350000,1,2,2026-10-31T18:01:01
+648,112,Library,Library access fee,100000,1,3,2026-10-31T18:01:01
+649,112,Lab,Laboratory usage fee,250000,0,4,2026-10-31T18:01:01
+650,112,Development,Campus development fee,300000,1,5,2026-10-31T18:01:01
+651,113,Tuition,Diploma tuition fee,5100000,1,1,2026-10-31T18:01:01
+652,113,Exam,Examination fee,250000,1,2,2026-10-31T18:01:01
+653,113,Library,Library access fee,200000,1,3,2026-10-31T18:01:01
+654,113,Lab,Laboratory usage fee,600000,0,4,2026-10-31T18:01:01
+655,113,Development,Campus development fee,500000,1,5,2026-10-31T18:01:01
+656,114,Tuition,Diploma tuition fee,5550000,1,1,2026-10-31T18:01:01
+657,114,Exam,Examination fee,400000,1,2,2026-10-31T18:01:01
+658,114,Library,Library access fee,150000,1,3,2026-10-31T18:01:01
+659,114,Lab,Laboratory usage fee,200000,0,4,2026-10-31T18:01:01
+660,114,Development,Campus development fee,350000,1,5,2026-10-31T18:01:01
+661,115,Tuition,Certificate course fee,3100000,1,1,2026-10-31T18:01:01
+662,115,Exam,Examination fee,200000,1,2,2026-10-31T18:01:01
+663,115,Material,Course material fee,200000,1,3,2026-10-31T18:01:01
+664,116,Tuition,Certificate course fee,4450000,1,1,2026-10-31T18:01:01
+665,116,Exam,Examination fee,250000,1,2,2026-10-31T18:01:01
+666,116,Material,Course material fee,450000,1,3,2026-10-31T18:01:01
+667,117,Tuition,Certificate course fee,2700000,1,1,2026-10-31T18:01:01
+668,117,Exam,Examination fee,200000,1,2,2026-10-31T18:01:01
+669,117,Material,Course material fee,200000,1,3,2026-10-31T18:01:01
+670,118,Tuition,Certificate course fee,2850000,1,1,2026-10-31T18:01:01
+671,118,Exam,Examination fee,200000,1,2,2026-10-31T18:01:01
+672,118,Material,Course material fee,250000,1,3,2026-10-31T18:01:01
+673,119,Tuition,Certificate course fee,4300000,1,1,2026-10-31T18:01:01
+674,119,Exam,Examination fee,150000,1,2,2026-10-31T18:01:01
+675,119,Material,Course material fee,250000,1,3,2026-10-31T18:01:01
+676,120,Tuition,Certificate course fee,3300000,1,1,2026-10-31T18:01:01
+677,120,Exam,Examination fee,250000,1,2,2026-10-31T18:01:01
+678,120,Material,Course material fee,300000,1,3,2026-10-31T18:01:01

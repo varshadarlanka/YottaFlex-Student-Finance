@@ -10,3 +10,10 @@ dist/
 build/
 .env
 *.log
+node_modules/
+frontend/dist/
+backend/venv/
+venv/
+check_db.py
+debug_phase3.py
+tmp_*.db

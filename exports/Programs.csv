@@ -1,0 +1,21 @@
+program_id,program_code,program_name,department,duration_years,level,is_active,created_at
+1,PROG-01-BTECH-CSE,B.Tech Computer Science & Engineering,Engineering,4,UG,1,2026-10-31T18:01:01
+2,PROG-02-BTECH-ECE,B.Tech Electronics & Communication Eng,Engineering,4,UG,1,2026-10-31T18:01:01
+3,PROG-03-BTECH-MECH,B.Tech Mechanical Engineering,Engineering,4,UG,1,2026-10-31T18:01:01
+4,PROG-04-BTECH-CIVIL,B.Tech Civil Engineering,Engineering,4,UG,1,2026-10-31T18:01:01
+5,PROG-05-BTECH-EEE,B.Tech Electrical & Electronics Eng,Engineering,4,UG,1,2026-10-31T18:01:01
+6,PROG-06-BCA,Bachelor of Computer Applications,Computing,3,UG,1,2026-10-31T18:01:01
+7,PROG-07-BSC-PHY,B.Sc Physics,Sciences,3,UG,1,2026-10-31T18:01:01
+8,PROG-08-BSC-CHEM,B.Sc Chemistry,Sciences,3,UG,1,2026-10-31T18:01:01
+9,PROG-09-BCOM-GEN,B.Com General,Commerce,3,UG,1,2026-10-31T18:01:01
+10,PROG-10-BBA,Bachelor of Business Administration,Management,3,UG,1,2026-10-31T18:01:01
+11,PROG-11-MTECH-CSE,M.Tech Computer Science & Engineering,Engineering,2,PG,1,2026-10-31T18:01:01
+12,PROG-12-MBA-FIN,MBA Finance,Management,2,PG,1,2026-10-31T18:01:01
+13,PROG-13-MBA-MKTG,MBA Marketing,Management,2,PG,1,2026-10-31T18:01:01
+14,PROG-14-MCA,Master of Computer Applications,Computing,2,PG,1,2026-10-31T18:01:01
+15,PROG-15-MSC-DATA,M.Sc Data Science,Sciences,2,PG,1,2026-10-31T18:01:01
+16,PROG-16-PHD-CSE,Ph.D Computer Science,Research,3,PhD,1,2026-10-31T18:01:01
+17,PROG-17-PHD-MGMT,Ph.D Management,Research,3,PhD,1,2026-10-31T18:01:01
+18,PROG-18-DIP-CS,Diploma in Computer Science,Computing,1,Diploma,1,2026-10-31T18:01:01
+19,PROG-19-DIP-ELEC,Diploma in Electronics,Engineering,1,Diploma,1,2026-10-31T18:01:01
+20,PROG-20-CERT-AIML,Certificate in AI & Machine Learning,Computing,1,Certificate,1,2026-10-31T18:01:01

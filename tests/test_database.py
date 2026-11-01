@@ -63,6 +63,23 @@ def conn(tmp_manager: DatabaseManager):
         yield c
 
 
+def test_initialise_closes_its_sqlite_connection(tmp_path: Path, monkeypatch):
+    manager = DatabaseManager(db_path=tmp_path / "closed-after-init.db")
+    connections = []
+    original_connect = manager._raw_connection
+
+    def track_connection():
+        connection = original_connect()
+        connections.append(connection)
+        return connection
+
+    monkeypatch.setattr(manager, "_raw_connection", track_connection)
+    manager.initialise()
+
+    with pytest.raises(sqlite3.ProgrammingError, match="closed database"):
+        connections[0].execute("SELECT 1")
+
+
 # ===========================================================================
 # Helper utilities
 # ===========================================================================
@@ -182,6 +199,17 @@ class TestInitialisation:
         found, missing = tmp_manager.verify_tables()
         assert missing == [], f"Tables disappeared after second init: {missing}"
 
+    def test_invoice_enrollment_term_lookup_index(self, tmp_manager: DatabaseManager) -> None:
+        with tmp_manager.connection() as conn:
+            columns = [
+                row["name"]
+                for row in conn.execute(
+                    "PRAGMA index_info('idx_invoices_enrollment_term')"
+                )
+            ]
+
+        assert columns == ["enrollment_id", "term_id"]
+
     def test_default_path_is_relative(self) -> None:
         """Default DB path must not be an absolute machine-specific path."""
         from backend.database.db_manager import DEFAULT_DB_PATH
@@ -215,7 +243,8 @@ class TestTableExistence:
         [
             "Students", "Programs", "Terms", "FeeSchedules", "FeeScheduleLines",
             "Enrollments", "Invoices", "InvoiceLines", "Scholarships", "Eligibility",
-            "Payments", "PaymentAllocations", "Refunds", "AuditEvents",
+            "Payments", "PaymentAllocations", "Refunds", "BalanceSnapshots",
+            "AuditEvents",
         ],
     )
     def test_individual_table_exists(

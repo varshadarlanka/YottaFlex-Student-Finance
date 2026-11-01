@@ -50,7 +50,7 @@ Student Finance Management/
 |   |
 |   |-- database/
 |   |   |-- __init__.py
-|   |   |-- schema.sql             # DDL: 14 tables, constraints, indexes
+|   |   |-- schema.sql             # DDL: 15 tables, constraints, indexes
 |   |   |-- db_manager.py          # Connection management, FK enforcement, validation
 |   |   `-- student_finance.db     # SQLite database (created on init)
 |   |
@@ -73,7 +73,7 @@ Student Finance Management/
 |   |-- architecture.md            # This file
 |   |-- api_documentation.md       # Full API endpoint reference
 |   |-- business_rules.md          # Invoice, scholarship, payment, balance rules
-|   |-- data_dictionary.md         # Column-level docs for all 14 tables
+|   |-- data_dictionary.md         # Column-level docs for all 15 tables
 |   `-- data_generation.md         # Generation modes, seed, targets, order
 |
 `-- tests/
@@ -154,7 +154,7 @@ AuditEvents (append-only; references all tables by name+id)
 | `initialise()` | Create DB file, apply schema idempotently |
 | `connection()` | Context manager yielding a FK-enabled connection |
 | `transaction(conn)` | Savepoint-based nested transaction context manager |
-| `verify_tables()` | Check all 14 expected tables exist |
+| `verify_tables()` | Check all 15 expected tables exist |
 | `verify_foreign_keys()` | Introspect FK definitions via `PRAGMA foreign_key_list` |
 | `run_foreign_key_check()` | Execute `PRAGMA foreign_key_check`; return violations |
 | `validate_allocation(conn, payment_id, line_id)` | Cross-student allocation guard |
@@ -192,7 +192,7 @@ And raises `DatabaseError` if the two `student_id` values differ.
 
 ## 5. Models
 
-`backend/database/models.py` contains Python `@dataclass` definitions for all 14 tables.
+`backend/database/models.py` contains Python `@dataclass` definitions for all 15 tables.
 
 ### Design Principles
 

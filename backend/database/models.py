@@ -310,6 +310,17 @@ class Refund:
 
 
 @dataclass
+class BalanceSnapshot:
+    """Stored point-in-time balance used for reconciliation checks."""
+
+    snapshot_id: Optional[int]
+    student_id: int
+    term_id: int
+    reported_outstanding_paise: int
+    snapshot_date: Optional[str] = None
+
+
+@dataclass
 class AuditEvent:
     """
     Immutable audit trail record.
